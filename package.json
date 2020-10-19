@@ -1,0 +1,21 @@
+{
+  "name": "maviyol-insaat-web-sitesi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Kerem Sirin",
+  "scripts": {
+    "dev": "parcel src/views/pages/index.pug",
+    "build": "parcel src/views/pages/index.pug"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "postcss-modules": "^3.2.2",
+    "pug": "^3.0.0",
+    "sass": "^1.27.0"
+  }
+}
