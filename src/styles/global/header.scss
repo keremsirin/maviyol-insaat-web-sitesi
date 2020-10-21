@@ -3,7 +3,8 @@
   position: fixed;
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid #ddd;
+  background-color: rgba($color: white, $alpha: 0);
+  // border-bottom: 1px solid rgba($color: $color-dark-grey, $alpha: 0.3);
 
   .container {
     position: relative;
@@ -12,25 +13,104 @@
     height: 100%;
   }
 
-  &-logo {
-    display: flex;
-    align-items: center;
-    width: 20%;
-
-    // background-color: #ddd;
-    .justlogo {
-      width: 30%;
-    }
-
-    .justtext {
-      padding-left: 10px;
-      width: 80%;
-    }
-  }
 
   &-menu {
     display: flex;
-    margin-left: auto;
+    // margin-left: auto;
+    width: 100%;
+    height: 100px;
+
+    &-logo {
+      display: flex;
+      align-items: flex-end;
+      width: 30%;
+      height: 100px;
+
+      a {
+        width: 75%;
+      }
+
+      .justlogo {
+        width: 25%;
+      }
+
+      .justtext {
+        padding-left: 10px;
+        width: 75%;
+      }
+    }
+
+    &-nav {
+      display: flex;
+      width: 70%;
+      height: 100px;
+      flex-direction: column;
+      justify-content: flex-end;
+
+
+      &-links {
+        display: flex;
+        margin-left: auto;
+        width: 80%;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+
+
+        a {
+          display: flex;
+          height: $finger-size;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        ul {
+          display: flex;
+
+          li {
+            position: relative;
+            width: auto;
+
+            &:hover {
+              top: 0;
+              display: block;
+
+              .dropdown-1 {
+                display: block;
+              }
+            }
+
+            ul {
+              li {
+                height: $finger-size;
+                padding-left: $offset;
+                padding-right: $offset;
+                // color: $color-dark-grey;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                background-color: $color-dark-grey;
+                a {
+                  color: white;
+                  &:hover {
+                    color: $color-blue;
+                    transition: 0.3s;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+        .dropdown-1 {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          width: 210%;
+        }
+      }
+    }
 
     .hover-border {
       display: inline-flex;
@@ -38,7 +118,8 @@
       height: $finger-size;
       padding-left: $offset;
       padding-right: $offset;
-      color: #ddd;
+      // color: $color-dark-grey;
+      color: white;
       font-weight: bold;
       font-size: 18px;
       position: relative;

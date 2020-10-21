@@ -1,14 +1,75 @@
 header.Header
     .container
-        a.Header-logo(href="")
-            img.justlogo(src="../../img/sadecelogo2.svg", alt="")
-            img.justtext(src="../../img/sadecemetin.svg", alt="")
-
         .Header-menu
-            a.hover-border(href="") Hakkımızda
-            a.hover-border(href="") Hizmetler
-                i.fa.fa-caret-down(aria-hidden='true')
-            a.hover-border(href="") Projeler
-                i.fa.fa-caret-down(aria-hidden='true')
-            a.hover-border(href="") Referanslar
-            a.hover-border(href="") İletişim
+            .Header-menu-logo
+                a.Header-menu-logo-a(href="")
+                    img.justlogo(src="../../img/sadecelogo1.svg", alt="")
+                    img.justtext(src="../../img/sadecemetin1.svg", alt="")
+            .Header-menu-nav
+                .Header-menu-nav-links
+                    ul
+                        li 
+                            a.hover-border(href="") Hakkımızda
+                        li 
+                            a#services.hover-border(href="") Hizmetler
+                                i.fa.fa-caret-down(aria-hidden='true')
+                            ul.dropdown-1
+                                li
+                                    a(href="") Kentsel Dönüşüm
+                                li
+                                    a(href="") Trafik Güvenliği
+                                li
+                                    a(href="") BİM (Bina Bilgi Modelleme)
+                                li
+                                    a(href="") Tasarım ve Mimari Proje
+                        li 
+                            a#projects.hover-border(href="") Projeler
+                                i.fa.fa-caret-down(aria-hidden='true')
+                            ul.dropdown-1
+                                li
+                                    a(href="") Devam Eden Projeler
+                                li
+                                    a(href="") Tamamlanan Projeler
+                        li 
+                            a.hover-border(href="") Referanslar
+                        li 
+                            a.hover-border(href="") İletişim
+                        
+
+
+
+
+        
+
+        //- .Header-menu
+        //-     ul
+        //-         li
+        //-             a.hover-border(href="") Hakkımızda
+        //-         li
+        //-             a.hover-border(href="") Hizmetler
+        //-                 i.fa.fa-caret-down(aria-hidden='true')
+        //-                 ul
+        //-                     li
+        //-                         a.hover-border(href="") Deneme1
+        //-                     li
+        //-                         a.hover-border(href="") Deneme2
+        //-                     li
+        //-                         a.hover-border(href="") Deneme3
+        //-                     li
+        //-                         a.hover-border(href="") Deneme4
+        //-         li
+        //-             a.hover-border(href="") Projeler
+        //-                 i.fa.fa-caret-down(aria-hidden='true')
+        //-         li
+        //-             a.hover-border(href="") Referanslar
+        //-         li
+        //-             a.hover-border(href="") İletişim
+            //- a.hover-border(href="") Hakkımızda
+            //- a.hover-border(href="") Hizmetler
+            //-     i.fa.fa-caret-down(aria-hidden='true')
+            //-     .Header-menu-services
+            //-         a(href="") Deneme
+            //- a.hover-border(href="") Projeler
+            //-     i.fa.fa-caret-down(aria-hidden='true')
+            //- a.hover-border(href="") Referanslar
+            //- a.hover-border(href="") İletişim
