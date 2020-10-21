@@ -347,6 +347,7 @@ td {
   padding: 0; }
 
 body {
+  font-family: "Mukta", Arial, sans-serif;
   width: 100%; }
 
 .container {
@@ -356,8 +357,68 @@ body {
   padding-left: 20px;
   padding-right: 20px; }
 
+.Header {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ddd; }
+  .Header .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%; }
+  .Header-logo {
+    display: flex;
+    align-items: center;
+    width: 20%; }
+    .Header-logo .justlogo {
+      width: 30%; }
+    .Header-logo .justtext {
+      padding-left: 10px;
+      width: 80%; }
+  .Header-menu {
+    display: flex;
+    margin-left: auto; }
+    .Header-menu .hover-border {
+      display: inline-flex;
+      align-items: center;
+      height: 44px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #ddd;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative; }
+      .Header-menu .hover-border i {
+        margin-left: 6px;
+        transform: rotate(270deg); }
+      .Header-menu .hover-border::after {
+        content: '';
+        width: 0%;
+        height: 4px;
+        background-color: #04BBBB;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        border-radius: 5px; }
+      .Header-menu .hover-border:hover {
+        color: #04BBBB;
+        transition: 0.3s; }
+        .Header-menu .hover-border:hover i {
+          transform: rotate(0deg);
+          transition: .5s; }
+        .Header-menu .hover-border:hover::after {
+          transition: 0.5s;
+          color: #04BBBB;
+          left: 0%;
+          width: 100%; }
+
 h1 {
   color: red; }
+
+body {
+  background-color: #686d76; }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */

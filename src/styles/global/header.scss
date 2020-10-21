@@ -1,0 +1,80 @@
+.Header {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ddd;
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+
+    // background-color: #ddd;
+    .justlogo {
+      width: 30%;
+    }
+
+    .justtext {
+      padding-left: 10px;
+      width: 80%;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    margin-left: auto;
+
+    .hover-border {
+      display: inline-flex;
+      align-items: center;
+      height: $finger-size;
+      padding-left: $offset;
+      padding-right: $offset;
+      color: #ddd;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative;
+
+      i {
+        margin-left: 6px;
+        transform: rotate(270deg);
+      }
+
+      &::after {
+        content: '';
+        width: 0%;
+        height: 4px;
+        background-color: $color-blue;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        border-radius: $border-radius;
+      }
+
+      &:hover {
+        color: $color-blue;
+        transition: 0.3s;
+
+        i {
+          transform: rotate(0deg);
+          transition: .5s;
+        }
+
+        &::after {
+          transition: 0.5s;
+          color: $color-blue;
+          left: 0%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
