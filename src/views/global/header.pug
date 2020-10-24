@@ -6,34 +6,38 @@ header.Header
                     img.justlogo(src="../../img/sadecelogo1.svg", alt="")
                     img.justtext(src="../../img/sadecemetin1.svg", alt="")
             .Header-menu-nav
+                //- img.menu_logo(src="../../img/menulogo1.svg", alt="")
+                button.Header-menu-nav-button(type="button")
+                    img.menu_logo(src="../../img/menulogo-beyaz.svg", alt="")
+                    
                 .Header-menu-nav-links
                     ul
                         li 
-                            a.hover-border(href="") Hakkımızda
+                            a.hover-border(href="#") Hakkımızda
                         li 
-                            a#services.hover-border(href="") Hizmetler
+                            a#services.hover-border(href="#") Hizmetler
                                 i.fa.fa-caret-down(aria-hidden='true')
                             ul.dropdown-1
                                 li
-                                    a(href="") Kentsel Dönüşüm
+                                    a.hover-left(href="#") Kentsel Dönüşüm
                                 li
-                                    a(href="") Trafik Güvenliği
+                                    a.hover-left(href="#") Trafik Güvenliği
+                                li.deneme
+                                    a.hover-left(href="#") BİM (Bina Bilgi Modelleme)
                                 li
-                                    a(href="") BİM (Bina Bilgi Modelleme)
-                                li
-                                    a(href="") Tasarım ve Mimari Proje
+                                    a.hover-left(href="#") Tasarım ve Mimari Proje
                         li 
-                            a#projects.hover-border(href="") Projeler
+                            a#projects.hover-border(href="#") Projeler
                                 i.fa.fa-caret-down(aria-hidden='true')
-                            ul.dropdown-1
+                            ul.dropdown-2
                                 li
-                                    a(href="") Devam Eden Projeler
+                                    a.hover-left(href="#") Devam Eden Projeler
                                 li
-                                    a(href="") Tamamlanan Projeler
+                                    a.hover-left(href="#") Tamamlanmış Projeler
                         li 
-                            a.hover-border(href="") Referanslar
+                            a.hover-border(href="#") Referanslar
                         li 
-                            a.hover-border(href="") İletişim
+                            a.hover-border(href="#") İletişim
                         
 
 
