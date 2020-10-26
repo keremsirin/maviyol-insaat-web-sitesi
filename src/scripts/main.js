@@ -33,10 +33,10 @@ $(".hover-left").hover(function () {
 });
 
 
-$(function() {
+$(function () {
     var div = $('body');
     var width = div.width();
-    
+
     div.css('height', width);
 });
 
@@ -53,9 +53,61 @@ $(".Header-menu-nav-button").on("click", function () {
 //     $(".dropdown-1").css("display", "block")
 // })
 
+var click_services = 0;
+if ($(window).width() < 768) {
+    $("#services").on("click", function () {
+        
+        if (click_services == 0) {
+            $(".dropdown-2").css("display", "none")
+            $("#services").removeClass("hover-border_mobile")
+            $("#services").addClass("hover-border")
+            $(".dropdown-1").css("display", "block");
+            click_services++;
+            console.log(click_services);
+        } else {
+            $(".dropdown-1").css("display", "none");
+            $("#services").removeClass("hover-border")
+            $("#services").addClass("hover-border_mobile")
+            click_services--;
+        }
+    })
+} else if ($(window).width() > 768) {
+    // $("ul").addClass("dropdown-1")
+}
 
-// if ($(window).width() < 768) {
-//     // $("ul li ul").removeClass("dropdown-1")
-// } else if ($(window).width() > 768) {
-//     // $("ul").addClass("dropdown-1")
-// }
+var click_projects = 0;
+if ($(window).width() < 768) {
+    $("#projects").on("click", function () {
+        
+        if (click_projects == 0) {
+            $(".dropdown-1").css("display", "none")
+            $("#projects").removeClass("hover-border_mobile")
+            $("#projects").addClass("hover-border")
+            $(".dropdown-2").css("display", "block");
+            click_projects++;
+            console.log(click_projects);
+        } else {
+            $(".dropdown-2").css("display", "none");
+            $("#projects").removeClass("hover-border")
+            $("#projects").addClass("hover-border_mobile")
+            click_projects--;
+        }
+    })
+} else if ($(window).width() > 768) {
+    // $("ul").addClass("dropdown-1")
+}
+
+
+// $("#projects").on("click", function () {
+//     if ($(window).width() < 768) {
+//         $(".dropdown-1").css("display", "none")
+       
+    
+//         // if ($(".dropdown-1").css("display", "block")) {
+//         //     $(".dropdown-2").css("display", "none")
+//         // }
+    
+//     } else if ($(window).width() > 768) {
+//         // $("ul").addClass("dropdown-1")
+//     }
+// })

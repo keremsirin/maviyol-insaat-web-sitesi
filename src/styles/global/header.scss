@@ -192,8 +192,12 @@
 
               .dropdown {
                 &-1, &-2 {
-                  display: block;
+                  display: none;
                   width: auto;
+                  @include mq("tablet") {
+                    display: block;
+                    width: auto;
+                  }
                 }
               }
             }
@@ -213,7 +217,7 @@
                 background-color: $color-dark-grey;
 
                 @include mq("tablet") {
-                  width: 210% !important;
+                  width: 210%;
                 }
 
                 a {
@@ -293,6 +297,56 @@
           color: $color-blue;
           left: 0%;
           width: 100%;
+        }
+      }
+    }
+
+    .hover-border_mobile {
+      display: inline-flex;
+      align-items: center;
+      height: $finger-size;
+      padding-left: $offset;
+      padding-right: $offset;
+      // color: $color-dark-grey;
+      color: white;
+      transition: 0.3s;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative;
+
+      i {
+        margin-left: 6px;
+        transform: rotate(270deg);
+        transition: 0.5s;
+      }
+
+      &::after {
+        content: '';
+        width: 0%;
+        height: 4px;
+        background-color: $color-blue;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        border-radius: $border-radius;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: $color-blue;
+        transition: 0.5s;
+        width: 100%;
+
+        i {
+          transform: rotate(270deg);
+          transition: .5s;
+        }
+
+        &::after {
+          transition: 0.5s;
+          color: $color-blue;
+          left: 50%;
+          width: 0%;
         }
       }
     }

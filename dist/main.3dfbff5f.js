@@ -161,11 +161,57 @@ $(".Header-menu-nav-button").on("click", function () {
 }); // $("#services").on("click", function () {
 //     $(".dropdown-1").css("display", "block")
 // })
-// if ($(window).width() < 768) {
-//     // $("ul li ul").removeClass("dropdown-1")
-// } else if ($(window).width() > 768) {
-//     // $("ul").addClass("dropdown-1")
-// }
+
+var click_services = 0;
+
+if ($(window).width() < 768) {
+  $("#services").on("click", function () {
+    if (click_services == 0) {
+      $(".dropdown-2").css("display", "none");
+      $("#services").removeClass("hover-border_mobile");
+      $("#services").addClass("hover-border");
+      $(".dropdown-1").css("display", "block");
+      click_services++;
+      console.log(click_services);
+    } else {
+      $(".dropdown-1").css("display", "none");
+      $("#services").removeClass("hover-border");
+      $("#services").addClass("hover-border_mobile");
+      click_services--;
+    }
+  });
+} else if ($(window).width() > 768) {// $("ul").addClass("dropdown-1")
+}
+
+var click_projects = 0;
+
+if ($(window).width() < 768) {
+  $("#projects").on("click", function () {
+    if (click_projects == 0) {
+      $(".dropdown-1").css("display", "none");
+      $("#projects").removeClass("hover-border_mobile");
+      $("#projects").addClass("hover-border");
+      $(".dropdown-2").css("display", "block");
+      click_projects++;
+      console.log(click_projects);
+    } else {
+      $(".dropdown-2").css("display", "none");
+      $("#projects").removeClass("hover-border");
+      $("#projects").addClass("hover-border_mobile");
+      click_projects--;
+    }
+  });
+} else if ($(window).width() > 768) {// $("ul").addClass("dropdown-1")
+} // $("#projects").on("click", function () {
+//     if ($(window).width() < 768) {
+//         $(".dropdown-1").css("display", "none")
+//         // if ($(".dropdown-1").css("display", "block")) {
+//         //     $(".dropdown-2").css("display", "none")
+//         // }
+//     } else if ($(window).width() > 768) {
+//         // $("ul").addClass("dropdown-1")
+//     }
+// })
 },{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -194,7 +240,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54530" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63091" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
