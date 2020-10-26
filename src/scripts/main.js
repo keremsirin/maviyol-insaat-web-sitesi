@@ -75,6 +75,7 @@ if ($(window).width() < 768) {
     // $("ul").addClass("dropdown-1")
 }
 
+
 var click_projects = 0;
 if ($(window).width() < 768) {
     $("#projects").on("click", function () {
@@ -98,6 +99,7 @@ if ($(window).width() < 768) {
 }
 
 
+
 // $("#projects").on("click", function () {
 //     if ($(window).width() < 768) {
 //         $(".dropdown-1").css("display", "none")
@@ -111,3 +113,4 @@ if ($(window).width() < 768) {
 //         // $("ul").addClass("dropdown-1")
 //     }
 // })
+$(window).resize(function(){location.reload();});

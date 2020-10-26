@@ -33,6 +33,7 @@
       // margin-top: $offset;
       width: auto;
       height: 70px;
+      padding-bottom: 0;
 
       @include mq ("tablet") {
         display: flex;
@@ -40,7 +41,18 @@
         margin-top: 0;
         width: auto;
         height: 100px;
+        padding-bottom: 6px;
       }
+
+      @include mq ("desktop") {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 0;
+        width: auto;
+        height: 100px;
+        padding-bottom: 0;
+      }
+      
 
       a {
         width: 100%;
@@ -50,8 +62,14 @@
         width: 40px;
 
         @include mq("tablet") {
+          width: 50px;
+        }
+
+        @include mq("desktop") {
           width: 60px;
         }
+        
+        
       }
 
       .justtext {
@@ -60,6 +78,11 @@
         padding-top: 1px;
 
         @include mq("tablet") {
+          padding-left: 10px;
+          width: 150px;
+        }
+
+        @include mq("desktop") {
           padding-left: 10px;
           width: 180px;
         }
@@ -162,11 +185,21 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            font-size: 14px;
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+          }
+          @include mq("desktop") {
+            display: flex;
+            height: $finger-size;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             font-size: $font-size;
             width: 100%;
             padding-right: 0;
             padding-left: 0;
-
           }
         }
 
@@ -220,6 +253,10 @@
                   width: 210%;
                 }
 
+                @include mq("desktop") {
+                  width: 210%;
+                }
+
                 a {
                   color: white;
 
@@ -264,6 +301,17 @@
       font-weight: bold;
       font-size: 18px;
       position: relative;
+
+      @include mq("tablet") {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @include mq("desktop") {
+        font-size: 18px;
+        padding-left: $offset;
+        padding-right: $offset;
+      }
 
       i {
         margin-left: 6px;
@@ -353,9 +401,9 @@
   }
 }
 
-.deneme {
-  padding-left: 0;
-  &:hover {
-    padding-left: 20px;
-  }
-}
+// .deneme {
+//   padding-left: 0;
+//   &:hover {
+//     padding-left: 20px;
+//   }
+// }
