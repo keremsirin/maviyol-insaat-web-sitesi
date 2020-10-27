@@ -85,3 +85,29 @@
         background-color: red;
     }
 }
+
+.flickity-prev-next-button {
+    width: 20px;
+    height: 60px;
+    border-radius: 5px;
+
+    @include mq("tablet") {
+        width: 30px;
+        height: 80px;
+        border-radius: 5px;
+    }
+}
+
+.flickity-button {
+    background: rgba($color: $color-dark-grey, $alpha: .5);
+
+
+    &:hover {
+        background: $color-dark-grey;
+        transition: 0.2s;
+    }
+
+    &-icon {
+        fill: rgba($color: $color-blue, $alpha: .5);
+    }
+}

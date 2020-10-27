@@ -849,5 +849,23 @@ https://flickity.metafizzy.co
   height: 200px;
   background-color: red; }
 
+.flickity-prev-next-button {
+  width: 20px;
+  height: 60px;
+  border-radius: 5px; }
+  @media (min-width: 768px) {
+    .flickity-prev-next-button {
+      width: 30px;
+      height: 80px;
+      border-radius: 5px; } }
+
+.flickity-button {
+  background: rgba(36, 36, 37, 0.5); }
+  .flickity-button:hover {
+    background: #242425;
+    transition: 0.2s; }
+  .flickity-button-icon {
+    fill: rgba(4, 187, 187, 0.5); }
+
 
 /*# sourceMappingURL=/main.90c45431.css.map */
