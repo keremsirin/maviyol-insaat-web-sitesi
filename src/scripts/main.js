@@ -119,11 +119,28 @@ $(document).ready(function(){
         refresh = true;
     }
   });
+
+  if (($(window).width() > 768) && ($(window).width() < 1200)) {
+    refresh = false;
+  }
+  $(window).resize( function(){
+  if (($(window).width() > 768) && ($(window).width() < 1200) ) {
+    if (refresh == true) location.reload();
+  } else {
+      refresh = true;
+  }
 });
 
-$('.main-carousel').flickity({
+});
+
+$('.homepage-slider').flickity({
     // options
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    wrapAround: true,
+    pageDots: false,
+    autoPlay: 6000,
+    pauseAutoPlayOnHover: false
+
   });
   
