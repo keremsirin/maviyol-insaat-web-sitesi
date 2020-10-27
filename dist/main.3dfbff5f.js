@@ -165,7 +165,10 @@ $(".Header-menu-nav-button").on("click", function () {
 var click_services = 0;
 
 if ($(window).width() < 768) {
-  $("#services").on("click", function () {
+  // $("ul").removeClass("dropdown-1")
+  $("#services").click(function () {
+    click_projects = 0;
+
     if (click_services == 0) {
       $(".dropdown-2").css("display", "none");
       $("#services").removeClass("hover-border_mobile");
@@ -179,6 +182,8 @@ if ($(window).width() < 768) {
       $("#services").addClass("hover-border_mobile");
       click_services--;
     }
+
+    return false;
   });
 } else if ($(window).width() > 768) {// $("ul").addClass("dropdown-1")
 }
@@ -186,7 +191,9 @@ if ($(window).width() < 768) {
 var click_projects = 0;
 
 if ($(window).width() < 768) {
-  $("#projects").on("click", function () {
+  $("#projects").click(function () {
+    click_services = 0;
+
     if (click_projects == 0) {
       $(".dropdown-1").css("display", "none");
       $("#projects").removeClass("hover-border_mobile");
@@ -200,22 +207,31 @@ if ($(window).width() < 768) {
       $("#projects").addClass("hover-border_mobile");
       click_projects--;
     }
+
+    return false;
   });
 } else if ($(window).width() > 768) {// $("ul").addClass("dropdown-1")
-} // $("#projects").on("click", function () {
-//     if ($(window).width() < 768) {
-//         $(".dropdown-1").css("display", "none")
-//         // if ($(".dropdown-1").css("display", "block")) {
-//         //     $(".dropdown-2").css("display", "none")
-//         // }
-//     } else if ($(window).width() > 768) {
-//         // $("ul").addClass("dropdown-1")
-//     }
-// })
+}
 
+$(document).ready(function () {
+  var refresh = true;
 
-$(window).resize(function () {
-  location.reload();
+  if ($(window).width() > 480 && $(window).width() < 768) {
+    refresh = false;
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() > 480 && $(window).width() < 768) {
+      if (refresh == true) location.reload();
+    } else {
+      refresh = true;
+    }
+  });
+});
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
 });
 },{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

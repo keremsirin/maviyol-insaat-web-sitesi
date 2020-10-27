@@ -8,6 +8,10 @@ body {
 }
 
 .bg {
+    @include mq("tablet") {
+        display: flex;
+    }
+    display: none;
     left: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
@@ -22,4 +26,31 @@ body {
     filter: brightness(60%);
     resize: horizontal;
     overflow-y: auto;
+}
+
+.bg_mobile {
+    @include mq("tablet") {
+       display: none;
+    }
+    display: flex;
+    filter: brightness(60%);
+    resize: horizontal;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    min-width: 100vw;
+    max-height: 100vh;
+    width: 100%;
+	margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+}
+
+.carousel {
+    &-cell {
+        display: block;
+        width: 100vw;
+        height: 200px;
+        background-color: red;
+    }
 }
