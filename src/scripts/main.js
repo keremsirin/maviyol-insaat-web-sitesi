@@ -56,7 +56,7 @@ $(".Header-menu-nav-button").on("click", function () {
 var click_services = 0;
 if ($(window).width() < 768) {
     // $("ul").removeClass("dropdown-1")
-    
+
     $("#services").click(function () {
         click_projects = 0;
         if (click_services == 0) {
@@ -84,7 +84,7 @@ if ($(window).width() < 768) {
     $("#projects").click(function () {
         click_services = 0;
 
-        
+
         if (click_projects == 0) {
             $(".dropdown-1").css("display", "none")
             $("#projects").removeClass("hover-border_mobile")
@@ -107,29 +107,29 @@ if ($(window).width() < 768) {
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     var refresh = true;
     if (($(window).width() > 480) && ($(window).width() < 768)) {
-      refresh = false;
+        refresh = false;
     }
-    $(window).resize( function(){
-    if (($(window).width() > 480) && ($(window).width() < 768) ) {
-      if (refresh == true) location.reload();
-    } else {
-        refresh = true;
-    }
-  });
+    $(window).resize(function () {
+        if (($(window).width() > 480) && ($(window).width() < 768)) {
+            if (refresh == true) location.reload();
+        } else {
+            refresh = true;
+        }
+    });
 
-  if (($(window).width() > 768) && ($(window).width() < 1200)) {
-    refresh = false;
-  }
-  $(window).resize( function(){
-  if (($(window).width() > 768) && ($(window).width() < 1200) ) {
-    if (refresh == true) location.reload();
-  } else {
-      refresh = true;
-  }
-});
+    if (($(window).width() > 768) && ($(window).width() < 1200)) {
+        refresh = false;
+    }
+    $(window).resize(function () {
+        if (($(window).width() > 768) && ($(window).width() < 1200)) {
+            if (refresh == true) location.reload();
+        } else {
+            refresh = true;
+        }
+    });
 
 });
 
@@ -142,5 +142,12 @@ $('.homepage-slider').flickity({
     autoPlay: 6000,
     pauseAutoPlayOnHover: false
 
-  });
-  
+});
+
+$(".homepage-slider").on("mouseleave", function () {
+    $(this).flickity("playPlayer");
+});
+
+$(window).on('load', function () {
+        $('.preloader').addClass('complete')
+})
