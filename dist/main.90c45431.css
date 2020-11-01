@@ -929,7 +929,7 @@ https://flickity.metafizzy.co
   bottom: 0;
   left: 0;
   right: 0;
-  background: #242425;
+  background: white;
   animation: animateBg 2s linear infinite; }
 
 @keyframes animate {
