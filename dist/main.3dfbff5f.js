@@ -241,12 +241,11 @@ $(document).ready(function () {
   });
 });
 $('.homepage-slider').flickity({
-  // options
   cellAlign: 'left',
   contain: true,
   wrapAround: true,
   pageDots: false,
-  autoPlay: 6000,
+  autoPlay: 8000,
   pauseAutoPlayOnHover: false
 });
 $(".homepage-slider").on("mouseleave", function () {
