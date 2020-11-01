@@ -914,7 +914,7 @@ https://flickity.metafizzy.co
   width: 50px;
   height: 50px;
   box-sizing: border-box;
-  border: 3px solid black;
+  border: 3px solid white;
   animation: animate 2s linear infinite;
   align-items: center;
   justify-content: center;
@@ -929,7 +929,7 @@ https://flickity.metafizzy.co
   bottom: 0;
   left: 0;
   right: 0;
-  background: #242425;
+  background: black;
   animation: animateBg 2s linear infinite; }
 
 @keyframes animate {

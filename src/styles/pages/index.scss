@@ -167,7 +167,8 @@
     width: 50px;
     height: 50px;
     box-sizing: border-box;
-    border: 3px solid black;
+    // border: 3px solid black;
+    border: 3px solid white;
     // background-color: white;
     animation: animate 2s linear infinite;
     // background-image: src("../../../src/img/");
@@ -187,7 +188,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: $color-dark-grey;
+    // background: $color-dark-grey;
+    background: black;
     animation: animateBg 2s linear infinite;
 }
 @keyframes animate {
