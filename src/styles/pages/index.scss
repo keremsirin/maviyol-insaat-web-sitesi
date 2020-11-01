@@ -135,7 +135,8 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background: $color-dark-grey;
+    // background: $color-dark-grey;
+    background: black;
     transition: 1s;
 }
 
@@ -149,7 +150,8 @@
     right: 0;
     width: 50%;
     height: 100%;
-    background: $color-dark-grey;
+    // background: $color-dark-grey;
+    background: black;
     transition: 1s;
 }
 
@@ -188,8 +190,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    // background: $color-dark-grey;
-    background: black;
+    background: $color-dark-grey;
+    // background: black;
     animation: animateBg 2s linear infinite;
 }
 @keyframes animate {

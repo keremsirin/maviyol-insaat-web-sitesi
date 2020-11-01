@@ -887,7 +887,7 @@ https://flickity.metafizzy.co
   left: 0;
   width: 50%;
   height: 100%;
-  background: #242425;
+  background: black;
   transition: 1s; }
 
 .preloader.complete:before {
@@ -899,7 +899,7 @@ https://flickity.metafizzy.co
   right: 0;
   width: 50%;
   height: 100%;
-  background: #242425;
+  background: black;
   transition: 1s; }
 
 .preloader.complete:after {
@@ -929,7 +929,7 @@ https://flickity.metafizzy.co
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+  background: #242425;
   animation: animateBg 2s linear infinite; }
 
 @keyframes animate {
