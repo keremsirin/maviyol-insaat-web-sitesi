@@ -245,7 +245,7 @@ $('.homepage-slider').flickity({
   contain: true,
   wrapAround: true,
   pageDots: false,
-  autoPlay: 8000,
+  autoPlay: 10000,
   pauseAutoPlayOnHover: false
 });
 $(".homepage-slider").on("mouseleave", function () {
