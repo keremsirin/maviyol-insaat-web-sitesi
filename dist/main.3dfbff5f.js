@@ -254,7 +254,7 @@ $(".homepage-slider").on("mouseleave", function () {
 $(window).on('load', function () {
   $('.preloader').addClass('complete');
   $('.homepage-slider').flickity({
-    autoPlay: 10000,
+    autoPlay: 6000,
     pauseAutoPlayOnHover: false
   });
 });
