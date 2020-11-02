@@ -796,52 +796,39 @@ https://flickity.metafizzy.co
     position: relative;
     width: 100vw;
     min-width: 100vw;
+    max-width: 100vw;
     resize: horizontal;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
-    margin-right: -50vw; }
-    .homepage-slider-1, .homepage-slider-2, .homepage-slider-3 {
+    margin-right: -50vw;
+    filter: brightness(60%);
+    resize: horizontal;
+    overflow-y: auto; }
+    .homepage-slider-1, .homepage-slider-2, .homepage-slider-3, .homepage-slider-4 {
       display: inherit;
       width: 100%;
-      height: 100vh; }
-
-.bg {
-  display: none;
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-  max-width: 100vw;
-  min-width: 100%;
-  position: relative;
-  height: 100%;
-  min-height: 100%;
-  max-height: 100vh;
-  right: 50%;
-  filter: brightness(60%);
-  resize: horizontal;
-  overflow-y: auto; }
-  @media (min-width: 768px) {
-    .bg {
-      display: flex; } }
-
-.bg_mobile {
-  display: flex;
-  filter: brightness(60%);
-  resize: horizontal;
-  width: 100%;
-  left: 50%;
-  right: 50%;
-  min-width: 100vw;
-  max-height: 100vh;
-  width: 100%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative; }
-  @media (min-width: 768px) {
-    .bg_mobile {
-      display: none; } }
+      height: 100vh;
+      background-repeat: no-repeat; }
+    .homepage-slider-1 {
+      background-image: url("/bg4.a3bf8520.jpg");
+      background-size: cover;
+      background-position: center; }
+    .homepage-slider-2 {
+      background-image: url("/bg3.dc143ce6.jpg");
+      background-size: cover;
+      background-position: center;
+      background-position-x: left;
+      background-position-y: top; }
+    .homepage-slider-3 {
+      background-image: url("/bg6.1a0084c7.jpg");
+      background-size: cover;
+      background-position: center; }
+    .homepage-slider-4 {
+      background-image: url("/bg8.9a105da3.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .carousel-cell {
   display: block;
@@ -866,6 +853,18 @@ https://flickity.metafizzy.co
     transition: 0.2s; }
   .flickity-button-icon {
     fill: rgba(4, 187, 187, 0.5); }
+
+.flickity-prev-next-button.previous {
+  left: 4px; }
+  @media (min-width: 768px) {
+    .flickity-prev-next-button.previous {
+      left: 20px; } }
+
+.flickity-prev-next-button.next {
+  right: 4px; }
+  @media (min-width: 768px) {
+    .flickity-prev-next-button.next {
+      right: 20px; } }
 
 .preloader {
   position: fixed;

@@ -130,7 +130,6 @@ $(document).ready(function () {
             refresh = true;
         }
     });
-
 });
 
 $('.homepage-slider').flickity({
@@ -138,7 +137,7 @@ $('.homepage-slider').flickity({
     contain: true,
     wrapAround: true,
     pageDots: false,
-    autoPlay: 10000,
+    // autoPlay: 10000,
     pauseAutoPlayOnHover: false
 });
 
@@ -148,4 +147,8 @@ $(".homepage-slider").on("mouseleave", function () {
 
 $(window).on('load', function () {
         $('.preloader').addClass('complete')
+        $('.homepage-slider').flickity({
+            autoPlay: 10000,
+            pauseAutoPlayOnHover: false
+        });
 })

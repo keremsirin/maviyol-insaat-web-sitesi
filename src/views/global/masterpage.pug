@@ -11,9 +11,13 @@ html(lang='en')
     body
         include header
         
+        
         main.Main
             .container
                 block content
+                .preloader
+                    .loader
+                        img(src="../../img/sadecelogo1.svg", alt="")
         
 
         //- include footer
