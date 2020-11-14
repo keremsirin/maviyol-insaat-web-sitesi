@@ -138,17 +138,39 @@ $('.homepage-slider').flickity({
     wrapAround: true,
     pageDots: false,
     // autoPlay: 10000,
-    pauseAutoPlayOnHover: false
+    pauseAutoPlayOnHover: true
 });
 
-$(".homepage-slider").on("mouseleave", function () {
-    $(this).flickity("playPlayer");
-});
+// $(".homepage-slider").on("mouseleave", function () {
+//     $(this).flickity("playPlayer");
+// });
 
 $(window).on('load', function () {
         $('.preloader').addClass('complete')
         $('.homepage-slider').flickity({
-            autoPlay: 6000,
-            pauseAutoPlayOnHover: false
+            autoPlay: 8000,
         });
 })
+
+if ($(".homepage-slider-1").is(".is-selected")) {
+    // $(".text1").removeClass("animation1")
+    // $(".text2").removeClass("animation2")
+    // var me = $(".text1");
+    // me.style.webkitAnimation = 'none';
+
+    // setTimeout(function() {
+    //     me.style.webkitAnimation = '';
+    // // }, 10);
+    // $(".text12").addClass("animation1")
+    // $(".text22").addClass("animation2")
+    // $(".text12").text("asdasd")
+    // console.log("asdas")
+    
+  
+} else {
+    // $(".text1").removeClass("animation1")
+    // $(".text2").removeClass("animation2")
+
+    
+}
+

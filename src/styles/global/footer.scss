@@ -1,0 +1,256 @@
+.Footer {
+    display: flex;
+    width: 100%;
+    background-color: rgba($color: $color-dark-grey, $alpha: .85);
+    height: auto;
+    overflow-x: hidden;
+
+    .container {
+        position: relative;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        // background-color: red;
+        flex-direction: column;
+
+    }
+
+    &-top {
+        display: flex;
+        width: 100%;
+        height: 400px;
+
+        &-company {
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            // background-color: #ddd;
+            padding-left: $offset;
+            padding-right: $offset;
+
+            &-logo {
+                width: 180px;
+                height: 120px;
+                // background-color: red;
+                margin-top: $offset;
+                pointer-events: none;
+                user-select: none;
+            }
+
+            &-content {
+                text-align: justify;
+                margin-top: $offset;
+                color: white;
+                font-size: $font-size-medium;
+                // background-color: red;
+
+            }
+
+            &-social {
+                display: flex;
+                width: 100%;
+                height: 60px;
+                // background-color: red;
+                margin-top: $offset;
+                justify-content: center;
+                align-items: center;
+                
+
+                #mtmt {
+                    padding-top: 16px;
+                }
+
+                &-btn {
+                    display: inherit;
+                    align-items: center;
+                    justify-content: center;
+                    height: 35px;
+                    width: 35px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    outline: none;
+                    border-radius: 20px;
+                    color: white;
+                    transition: 0.3s;
+                    // padding: 15px 15px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-right: 15px;
+                    padding-left: 16px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    font-size: 20px;
+
+                    
+
+                    &:hover {
+                        background-color: $color-blue;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+
+        &-contact {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: $offset;
+            padding-right: $offset;
+            // background-color: pink;
+            color: white;
+            font-size: $font-size-medium;
+
+
+            &-title {
+                padding-top: 50px;
+                user-select: none;
+                font-size: 32px;
+            }
+            &-address {
+                padding-top: 40px;
+                padding-right: $offset;
+                padding-left: $offset;
+                text-align: center;
+                i {
+                    margin-right: 20px;
+                }
+                p {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                }
+                a {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &-location {
+                    a {
+                        color: white;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color-blue;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                &-email {
+                    padding-top: 40px;
+                    a {
+                        color: white;
+                        transition: 0.3s;
+                        margin-top: 4px;
+                        &:hover {
+                            color: $color-blue;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                &-phone {
+                    padding-top: 40px;
+                    a {
+                        color: white;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $color-blue;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        &-links {
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: $offset;
+            padding-right: $offset;
+            color: white;
+            
+            // background-color: yellow;
+            &-title {
+                padding-top: 50px;
+                user-select: none;
+                text-align: center;
+                font-size: 32px;
+            }
+
+            &-quick {
+                padding-top: 20px;
+                
+
+                @include mq("tablet") {
+                    padding-top: 20px;
+                }
+                @include mq("desktop") {
+                    padding-top: 40px;
+                }
+
+                &-links {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    text-align: center;
+
+                    a {
+                        color: white;
+                        transition: 0.3s;
+                        font-weight: bold;
+                        font-size: 15px;
+                        padding-bottom: $offset;
+                        // text-decoration: underline;
+
+                        @include mq("tablet") {
+                            font-size: 16px;
+                        }
+                        @include mq("desktop") {
+                            font-size: 16px;
+                        }
+                        
+                        &:hover {
+                            color: $color-blue;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    &-bot {
+        display: flex;
+        width: 100vw;
+        height: 100px;
+        background-color: $color-dark-grey;
+
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        position: relative;
+        justify-content: center;
+        padding-right: 28px;
+        padding-left: 28px;
+
+        &-copyright {
+            display: flex;
+            width: 1100px;
+            height: 100%;
+            color: white;
+            background-color: $color-dark-grey;
+        }
+    }
+
+
+}
