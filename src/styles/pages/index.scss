@@ -82,7 +82,8 @@
         &-3 {
             background-image: 
             linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("../../src/img/bg6.jpg");
+            // url("../../src/img/bg6.jpg");
+            url("../../src/img/bg10.jpg");
             background-size: cover;
             background-position: center;
             &.is-selected {
@@ -163,7 +164,8 @@
     }
     left: 4px;
   }
-  .flickity-prev-next-button.next {
+
+.flickity-prev-next-button.next {
     @include mq("tablet") {
         right: $offset;
     }

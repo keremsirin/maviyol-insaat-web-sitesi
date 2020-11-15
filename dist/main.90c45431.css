@@ -800,7 +800,7 @@ https://flickity.metafizzy.co
       width: 30%;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       padding-left: 20px;
       padding-right: 20px; }
       .Footer-top-company-logo {
@@ -901,12 +901,11 @@ https://flickity.metafizzy.co
       width: 30%;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       padding-left: 20px;
       padding-right: 20px;
       color: white; }
       .Footer-top-links-title {
-        padding-top: 50px;
         user-select: none;
         text-align: center;
         font-size: 32px; }
@@ -1011,7 +1010,7 @@ https://flickity.metafizzy.co
       .homepage-slider-2.is-selected .button_hp {
         animation: button2 8s 1; }
     .homepage-slider-3 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/bg6.1a0084c7.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/bg10.6e4e97f1.jpg");
       background-size: cover;
       background-position: center; }
       .homepage-slider-3.is-selected .text3 {
