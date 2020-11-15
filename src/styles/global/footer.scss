@@ -4,6 +4,12 @@
     background-color: rgba($color: $color-dark-grey, $alpha: .85);
     height: auto;
     overflow-x: hidden;
+    position: relative;
+    // top: 100%;
+
+    @include mq("tablet") {
+        
+    }
 
     .container {
         position: relative;
@@ -13,30 +19,73 @@
         // background-color: red;
         flex-direction: column;
 
+        @include mq("tablet") {
+            
+        }
     }
 
     &-top {
         display: flex;
         width: 100%;
-        height: 400px;
+        height: auto;
+        // background-color: red;
+        flex-direction: column;
+        
+
+        @include mq("tablet") {
+            flex-direction: row;
+            height: auto;
+            
+        }
 
         &-company {
             display: flex;
-            width: 30%;
+            width: 100%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             // background-color: #ddd;
             padding-left: $offset;
             padding-right: $offset;
+            margin-top: 40px;
+            padding-top: 0px;
+            border-bottom: 2px solid $color-blue;
+            padding-bottom: 40px;
+
+
+            @include mq("tablet") {
+                display: flex;
+                width: 30%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // background-color: #ddd;
+                margin-left: 0;
+                padding-left: $offset;
+                padding-right: $offset;
+                margin-top: 0;
+                border: none;
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+            }
 
             &-logo {
-                width: 180px;
-                height: 120px;
+                width: 120px;
+                height: 80px;
                 // background-color: red;
-                margin-top: $offset;
+                margin-top: 0;
                 pointer-events: none;
                 user-select: none;
+
+                @include mq("tablet") {
+                    width: 180px;
+                    height: 120px;
+                    // background-color: red;
+                    // margin-top: $offset;
+                    pointer-events: none;
+                    user-select: none;
+                }
             }
 
             &-content {
@@ -46,20 +95,72 @@
                 font-size: $font-size-medium;
                 // background-color: red;
 
+                @include mq("tablet") {
+        
+                }
             }
 
             &-social {
                 display: flex;
                 width: 100%;
-                height: 60px;
+                height: auto;
                 // background-color: red;
-                margin-top: $offset;
+                margin-top: 0;
                 justify-content: center;
                 align-items: center;
+
+                .social_mobile {
+                    display: none;
+                }
+                .social_desktop {
+                    display: none;
+                }
+
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 60px;
+                    // background-color: red;
+                    margin-top: $offset;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .social_mobile {
+                        display: none;
+                    }
+                    .social_desktop {
+                        display: flex;
+                    }
+                }
+
+                #in {
+                    padding-top: 13px;
+                }
                 
+                #insta {
+                    padding-left: 8px;
+                    padding-top: 2px;
+                    margin-top: 20px;
+                }
+                #yt {
+                    padding-left: 7px;
+                    padding-top: 2px;
+                }
+
+                #fb {
+                    padding-top: 3px;
+                    padding-left: 10px;
+                    margin-bottom: 20px;
+                }
 
                 #mtmt {
-                    padding-top: 16px;
+                    padding-top: 3px;
+                    padding-left: 10px;
+
+                    @include mq("tablet") {
+                        padding-left: 16px;
+                        padding-top: 16px;
+                    }
                 }
 
                 &-btn {
@@ -74,16 +175,34 @@
                     border-radius: 20px;
                     color: white;
                     transition: 0.3s;
-                    // padding: 15px 15px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    padding-right: 15px;
-                    padding-left: 16px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    padding-right: 10px;
+                    padding-left: 10px;
                     margin-right: 10px;
                     margin-left: 10px;
                     font-size: 20px;
 
-                    
+                    @include mq("tablet") {
+                        display: inherit;
+                        align-items: center;
+                        justify-content: center;
+                        height: 35px;
+                        width: 35px;
+                        background-color: transparent;
+                        border: 1px solid #fff;
+                        outline: none;
+                        border-radius: 20px;
+                        color: white;
+                        transition: 0.3s;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        padding-right: 15px;
+                        padding-left: 16px;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
 
                     &:hover {
                         background-color: $color-blue;
@@ -95,43 +214,93 @@
 
         &-contact {
             display: flex;
-            width: 40%;
+            width: 100%;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             padding-left: $offset;
             padding-right: $offset;
             // background-color: pink;
             color: white;
             font-size: $font-size-medium;
+            margin-top: 40px;
+            border-bottom: 2px solid $color-blue;
+            padding-bottom: 40px;
+
+
+
+            @include mq("tablet") {
+                display: flex;
+                width: 40%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: $offset;
+                padding-right: $offset;
+                margin-top: 0px;
+                
+                // background-color: pink;
+                color: white;
+                font-size: $font-size-medium;
+                border: none;
+            }
 
 
             &-title {
-                padding-top: 50px;
-                user-select: none;
-                font-size: 32px;
+                display: flex;
+
+                @include mq("tablet") {
+                    padding-top: 50px;
+                    user-select: none;
+                    font-size: 32px;
+                    display: block;
+                }
             }
             &-address {
+                // width: 100%;
                 padding-top: 40px;
                 padding-right: $offset;
                 padding-left: $offset;
                 text-align: center;
+                font-size: $font-size-medium;
+
+                @include mq("tablet") {
+                    padding-top: 40px;
+                }
                 i {
-                    margin-right: 20px;
+                    margin-right: $offset;
+
+
+                    @include mq("tablet") {
+                        display: flex;
+                        margin-right: $offset;
+                    }
                 }
                 p {
                     display: flex;
                     width: 100%;
                     align-items: center;
+
+                    @include mq("tablet") {
+        
+                    }
                 }
                 a {
                     margin-left: auto;
                     margin-right: auto;
+
+                    @include mq("tablet") {
+        
+                    }
                 }
                 &-location {
                     a {
                         color: white;
                         transition: 0.3s;
+
+                        @include mq("tablet") {
+        
+                        }
                         &:hover {
                             color: $color-blue;
                             transition: 0.3s;
@@ -140,6 +309,10 @@
                 }
                 &-email {
                     padding-top: 40px;
+
+                    @include mq("tablet") {
+        
+                    }
                     a {
                         color: white;
                         transition: 0.3s;
@@ -152,9 +325,17 @@
                 }
                 &-phone {
                     padding-top: 40px;
+
+                    @include mq("tablet") {
+        
+                    }
                     a {
                         color: white;
                         transition: 0.3s;
+
+                        @include mq("tablet") {
+        
+                        }
                         &:hover {
                             color: $color-blue;
                             transition: 0.3s;
@@ -166,14 +347,20 @@
         }
 
         &-links {
-            display: flex;
-            width: 30%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-left: $offset;
-            padding-right: $offset;
-            color: white;
+            display: none;
+
+            @include mq("tablet") {
+                display: flex;
+                width: 30%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-left: $offset;
+                padding-right: $offset;
+                color: white;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
             
             // background-color: yellow;
             &-title {
@@ -181,11 +368,14 @@
                 user-select: none;
                 text-align: center;
                 font-size: 32px;
+
+                @include mq("tablet") {
+        
+                }
             }
 
             &-quick {
                 padding-top: 20px;
-                
 
                 @include mq("tablet") {
                     padding-top: 20px;
@@ -199,6 +389,10 @@
                     width: 100%;
                     flex-direction: column;
                     text-align: center;
+
+                    @include mq("tablet") {
+        
+                    }
 
                     a {
                         color: white;
@@ -228,11 +422,43 @@
 
 
 
+    &-middle {
+        display: flex;
+        width: 100%;
+        height: auto;
+        // background-color: red;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+
+        &-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+        }
+        
+        @include mq("tablet") {
+            display: none;
+        }
+
+    }
+
+
+
+
+
+
+
     &-bot {
         display: flex;
         width: 100vw;
-        height: 100px;
+        height: 60px;
         background-color: $color-dark-grey;
+
+        @include mq("tablet") {
+        
+        }
 
         left: 50%;
         right: 50%;
@@ -243,12 +469,25 @@
         padding-right: 28px;
         padding-left: 28px;
 
+        @include mq("tablet") {
+        
+        }
+
         &-copyright {
             display: flex;
             width: 1100px;
             height: 100%;
             color: white;
             background-color: $color-dark-grey;
+            font-size: $font-size;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+
+            @include mq("tablet") {
+                
+            }
         }
     }
 

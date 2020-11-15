@@ -247,10 +247,10 @@ $('.homepage-slider').flickity({
   pageDots: false,
   // autoPlay: 10000,
   pauseAutoPlayOnHover: true
-}); // $(".homepage-slider").on("mouseleave", function () {
-//     $(this).flickity("playPlayer");
-// });
-
+});
+$(".homepage-slider").on("mouseleave", function () {
+  $(this).flickity("playPlayer");
+});
 $(window).on('load', function () {
   $('.preloader').addClass('complete');
   $('.homepage-slider').flickity({

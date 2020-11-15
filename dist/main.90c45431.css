@@ -482,7 +482,7 @@ https://flickity.metafizzy.co
   position: fixed;
   width: 100%;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0); }
+  background-color: rgba(128, 128, 128, 0); }
   @media (min-width: 768px) {
     .Header {
       height: 100px; } }
@@ -784,7 +784,8 @@ https://flickity.metafizzy.co
   width: 100%;
   background-color: rgba(36, 36, 37, 0.85);
   height: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
   .Footer .container {
     position: relative;
     display: flex;
@@ -794,21 +795,50 @@ https://flickity.metafizzy.co
   .Footer-top {
     display: flex;
     width: 100%;
-    height: 400px; }
+    height: auto;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .Footer-top {
+        flex-direction: row;
+        height: auto; } }
     .Footer-top-company {
       display: flex;
-      width: 30%;
+      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       padding-left: 20px;
-      padding-right: 20px; }
+      padding-right: 20px;
+      margin-top: 40px;
+      padding-top: 0px;
+      border-bottom: 2px solid #04BBBB;
+      padding-bottom: 40px; }
+      @media (min-width: 768px) {
+        .Footer-top-company {
+          display: flex;
+          width: 30%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-left: 0;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 0;
+          border: none;
+          padding-top: 40px;
+          padding-bottom: 40px; } }
       .Footer-top-company-logo {
-        width: 180px;
-        height: 120px;
-        margin-top: 20px;
+        width: 120px;
+        height: 80px;
+        margin-top: 0;
         pointer-events: none;
         user-select: none; }
+        @media (min-width: 768px) {
+          .Footer-top-company-logo {
+            width: 180px;
+            height: 120px;
+            pointer-events: none;
+            user-select: none; } }
       .Footer-top-company-content {
         text-align: justify;
         margin-top: 20px;
@@ -817,12 +847,46 @@ https://flickity.metafizzy.co
       .Footer-top-company-social {
         display: flex;
         width: 100%;
-        height: 60px;
-        margin-top: 20px;
+        height: auto;
+        margin-top: 0;
         justify-content: center;
         align-items: center; }
+        .Footer-top-company-social .social_mobile {
+          display: none; }
+        .Footer-top-company-social .social_desktop {
+          display: none; }
+        @media (min-width: 768px) {
+          .Footer-top-company-social {
+            display: flex;
+            width: 100%;
+            height: 60px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center; }
+            .Footer-top-company-social .social_mobile {
+              display: none; }
+            .Footer-top-company-social .social_desktop {
+              display: flex; } }
+        .Footer-top-company-social #in {
+          padding-top: 13px; }
+        .Footer-top-company-social #insta {
+          padding-left: 8px;
+          padding-top: 2px;
+          margin-top: 20px; }
+        .Footer-top-company-social #yt {
+          padding-left: 7px;
+          padding-top: 2px; }
+        .Footer-top-company-social #fb {
+          padding-top: 3px;
+          padding-left: 10px;
+          margin-bottom: 20px; }
         .Footer-top-company-social #mtmt {
-          padding-top: 16px; }
+          padding-top: 3px;
+          padding-left: 10px; }
+          @media (min-width: 768px) {
+            .Footer-top-company-social #mtmt {
+              padding-left: 16px;
+              padding-top: 16px; } }
         .Footer-top-company-social-btn {
           display: inherit;
           align-items: center;
@@ -835,37 +899,85 @@ https://flickity.metafizzy.co
           border-radius: 20px;
           color: white;
           transition: 0.3s;
-          padding-top: 15px;
-          padding-bottom: 15px;
-          padding-right: 15px;
-          padding-left: 16px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-right: 10px;
+          padding-left: 10px;
           margin-right: 10px;
           margin-left: 10px;
           font-size: 20px; }
+          @media (min-width: 768px) {
+            .Footer-top-company-social-btn {
+              display: inherit;
+              align-items: center;
+              justify-content: center;
+              height: 35px;
+              width: 35px;
+              background-color: transparent;
+              border: 1px solid #fff;
+              outline: none;
+              border-radius: 20px;
+              color: white;
+              transition: 0.3s;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              padding-right: 15px;
+              padding-left: 16px;
+              margin-right: 10px;
+              margin-left: 10px;
+              font-size: 20px; } }
           .Footer-top-company-social-btn:hover {
             background-color: #04BBBB;
             transition: 0.3s; }
     .Footer-top-contact {
       display: flex;
-      width: 40%;
+      width: 100%;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: center;
       padding-left: 20px;
       padding-right: 20px;
       color: white;
-      font-size: 15px; }
+      font-size: 15px;
+      margin-top: 40px;
+      border-bottom: 2px solid #04BBBB;
+      padding-bottom: 40px; }
+      @media (min-width: 768px) {
+        .Footer-top-contact {
+          display: flex;
+          width: 40%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 0px;
+          color: white;
+          font-size: 15px;
+          border: none; } }
       .Footer-top-contact-title {
-        padding-top: 50px;
-        user-select: none;
-        font-size: 32px; }
+        display: flex; }
+        @media (min-width: 768px) {
+          .Footer-top-contact-title {
+            padding-top: 50px;
+            user-select: none;
+            font-size: 32px;
+            display: block; } }
       .Footer-top-contact-address {
         padding-top: 40px;
         padding-right: 20px;
         padding-left: 20px;
-        text-align: center; }
+        text-align: center;
+        font-size: 15px; }
+        @media (min-width: 768px) {
+          .Footer-top-contact-address {
+            padding-top: 40px; } }
         .Footer-top-contact-address i {
           margin-right: 20px; }
+          @media (min-width: 768px) {
+            .Footer-top-contact-address i {
+              display: flex;
+              margin-right: 20px; } }
         .Footer-top-contact-address p {
           display: flex;
           width: 100%;
@@ -897,14 +1009,19 @@ https://flickity.metafizzy.co
               color: #04BBBB;
               transition: 0.3s; }
     .Footer-top-links {
-      display: flex;
-      width: 30%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-left: 20px;
-      padding-right: 20px;
-      color: white; }
+      display: none; }
+      @media (min-width: 768px) {
+        .Footer-top-links {
+          display: flex;
+          width: 30%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-left: 20px;
+          padding-right: 20px;
+          color: white;
+          padding-top: 40px;
+          padding-bottom: 40px; } }
       .Footer-top-links-title {
         user-select: none;
         text-align: center;
@@ -937,10 +1054,25 @@ https://flickity.metafizzy.co
             .Footer-top-links-quick-links a:hover {
               color: #04BBBB;
               transition: 0.3s; }
+  .Footer-middle {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px; }
+    .Footer-middle-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px; }
+    @media (min-width: 768px) {
+      .Footer-middle {
+        display: none; } }
   .Footer-bot {
     display: flex;
     width: 100vw;
-    height: 100px;
+    height: 60px;
     background-color: #242425;
     left: 50%;
     right: 50%;
@@ -955,7 +1087,12 @@ https://flickity.metafizzy.co
       width: 1100px;
       height: 100%;
       color: white;
-      background-color: #242425; }
+      background-color: #242425;
+      font-size: 16px;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      user-select: none; }
 
 .homepage {
   display: block;

@@ -141,9 +141,9 @@ $('.homepage-slider').flickity({
     pauseAutoPlayOnHover: true
 });
 
-// $(".homepage-slider").on("mouseleave", function () {
-//     $(this).flickity("playPlayer");
-// });
+$(".homepage-slider").on("mouseleave", function () {
+    $(this).flickity("playPlayer");
+});
 
 $(window).on('load', function () {
         $('.preloader').addClass('complete')
@@ -151,7 +151,7 @@ $(window).on('load', function () {
             autoPlay: 8000,
         });
         $("#text1").removeClass("text1")
-            $("#text1").addClass("text1")
+        $("#text1").addClass("text1")
 })
 
 if ($(".homepage-slider-1").is(".is-selected")) {
