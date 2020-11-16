@@ -1295,10 +1295,10 @@ https://flickity.metafizzy.co
 
 .button_hp {
   display: flex;
-  width: 200px;
-  height: 60px;
+  width: 160px;
+  height: 50px;
   position: absolute;
-  top: 130%;
+  top: 110%;
   border-radius: 5px;
   background-color: #04BBBB;
   border: 1px solid #04BBBB;
@@ -1308,7 +1308,25 @@ https://flickity.metafizzy.co
   color: #ddd;
   transition: 0.5s;
   font-weight: bold;
-  opacity: 1; }
+  opacity: 1;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .button_hp {
+      display: flex;
+      width: 200px;
+      height: 60px;
+      position: absolute;
+      top: 130%;
+      border-radius: 5px;
+      background-color: #04BBBB;
+      border: 1px solid #04BBBB;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+      color: #ddd;
+      transition: 0.5s;
+      font-weight: bold;
+      opacity: 1; } }
   .button_hp:hover {
     background-color: #242425;
     transition: 0.5s; }
@@ -1319,79 +1337,130 @@ https://flickity.metafizzy.co
   top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110%; }
+  width: 97%; }
+  @media (min-width: 768px) {
+    .text_container {
+      width: 110%; } }
 
 .text_container span {
   display: flex;
   justify-content: center; }
 
 .text1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: 6px;
-  margin-bottom: 44px;
+  margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text1 {
+      font-size: 60px;
+      font-weight: 800;
+      letter-spacing: 6px;
+      margin-bottom: 44px;
+      color: #04BBBB;
+      position: relative;
+      text-shadow: 1px 1px 10px #242425; } }
 
 .text12 {
-  font-size: 30px;
+  font-size: 20px;
   width: 70%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text12 {
+      font-size: 30px; } }
 
 .text2 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: 6px;
-  margin-bottom: 44px;
+  margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text2 {
+      font-size: 60px;
+      font-weight: 800;
+      letter-spacing: 6px;
+      margin-bottom: 44px;
+      color: #04BBBB;
+      position: relative;
+      text-shadow: 1px 1px 10px #242425; } }
 
 .text22 {
-  font-size: 30px;
+  font-size: 20px;
   width: 70%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text22 {
+      font-size: 30px; } }
 
 .text3 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: 6px;
-  margin-bottom: 44px;
+  margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text3 {
+      font-size: 60px;
+      font-weight: 800;
+      letter-spacing: 6px;
+      margin-bottom: 44px;
+      color: #04BBBB;
+      position: relative;
+      text-shadow: 1px 1px 10px #242425; } }
 
 .text32 {
-  font-size: 30px;
+  font-size: 20px;
   width: 70%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text32 {
+      font-size: 30px; } }
 
 .text4 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: 6px;
-  margin-bottom: 44px;
+  margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text4 {
+      font-size: 60px;
+      font-weight: 800;
+      letter-spacing: 6px;
+      margin-bottom: 44px;
+      color: #04BBBB;
+      position: relative;
+      text-shadow: 1px 1px 10px #242425; } }
 
 .text42 {
-  font-size: 30px;
+  font-size: 20px;
   width: 70%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 1px 1px 10px #242425; }
+  @media (min-width: 768px) {
+    .text42 {
+      font-size: 30px; } }
 
 @keyframes text1 {
   0% {

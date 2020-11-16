@@ -141,9 +141,9 @@ $('.homepage-slider').flickity({
     pauseAutoPlayOnHover: true
 });
 
-$(".homepage-slider").on("mouseleave", function () {
-    $(this).flickity("playPlayer");
-});
+// $(".homepage-slider").on("mouseleave", function () {
+//     $(this).flickity("playPlayer");
+// });
 
 $(window).on('load', function () {
         $('.preloader').addClass('complete')
