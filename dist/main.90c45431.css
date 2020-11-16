@@ -1299,6 +1299,9 @@ https://flickity.metafizzy.co
   height: 50px;
   position: absolute;
   top: 110%;
+  left: 28.5%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   background-color: #04BBBB;
   border: 1px solid #04BBBB;
@@ -1317,6 +1320,7 @@ https://flickity.metafizzy.co
       height: 60px;
       position: absolute;
       top: 130%;
+      left: auto;
       border-radius: 5px;
       background-color: #04BBBB;
       border: 1px solid #04BBBB;
