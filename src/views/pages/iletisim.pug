@@ -1,0 +1,39 @@
+extends ../global/masterpage.pug
+block content
+    .Iletisim
+        .container
+            .Iletisim-master
+                    .Iletisim-master-page_title İletişim
+                    .Iletisim-master-content
+                        .Iletisim-master-content-top
+                            .Iletisim-master-content-top-form
+                                .Iletisim-master-content-top-form-items
+                                    h1 Bizimle iletişime geçin!
+                                    form(action="https://formspree.io/f/xleowrrn" method="POST")
+                                        input.email(type="email", name="Email", placeholder="Email Adresiniz")                                
+                                        input.subject(type="text", name="Konu", placeholder="Konu")                                
+                                        textarea.message(name="Mesaj", placeholder="Mesajınız", cols="2" rows="10")
+                                        button.submit(type="submit") Gönder
+
+
+                            .Iletisim-master-content-top-infos
+                                .Iletisim-master-content-top-infos-contact
+                                    h1.h1fc Adresimiz
+                                    a(href="https://goo.gl/maps/yAgMgm3kML7mp96BA" target="_blank") Şenlikköy Mah. Avcılar Sk No:37 Villa Aksoy 34153, Florya, Bakırköy/İstanbul
+                                    h1 İletişim Bilgilerimiz
+                                    p Email:
+                                        span
+                                            a(href="mailto:info@maviyolinsaat.com") info@maviyolinsaat.com
+                                    p Telefon:
+                                        span
+                                            a(href="tel:02125430108") 0212 543 01 08                                
+                                    h1 Çalışma Saatlerimiz
+                                    p Hafta İçi: 
+                                        span 09:00 – 18:00
+                                    p Hafta Sonu: 
+                                        span 09:00 – 17:00
+
+
+                        .Iletisim-master-content-bot
+                            .Iletisim-master-content-bot-map
+                                iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12048.124149491267!2d28.7961983!3d40.9808012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62a99da21950a6bc!2zTWF2aXlvbCDEsG7Fn2FhdA!5e0!3m2!1str!2str!4v1606058262034!5m2!1str!2str' width='100%' height='100%' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')

@@ -117,181 +117,74 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../scripts/main.js":[function(require,module,exports) {
-$("#services").hover(function () {
-  $(".dropdown-1").css("padding-top", "0");
-  $(".dropdown-1").animate({
-    paddingTop: '10px'
-  }, 500);
-}, function () {
-  $(".dropdown-1").stop();
-});
-$("#projects").hover(function () {
-  $(".dropdown-2").css("padding-top", "0");
-  $(".dropdown-2").animate({
-    paddingTop: '10px'
-  }, 500);
-}, function () {
-  $(".dropdown-2").stop();
-});
-$(".hover-left").hover(function () {
-  // $(this).parent().css("padding-left", "20px")
-  $(this).parent().stop();
-  $(this).parent().animate({
-    paddingLeft: '40px'
-  }, 500);
-}, function () {
-  $(this).parent().stop(); // $(this).parent().css("padding-left", "20px");
+})({"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-  $(this).parent().animate({
-    paddingLeft: '20px'
-  }, 300);
-});
-$(function () {
-  var div = $('body');
-  var width = div.width();
-  div.css('height', width);
-});
-$(".Header-menu-nav-button").on("click", function () {
-  if ($("Header").is(".menu-nav-links-show")) {
-    $(".Header").removeClass("menu-nav-links-show");
-  } else {
-    $(".Header").addClass("menu-nav-links-show");
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
   }
-}); // $("#services").on("click", function () {
-//     $(".dropdown-1").css("display", "block")
-// })
 
-var click_services = 0;
-
-if ($(window).width() < 768) {
-  // $("ul").removeClass("dropdown-1")
-  $("#services").click(function () {
-    click_projects = 0;
-
-    if (click_services == 0) {
-      $(".dropdown-2").css("display", "none");
-      $("#services").removeClass("hover-border_mobile");
-      $("#services").addClass("hover-border");
-      $(".dropdown-1").css("display", "block");
-      click_services++;
-      console.log(click_services);
-    } else {
-      $(".dropdown-1").css("display", "none");
-      $("#services").removeClass("hover-border");
-      $("#services").addClass("hover-border_mobile");
-      click_services--;
-    }
-
-    return false;
-  });
-} else if ($(window).width() > 768) {// $("ul").addClass("dropdown-1")
+  return bundleURL;
 }
 
-var click_projects = 0;
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
 
-if ($(window).width() < 768) {
-  $("#projects").click(function () {
-    click_services = 0;
-
-    if (click_projects == 0) {
-      $(".dropdown-1").css("display", "none");
-      $("#projects").removeClass("hover-border_mobile");
-      $("#projects").addClass("hover-border");
-      $(".dropdown-2").css("display", "block");
-      click_projects++;
-      console.log(click_projects);
-    } else {
-      $(".dropdown-2").css("display", "none");
-      $("#projects").removeClass("hover-border");
-      $("#projects").addClass("hover-border_mobile");
-      click_projects--;
+    if (matches) {
+      return getBaseURL(matches[0]);
     }
+  }
 
-    return false;
-  });
-} else if ($(window).width() > 768) {// $("ul").addClass("dropdown-1")
+  return '/';
 }
 
-$(document).ready(function () {
-  var refresh = true;
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
 
-  if ($(window).width() > 480 && $(window).width() < 768) {
-    refresh = false;
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
   }
 
-  $(window).resize(function () {
-    if ($(window).width() > 480 && $(window).width() < 768) {
-      if (refresh == true) location.reload();
-    } else {
-      refresh = true;
-    }
-  });
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
 
-  if ($(window).width() > 768 && $(window).width() < 1200) {
-    refresh = false;
-  }
-
-  $(window).resize(function () {
-    if ($(window).width() > 768 && $(window).width() < 1200) {
-      if (refresh == true) location.reload();
-    } else {
-      refresh = true;
-    }
-  });
-});
-$('.homepage-slider').flickity({
-  cellAlign: 'left',
-  contain: true,
-  wrapAround: true,
-  pageDots: false,
-  // autoPlay: 10000,
-  pauseAutoPlayOnHover: true
-}); // $(".homepage-slider").on("mouseleave", function () {
-//     $(this).flickity("playPlayer");
-// });
-
-$(window).on('load', function () {
-  $('.preloader').addClass('complete');
-  $('.homepage-slider').flickity({
-    autoPlay: 8000
-  });
-  $("#text1").removeClass("text1");
-  $("#text1").addClass("text1");
-});
-
-if ($(".homepage-slider-1").is(".is-selected")) {} else {}
-
-$(document).ready(function () {
-  $(".submit").click(function (event) {
-    console.log("clicked");
-    var email = $('.email').val();
-    var subject = $('.subject').val();
-    var message = $('.message').val();
-
-    if (email.length > 5 && email.includes('@') && email.includes('.')) {
-      console.log('ok');
-    } else {
-      event.preventDefault();
-      alert('Lütfen geçerli bir email adresi giriniz!');
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
     }
 
-    if (subject.length > 2) {
-      console.log('ok');
-    } else {
-      event.preventDefault();
-      alert('Lütfen daha uzun bir konu başlığı giriniz!');
-    }
+    cssTimeout = null;
+  }, 50);
+}
 
-    if (message.length > 10) {
-      console.log('ok');
-    } else {
-      event.preventDefault();
-      alert('Lütfen daha uzun bir mesaj giriniz!');
-    }
-  });
-});
-},{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -495,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../../scripts/main.js"], null)
-//# sourceMappingURL=/main.3dfbff5f.js.map
+},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/iletisim.js.map

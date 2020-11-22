@@ -347,7 +347,8 @@ td {
 
 body {
   font-family: "Mukta", Arial, sans-serif;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 .container {
   max-width: 1140px;
@@ -481,8 +482,7 @@ https://flickity.metafizzy.co
   height: 70px;
   position: fixed;
   width: 100%;
-  z-index: 2;
-  background-color: rgba(128, 128, 128, 0); }
+  z-index: 2; }
   @media (min-width: 768px) {
     .Header {
       height: 100px; } }
@@ -1603,6 +1603,565 @@ https://flickity.metafizzy.co
   margin-right: -50vw;
   position: relative;
   padding-left: 8px; }
+
+.Hakkimizda {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  .Hakkimizda .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Hakkimizda .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Hakkimizda-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Hakkimizda-master {
+        top: 140px; } }
+    .Hakkimizda-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB; }
+    .Hakkimizda-master-bizkimiz {
+      display: flex;
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      flex-direction: column;
+      margin-bottom: 40px; }
+      .Hakkimizda-master-bizkimiz-title {
+        color: white;
+        display: inherit; }
+      .Hakkimizda-master-bizkimiz-content p:first-child {
+        color: white;
+        margin-top: 20px; }
+      .Hakkimizda-master-bizkimiz-content p:nth-child(2), .Hakkimizda-master-bizkimiz-content p:nth-child(3), .Hakkimizda-master-bizkimiz-content p:nth-child(4) {
+        color: white;
+        margin-top: 10px; }
+    .Hakkimizda-master-vizyon {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 40px; }
+      .Hakkimizda-master-vizyon-title {
+        color: white;
+        display: inherit; }
+      .Hakkimizda-master-vizyon-content p:first-child {
+        color: white;
+        margin-top: 20px; }
+      .Hakkimizda-master-vizyon-content p:nth-child(2), .Hakkimizda-master-vizyon-content p:nth-child(3), .Hakkimizda-master-vizyon-content p:nth-child(4) {
+        color: white;
+        margin-top: 10px; }
+    .Hakkimizda-master-misyon {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 40px; }
+      .Hakkimizda-master-misyon-title {
+        color: white;
+        display: inherit; }
+      .Hakkimizda-master-misyon-content p:first-child {
+        color: white;
+        margin-top: 20px; }
+      .Hakkimizda-master-misyon-content p:nth-child(2), .Hakkimizda-master-misyon-content p:nth-child(3), .Hakkimizda-master-misyon-content p:nth-child(4) {
+        color: white;
+        margin-top: 10px; }
+    .Hakkimizda-master-yky {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding-bottom: 120px; }
+      @media (min-width: 768px) {
+        .Hakkimizda-master-yky {
+          padding-bottom: 180px; } }
+      .Hakkimizda-master-yky-title {
+        color: white;
+        display: inherit; }
+      .Hakkimizda-master-yky-content p:first-child {
+        color: white;
+        margin-top: 20px; }
+      .Hakkimizda-master-yky-content p:nth-child(2), .Hakkimizda-master-yky-content p:nth-child(3), .Hakkimizda-master-yky-content p:nth-child(4) {
+        color: white;
+        margin-top: 10px; }
+      .Hakkimizda-master-yky-nr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 10px;
+        text-align: center; }
+
+.Referanslar {
+  height: 730px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  .Referanslar .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Referanslar .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  @media (min-width: 768px) {
+    .Referanslar {
+      height: 940px; }
+      .Referanslar .Referanslar-master-content-container5 {
+        display: none; } }
+  @media (min-width: 992px) {
+    .Referanslar {
+      height: 1100px; }
+      .Referanslar .Referanslar-master-content-container5 {
+        display: none; } }
+  @media (min-width: 1200px) {
+    .Referanslar {
+      height: 1220px; }
+      .Referanslar .Referanslar-master-content-container5 {
+        display: none; } }
+  .Referanslar-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Referanslar-master {
+        top: 140px; } }
+    .Referanslar-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB; }
+    .Referanslar-master-content {
+      display: flex;
+      width: 100%;
+      height: 960px;
+      margin-top: 40px;
+      flex-direction: column; }
+      .Referanslar-master-content-container1, .Referanslar-master-content-container2, .Referanslar-master-content-container3, .Referanslar-master-content-container4, .Referanslar-master-content-container5 {
+        display: inherit;
+        width: 100%;
+        height: 90px;
+        justify-content: space-between; }
+        .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5, .Referanslar-master-content-container5-1, .Referanslar-master-content-container5-2, .Referanslar-master-content-container5-3, .Referanslar-master-content-container5-4, .Referanslar-master-content-container5-5 {
+          display: inherit;
+          width: 70px;
+          height: 70px;
+          background-color: white; }
+          .Referanslar-master-content-container1-1:last-child, .Referanslar-master-content-container1-2:last-child, .Referanslar-master-content-container1-3:last-child, .Referanslar-master-content-container1-4:last-child, .Referanslar-master-content-container1-5:last-child, .Referanslar-master-content-container2-1:last-child, .Referanslar-master-content-container2-2:last-child, .Referanslar-master-content-container2-3:last-child, .Referanslar-master-content-container2-4:last-child, .Referanslar-master-content-container2-5:last-child, .Referanslar-master-content-container3-1:last-child, .Referanslar-master-content-container3-2:last-child, .Referanslar-master-content-container3-3:last-child, .Referanslar-master-content-container3-4:last-child, .Referanslar-master-content-container3-5:last-child, .Referanslar-master-content-container4-1:last-child, .Referanslar-master-content-container4-2:last-child, .Referanslar-master-content-container4-3:last-child, .Referanslar-master-content-container4-4:last-child, .Referanslar-master-content-container4-5:last-child, .Referanslar-master-content-container5-1:last-child, .Referanslar-master-content-container5-2:last-child, .Referanslar-master-content-container5-3:last-child, .Referanslar-master-content-container5-4:last-child, .Referanslar-master-content-container5-5:last-child {
+            display: none; }
+      @media (min-width: 768px) {
+        .Referanslar-master-content {
+          display: flex;
+          width: 100%;
+          height: 960px;
+          margin-top: 40px;
+          flex-direction: column; }
+          .Referanslar-master-content-container1, .Referanslar-master-content-container2, .Referanslar-master-content-container3, .Referanslar-master-content-container4 {
+            display: inherit;
+            width: 100%;
+            height: 150px;
+            justify-content: space-between; }
+            .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5 {
+              display: inherit;
+              width: 130px;
+              height: 130px;
+              background-color: white; }
+              .Referanslar-master-content-container1-1:last-child, .Referanslar-master-content-container1-2:last-child, .Referanslar-master-content-container1-3:last-child, .Referanslar-master-content-container1-4:last-child, .Referanslar-master-content-container1-5:last-child, .Referanslar-master-content-container2-1:last-child, .Referanslar-master-content-container2-2:last-child, .Referanslar-master-content-container2-3:last-child, .Referanslar-master-content-container2-4:last-child, .Referanslar-master-content-container2-5:last-child, .Referanslar-master-content-container3-1:last-child, .Referanslar-master-content-container3-2:last-child, .Referanslar-master-content-container3-3:last-child, .Referanslar-master-content-container3-4:last-child, .Referanslar-master-content-container3-5:last-child, .Referanslar-master-content-container4-1:last-child, .Referanslar-master-content-container4-2:last-child, .Referanslar-master-content-container4-3:last-child, .Referanslar-master-content-container4-4:last-child, .Referanslar-master-content-container4-5:last-child {
+                display: flex; } }
+      @media (min-width: 992px) {
+        .Referanslar-master-content {
+          display: flex;
+          width: 100%;
+          height: auto;
+          margin-top: 40px;
+          flex-direction: column; }
+          .Referanslar-master-content-container1, .Referanslar-master-content-container2, .Referanslar-master-content-container3, .Referanslar-master-content-container4 {
+            display: inherit;
+            width: 100%;
+            height: 190px;
+            justify-content: space-between; }
+            .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5 {
+              display: inherit;
+              width: 170px;
+              height: 170px;
+              background-color: white; } }
+      @media (min-width: 1200px) {
+        .Referanslar-master-content {
+          display: flex;
+          width: 100%;
+          height: auto;
+          margin-top: 40px;
+          flex-direction: column; }
+          .Referanslar-master-content-container1, .Referanslar-master-content-container2, .Referanslar-master-content-container3, .Referanslar-master-content-container4 {
+            display: inherit;
+            width: 100%;
+            height: 220px;
+            justify-content: space-between; }
+            .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5 {
+              display: inherit;
+              width: 200px;
+              height: 200px;
+              background-color: white; } }
+      .Referanslar-master-content-container1-1 {
+        background-color: white;
+        background-image: url(/ibb.2ce8007f.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container1-2 {
+        background-color: white;
+        background-image: url(/iga.1f001ae1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container1-3 {
+        background-color: white;
+        background-image: url(/isfalt.81804676.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 2px 10px; }
+      .Referanslar-master-content-container1-4 {
+        background-color: white;
+        background-image: url(/teskoop.35184209.jpg);
+        background-size: 100% 75%;
+        background-position: 6px 45%;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container1-5 {
+        background-color: white;
+        background-image: url(/kagithane.6cdf4382.png);
+        background-size: 75% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container2-1 {
+        background-color: white;
+        background-image: url(/agac.6868e596.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container2-2 {
+        background-color: white;
+        background-image: url(/torunlar.85f84e7b.jpg);
+        background-size: 100% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container2-3 {
+        background-color: white;
+        background-image: url(/ozyalcin.e5ec3580.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container2-4 {
+        background-color: white;
+        background-image: url(/rasan.cef017d8.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container2-5 {
+        background-color: white;
+        background-image: url(/harran.93e2fec7.png);
+        background-size: 75% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container3-1 {
+        background-color: white;
+        background-image: url(/ford.812176d0.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container3-2 {
+        background-color: white;
+        background-image: url(/dedeman.3bd542ed.jpg);
+        background-size: 100% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container3-3 {
+        background-color: white;
+        background-image: url(/rocks.d413ae6b.jpeg);
+        background-size: 75% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container3-4 {
+        background-color: white;
+        background-image: url(/grand.2f194efb.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container3-5 {
+        background-color: white;
+        background-image: url(/nevali.8b0faeff.png);
+        background-size: 90% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container4-1 {
+        background-color: white;
+        background-image: url(/merit.9bc1f15e.png);
+        background-size: 75% 95%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container4-2 {
+        background-color: white;
+        background-image: url(/sandavic.16fe737d.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container4-3 {
+        background-color: white;
+        background-image: url(/kurukahve.db9538d8.jpeg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container4-4 {
+        background-color: white;
+        background-image: url(/fapel.5dc618bf.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container4-5 {
+        background-color: white;
+        background-image: url(/balkon.20a65a3e.png);
+        background-size: 90% 60%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container5-1 {
+        background-color: white;
+        background-image: url(/kagithane.6cdf4382.png);
+        background-size: 75% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container5-2 {
+        background-color: white;
+        background-image: url(/harran.93e2fec7.png);
+        background-size: 75% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container5-3 {
+        background-color: white;
+        background-image: url(/nevali.8b0faeff.png);
+        background-size: 90% 75%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container5-4 {
+        background-color: white;
+        background-image: url(/balkon.20a65a3e.png);
+        background-size: 90% 60%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .Referanslar-master-content-container5-5 {
+        background-color: white;
+        background-image: url(/balkon.20a65a3e.png);
+        background-size: 90% 60%;
+        background-position: center;
+        background-repeat: no-repeat; }
+
+.Iletisim {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 120px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Iletisim {
+      height: auto;
+      padding-bottom: 180px; } }
+  .Iletisim .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Iletisim .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Iletisim-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Iletisim-master {
+        top: 140px; } }
+    .Iletisim-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB; }
+    .Iletisim-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; }
+      .Iletisim-master-content-top {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse; }
+        @media (min-width: 768px) {
+          .Iletisim-master-content-top {
+            flex-direction: row; } }
+        .Iletisim-master-content-top-form {
+          display: inherit;
+          width: 100%;
+          height: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          @media (min-width: 768px) {
+            .Iletisim-master-content-top-form {
+              width: 50%; } }
+          .Iletisim-master-content-top-form h1 {
+            color: white;
+            text-align: center; }
+          .Iletisim-master-content-top-form-items {
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            padding-right: 0; }
+            @media (min-width: 768px) {
+              .Iletisim-master-content-top-form-items {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 80%; } }
+            .Iletisim-master-content-top-form-items input, .Iletisim-master-content-top-form-items textarea {
+              display: inherit;
+              width: 100%;
+              border: 1px solid #04BBBB;
+              font-size: 16px;
+              height: 40px;
+              margin-bottom: 20px;
+              border-radius: 5px;
+              padding-left: 10px;
+              color: white;
+              background-color: transparent; }
+              .Iletisim-master-content-top-form-items input::placeholder, .Iletisim-master-content-top-form-items textarea::placeholder {
+                font-family: "Mukta", Arial, sans-serif;
+                color: white; }
+            .Iletisim-master-content-top-form-items input:first-child {
+              margin-top: 20px; }
+            .Iletisim-master-content-top-form-items input {
+              padding-top: 5px; }
+              .Iletisim-master-content-top-form-items input::placeholder {
+                padding-top: 5px; }
+            .Iletisim-master-content-top-form-items textarea {
+              resize: none;
+              max-width: 100%;
+              height: 100px;
+              padding-top: 10px; }
+            .Iletisim-master-content-top-form-items button {
+              display: block;
+              width: 150px;
+              height: 45px;
+              margin-left: auto;
+              margin-right: auto;
+              color: white;
+              background-color: #04BBBB;
+              border: 1px solid #04BBBB;
+              font-weight: bold;
+              border-radius: 5px;
+              transition: 0.3s;
+              margin-bottom: 40px; }
+              .Iletisim-master-content-top-form-items button:hover {
+                transition: 0.3s;
+                background-color: #242425; }
+        .Iletisim-master-content-top-infos {
+          display: inherit;
+          width: 100%;
+          height: auto;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 40px;
+          padding-bottom: 40px; }
+          @media (min-width: 768px) {
+            .Iletisim-master-content-top-infos {
+              width: 50%; } }
+          .Iletisim-master-content-top-infos-contact {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; }
+            .Iletisim-master-content-top-infos-contact h1 {
+              color: white;
+              padding-bottom: 20px;
+              padding-top: 40px; }
+            .Iletisim-master-content-top-infos-contact .h1fc {
+              padding-top: 0; }
+            .Iletisim-master-content-top-infos-contact p {
+              color: white;
+              line-height: 24px;
+              font-weight: bold; }
+              .Iletisim-master-content-top-infos-contact p span {
+                padding-left: 4px;
+                font-weight: normal; }
+            .Iletisim-master-content-top-infos-contact a {
+              color: white;
+              transition: 0.3s;
+              text-align: center; }
+              .Iletisim-master-content-top-infos-contact a:hover {
+                color: #04BBBB;
+                transition: 0.3s; }
+      .Iletisim-master-content-bot {
+        display: inherit;
+        width: 100%;
+        height: auto; }
+        .Iletisim-master-content-bot-map {
+          width: 100%;
+          height: 380px; }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */

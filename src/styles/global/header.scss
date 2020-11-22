@@ -3,7 +3,8 @@
   position: fixed;
   width: 100%;
   z-index: 2;
-  background-color: rgba($color: grey, $alpha: 0);
+
+  // background-color: rgba($color: grey, $alpha: 1);
   // border-bottom: 1px solid rgba($color: $color-dark-grey, $alpha: 0.3);
 
   @include mq("tablet") {

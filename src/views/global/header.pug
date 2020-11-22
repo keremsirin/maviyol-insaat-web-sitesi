@@ -2,7 +2,7 @@ header.Header
     .container
         .Header-menu
             .Header-menu-logo
-                a.Header-menu-logo-a(href="")
+                a.Header-menu-logo-a(href="../pages/index.pug")
                     img.justlogo(src="../../img/sadecelogo1.svg", alt="")
                     img.justtext(src="../../img/sadecemetin1.svg", alt="")
             .Header-menu-nav
@@ -13,9 +13,9 @@ header.Header
                 .Header-menu-nav-links
                     ul
                         li 
-                            a.hover-border(href="" onclick='return false;') Hakkımızda
+                            a.hover-border(href="../pages/hakkimizda.pug") Hakkımızda
                         li 
-                            a#services.hover-border(href="#") Hizmetler
+                            a#services.hover-border(href="#" onclick='return false;') Hizmetler
                                 i.fa.fa-caret-down(aria-hidden='true')
                             ul.dropdown-1
                                 li
@@ -27,7 +27,7 @@ header.Header
                                 li
                                     a.hover-left(href="#") Tasarım ve Mimari Proje
                         li 
-                            a#projects.hover-border(href="#") Projeler
+                            a#projects.hover-border(href="#" onclick='return false;') Projeler
                                 i.fa.fa-caret-down(aria-hidden='true')
                             ul.dropdown-2
                                 li
@@ -35,9 +35,9 @@ header.Header
                                 li
                                     a.hover-left(href="#") Tamamlanmış Projeler
                         li 
-                            a.hover-border(href="#") Referanslar
+                            a.hover-border(href="../pages/referanslar.pug") Referanslar
                         li 
-                            a.hover-border(href="#") İletişim
+                            a.hover-border(href="../pages/iletisim.pug") İletişim
                         
 
 
