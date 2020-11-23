@@ -191,3 +191,17 @@ $(document).ready(function () {
         }
     })
 })
+
+
+$(document).ready(function () {
+    if ($(window).width() < 480) {
+        $(".Devam-master-content-project1-container1 a").last().attr("data-lightbox", " ")
+        $(".Devam-master-content-project1-container2 a").last().attr("data-lightbox", " ")
+        $(".Devam-master-content-project1-container3 a").last().attr("data-lightbox", " ")
+        $(".Devam-master-content-project1-container4 a").last().attr("data-lightbox", " ")
+    }
+    else if ($(window).width() > 480) {
+        $(".Devam-master-content-project1-container6 a").attr("data-lightbox", " ")
+        $(".Devam-master-content-project1-container7 a").attr("data-lightbox", " ")
+    }
+})
