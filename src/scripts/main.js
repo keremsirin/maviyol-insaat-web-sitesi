@@ -264,6 +264,3 @@ $(window).scroll(function() {
         }
     }
 });
-
-
-//  Circlle('.round')
