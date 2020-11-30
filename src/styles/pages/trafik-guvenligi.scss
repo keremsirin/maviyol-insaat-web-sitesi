@@ -1,0 +1,183 @@
+.Trafik {
+    height: auto;
+    width: 100vw;
+    // background-color: rgba($color: $color-dark-grey, $alpha: .8);
+    background-color: rgba($color: #000000, $alpha: .6);
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    @include mq("tablet") {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include mq("tablet") {
+            padding-left: $offset;
+            padding-right: $offset;
+        }
+    }
+
+    &-master {
+        width: 100%;
+        height: auto;
+        // background-color: #ddd;
+        position: relative;
+        top: 80px;
+
+
+        @include mq("tablet") {
+            top: 140px;
+        }
+
+        &-page_title {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 140px;
+            // background-color: black;
+            text-align: center;
+            position: relative;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            border-bottom: 1px solid $color-blue;
+            line-height: 40px;
+        }
+
+        &-content {
+            display: flex;
+            width: 100%;
+            height: auto;
+            // background-color: red;
+            flex-direction: column;
+            // background-color: red;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            &-1, &-2, &-3, &-4 {
+                display: inherit;
+                width: 100%;
+                height: auto;
+                // background-color: red;
+                flex-direction: column;
+
+                &-title {
+                    display: inherit;
+                    width: 100%;
+                    // background-color: blue;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    height: auto;
+                    padding-top: 40px;
+                    padding-bottom: $offset;
+                    color: white;
+                }
+                #first_title {
+                    padding-top: $offset;
+                }
+
+                &-rest {
+                    display: inherit;
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                    
+                    @include mq("tablet") {
+                        flex-direction: row;
+                        height: 400px;
+                    }
+
+                    &-img {
+                        display: inherit;
+                        width: 100%;
+                        height: 400px;
+                        // background-color: #fff;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include mq("tablet") {
+                            width: 50%;
+                            margin-right: 0;
+                            margin-left: 0;
+                            height: auto;
+                        }
+                    }
+                    &-text {
+                        display: inherit;
+                        width: 100%;
+                        height: 100%;
+                        // background-color: pink;
+                        color: white;
+                        padding: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-top: $offset;
+
+                        @include mq("tablet") {
+                            width: 50%;
+                            margin-right: 0;
+                            margin-left: 0;
+                            padding: 40px;
+                        }
+                    }
+                }
+            }
+            &-1 {
+                &-rest {
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/trafik-1.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+            &-2 {
+                &-rest {
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/trafik-2.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+            &-3 {
+                &-rest {
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/trafik-3.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+            &-4 {
+                &-rest {
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/trafik-4.jpg");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+}

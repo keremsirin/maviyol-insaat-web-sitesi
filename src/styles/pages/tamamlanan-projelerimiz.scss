@@ -1,0 +1,305 @@
+.Tamam {
+    height: auto;
+    width: 100vw;
+    // background-color: rgba($color: $color-dark-grey, $alpha: .8);
+    background-color: rgba($color: #000000, $alpha: .6);
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    @include mq("tablet") {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include mq("tablet") {
+            padding-left: $offset;
+            padding-right: $offset;
+        }
+    }
+
+    &-master {
+        width: 100%;
+        height: auto;
+        // background-color: #ddd;
+        position: relative;
+        top: 80px;
+
+
+        @include mq("tablet") {
+            top: 140px;
+        }
+
+        &-page_title {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 140px;
+            // background-color: black;
+            text-align: center;
+            position: relative;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            border-bottom: 1px solid $color-blue;
+            line-height: 40px;
+        }
+
+        &-content {
+            display: flex;
+            width: 100%;
+            height: auto;
+            // background-color: red;
+            flex-direction: column;
+            // background-color: red;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            justify-content: center;
+
+            &-container1,
+            &-container2,
+            &-container3 {
+                display: inherit;
+                width: 100%;
+                padding-bottom: 40px;
+                // background-color: red;
+                height: auto;
+                flex-direction: column;
+                @include mq("tablet") {
+                    flex-direction: row;
+                }
+
+
+
+                &-proje1,
+                &-proje2 {
+                    display: inherit;
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+
+                    @include mq("tablet") {
+                        width: 50%;
+                    }
+
+                    &-title {
+                        display: inherit;
+                        // background-color: red;
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 20px;
+                        justify-content: center;
+
+                        // align-items: center;
+                        h1 {
+                            color: white;
+                            font-size: 24px;
+                        
+                        @include mq("tablet") {
+                            font-size: 30px;
+                        }
+                        }
+                    }
+
+                    &-img {
+                        display: inherit;
+                        // background-color: black;
+                        width: 100%;
+                        height: 180px;        
+                        transition: 1s;
+                        @include mq("tablet") {
+                            height: 300px;        
+                        }
+                        h4 {
+                            display: flex;
+                            color: white;
+                            justify-content: center;
+                            padding-top: 100px;
+                            opacity: 0;
+                            transition: 1s;
+                        }                       
+                    }
+                }
+            }
+            
+            &-container1 {
+                &-proje1 {
+                    margin-right: 0;
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/duhok/49.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/duhok/49.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje2 {
+                    margin-left: 0;
+                    padding-top: 40px;
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        padding-top: 0;
+                    }                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/bhc/13.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/bhc/13.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }  
+            &-container2 {
+                &-proje1 {
+                    margin-right: 0;
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/fapel/1.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/fapel/1.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje2 {
+                    margin-left: 0;
+                    padding-top: 40px;
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        padding-top: 0;
+                    }                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/kerkuk/2.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/kerkuk/2.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            &-container3 {
+                &-proje1 {
+                    margin-right: 0;
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                        padding-right: 20px; // YANINA YENI PROJE GELINCE SILINECEK
+                    }
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/balkon/4.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/balkon/4.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje2 {
+                    margin-left: 0;
+                    padding-top: 40px;
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        padding-top: 0;
+                    }                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/bhc/6.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/bhc/6.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}

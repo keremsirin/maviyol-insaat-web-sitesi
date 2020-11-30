@@ -29,17 +29,21 @@
         resize: horizontal;
         overflow-y: auto;
 
-        
 
 
-        &-1, &-2, &-3, &-4 {
+
+        &-1,
+        &-2,
+        &-3,
+        &-4 {
             display: inherit;
             width: 100%;
             height: 100vh;
             background-repeat: no-repeat;
         }
+
         &-1 {
-            background-image: 
+            background-image:
             linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
             url("../../src/img/bg4.jpg");
             background-size: cover;
@@ -49,77 +53,91 @@
                 .text1 {
                     animation: text1 3s 1;
                 }
+
                 .text12 {
                     animation: text12 6s 1;
                 }
+
                 .button_hp {
                     animation: button1 8s 1;
                 }
-                
+
             }
         }
+
         &-2 {
-            background-image: 
-            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("../../src/img/bg3.jpg");
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url("../../src/img/bg3.jpg");
             background-size: cover;
             background-position: center;
             background-position-x: left;
             background-position-y: top;
+
             &.is-selected {
                 .text2 {
                     animation: text2 3s 1;
                 }
+
                 .text22 {
                     animation: text22 6s 1;
                 }
+
                 .button_hp {
                     animation: button2 8s 1;
                 }
             }
         }
+
         &-3 {
-            background-image: 
-            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            // url("../../src/img/bg6.jpg");
-            url("../../src/img/bg10.jpg");
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                // url("../../src/img/bg6.jpg");
+                url("../../src/img/bg10.jpg");
             background-size: cover;
             background-position: center;
+
             &.is-selected {
                 .text3 {
                     animation: text3 3s 1;
                 }
+
                 .text32 {
                     animation: text32 6s 1;
                 }
+
                 .button_hp {
                     animation: button3 8s 1;
                 }
             }
         }
+
         &-4 {
-            background-image: 
-            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("../../src/img/bg8.jpg");
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url("../../src/img/bg8.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+
             &.is-selected {
                 .text4 {
                     animation: text4 3s 1;
                 }
+
                 .text42 {
                     animation: text42 6s 1;
                 }
+
                 .button_hp {
                     animation: button4 8s 1;
                 }
             }
         }
-        
+
     }
 
-    
+
 }
 
 .carousel {
@@ -161,15 +179,17 @@
     @include mq("tablet") {
         left: $offset;
     }
+
     left: 4px;
-  }
+}
 
 .flickity-prev-next-button.next {
     @include mq("tablet") {
         right: $offset;
     }
+
     right: 4px;
-  }
+}
 
 
 .preloader {
@@ -235,6 +255,7 @@
     align-items: center;
     justify-content: center;
     z-index: 10000;
+
     img {
         // height: 80%;
         // width: 80%;
@@ -258,15 +279,19 @@
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
     }
+
     25% {
         transform: translate(-50%, -50%) rotate(180deg);
     }
+
     50% {
         transform: translate(-50%, -50%) rotate(180deg);
     }
+
     75% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
+
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
@@ -276,15 +301,19 @@
     0% {
         height: 0;
     }
+
     25% {
         height: 0;
     }
+
     50% {
         height: 100%;
     }
+
     75% {
         height: 100%;
     }
+
     100% {
         height: 0;
     }
@@ -311,7 +340,7 @@
     opacity: 1;
     text-align: center;
 
-    
+
     // margin-left: auto;
     // margin-right: auto;
 
@@ -343,16 +372,16 @@
 .text_container {
     text-align: center;
     position: absolute;
-    top: 44%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 97%;
-    
+
     @include mq("tablet") {
         width: 110%;
-
+        top: 44%;
     }
-    
+
 }
 
 .text_container span {
@@ -368,6 +397,7 @@
     color: $color-blue;
     position: relative;
     text-shadow: 1px 1px 10px $color-dark-grey;
+    line-height: 50px;
 
     @include mq("tablet") {
         font-size: 60px;
@@ -382,7 +412,7 @@
 
 .text12 {
     font-size: 20px;
-    width: 70%;
+    width: 88%;
     color: #ddd;
     margin-left: auto;
     margin-right: auto;
@@ -401,6 +431,8 @@
     color: $color-blue;
     position: relative;
     text-shadow: 1px 1px 10px $color-dark-grey;
+    line-height: 50px;
+
 
     @include mq("tablet") {
         font-size: 60px;
@@ -415,11 +447,12 @@
 
 .text22 {
     font-size: 20px;
-    width: 70%;
+    width: 88%;
     color: #ddd;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 1px 1px 10px $color-dark-grey;
+
     @include mq("tablet") {
         font-size: 30px;
     }
@@ -433,6 +466,8 @@
     color: $color-blue;
     position: relative;
     text-shadow: 1px 1px 10px $color-dark-grey;
+    line-height: 50px;
+
 
     @include mq("tablet") {
         font-size: 60px;
@@ -447,11 +482,12 @@
 
 .text32 {
     font-size: 20px;
-    width: 70%;
+    width: 88%;
     color: #ddd;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 1px 1px 10px $color-dark-grey;
+
     @include mq("tablet") {
         font-size: 30px;
     }
@@ -465,6 +501,8 @@
     color: $color-blue;
     position: relative;
     text-shadow: 1px 1px 10px $color-dark-grey;
+    line-height: 50px;
+
 
     @include mq("tablet") {
         font-size: 60px;
@@ -479,11 +517,12 @@
 
 .text42 {
     font-size: 20px;
-    width: 70%;
+    width: 88%;
     color: #ddd;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 1px 1px 10px $color-dark-grey;
+
     @include mq("tablet") {
         font-size: 30px;
     }
@@ -700,15 +739,91 @@
 
 
 
+#circleBar {
+    // margin-top: 180px;
+    text-align: center;
 
-.content {
-    height: 800px;
-    background-color: rgba($color: $color-dark-grey, $alpha: .8);
+    .round {
+        min-height: 255px;
+        margin-top: 30px;
+        position: relative;
+        margin-bottom: 20px;
+
+        strong {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            transform: translate(-50%);
+            font-size: 40px;
+            color: white;
+        }
+    }
+
+    span {
+        display: block;
+        color: white;
+        font-size: 17px;
+        margin-top: 10px;
+        font-weight: bold;
+
+        i {
+            color: $color-blue;
+            font-size: 22px;
+            margin-right: 7px;
+
+        }
+    }
+}
+
+
+.Homepage {
+    height: auto;
+    width: 100vw;
+    // background-color: rgba($color: $color-dark-grey, $alpha: .8);
+    background-color: rgba($color: #000000, $alpha: .6);
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    padding-bottom: 100px;
     position: relative;
-    // margin-left: 1px;
-    padding-left: 8px;
+    justify-content: center;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    @include mq("tablet") {
+        height: auto;
+        padding-bottom: 140px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @include mq("tablet") {
+            padding-left: $offset;
+            padding-right: $offset;
+        }
+    }
+
+    &-master {
+        width: 100%;
+        height: auto;
+        // background-color: #ddd;
+        position: relative;
+        top: 80px;
+
+
+        @include mq("tablet") {
+            top: 140px;
+        }
+    }
+
+    &-content {
+        width: 100%;
+        height: 400px;
+        background-color: red;
+    }
+
 }

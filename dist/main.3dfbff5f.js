@@ -146,12 +146,12 @@ $(".hover-left").hover(function () {
   $(this).parent().animate({
     paddingLeft: '20px'
   }, 300);
-});
-$(function () {
-  var div = $('body');
-  var width = div.width();
-  div.css('height', width);
-});
+}); // $(function () {
+//     var div = $('body');
+//     var width = div.width();
+//     div.css('height', width);
+// });
+
 $(".Header-menu-nav-button").on("click", function () {
   if ($("Header").is(".menu-nav-links-show")) {
     $(".Header").removeClass("menu-nav-links-show");
@@ -247,10 +247,10 @@ $('.homepage-slider').flickity({
   pageDots: false,
   // autoPlay: 10000,
   pauseAutoPlayOnHover: true
-}); // $(".homepage-slider").on("mouseleave", function () {
-//     $(this).flickity("playPlayer");
-// });
-
+});
+$(".homepage-slider").on("mouseleave", function () {
+  $(this).flickity("playPlayer");
+});
 $(window).on('load', function () {
   $('.preloader').addClass('complete');
   $('.homepage-slider').flickity({
@@ -293,15 +293,72 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   if ($(window).width() < 480) {
-    $(".Devam-master-content-project1-container1 a").last().attr("data-lightbox", " ");
-    $(".Devam-master-content-project1-container2 a").last().attr("data-lightbox", " ");
-    $(".Devam-master-content-project1-container3 a").last().attr("data-lightbox", " ");
-    $(".Devam-master-content-project1-container4 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container1 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container3 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container4 a").last().attr("data-lightbox", " ");
+    $(".Duhok-master-content-project1-container1 a").last().attr("data-lightbox", " ");
+    $(".Bahcesehir_tadilat-master-content-project1-container2 a").first().attr("data-lightbox", " ");
+    $(".Fapel-master-content-project1-container1 a").last().attr("data-lightbox", " ");
+    $(".Fapel-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Kerkuk-master-content-project1-container1 a").last().attr("data-lightbox", " ");
+    $(".Kerkuk-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Balkon-master-content-project1-container1 a").last().attr("data-lightbox", " ");
+    $(".Balkon-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Balkon-master-content-project1-container3 a").last().attr("data-lightbox", " ");
   } else if ($(window).width() > 480) {
-    $(".Devam-master-content-project1-container6 a").attr("data-lightbox", " ");
-    $(".Devam-master-content-project1-container7 a").attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container5 a").eq(1).attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container5 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container6 a").attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container7 a").attr("data-lightbox", " ");
+    $(".Duhok-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Bahcesehir_tadilat-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Fapel-master-content-project1-container3 a").eq(1).attr("data-lightbox", " ");
+    $(".Fapel-master-content-project1-container3 a").last().attr("data-lightbox", " ");
+    $(".Kerkuk-master-content-project1-container3 a").eq(1).attr("data-lightbox", " ");
+    $(".Kerkuk-master-content-project1-container3 a").first().attr("data-lightbox", " ");
+    $(".Balkon-master-content-project1-container4 a").attr("data-lightbox", " ");
   }
 });
+
+function Circlle(el) {
+  $(el).circleProgress({
+    fill: {
+      color: '#04BBBB'
+    }
+  }).on('circle-animation-progress', function (event, progress, stepValue) {
+    $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2) + '%');
+  });
+}
+
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  if (scroll > 200) {
+    Circlle('.round');
+    $(window).unbind('scroll');
+  }
+
+  if (window.location.pathname == "/index.html") {
+    $(".Header").removeClass("bg_scroll");
+    $(".Header-menu-logo").removeClass("ai_scroll");
+    $(".Header-menu-nav").removeClass("jc_scroll");
+  } else if (window.location.pathname == "/") {
+    $(".Header").removeClass("bg_scroll");
+    $(".Header-menu-logo").removeClass("ai_scroll");
+    $(".Header-menu-nav").removeClass("jc_scroll");
+  } else {
+    if (scroll >= 40) {
+      $(".Header").addClass("bg_scroll");
+      $(".Header-menu-logo").addClass("ai_scroll");
+      $(".Header-menu-nav").addClass("jc_scroll");
+    } else {
+      $(".Header").removeClass("bg_scroll");
+      $(".Header-menu-logo").removeClass("ai_scroll");
+      $(".Header-menu-nav").removeClass("jc_scroll");
+    }
+  }
+}); //  Circlle('.round')
 },{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -330,7 +387,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58251" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54944" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -318,6 +318,8 @@ body {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 img {
   vertical-align: middle; }
@@ -680,7 +682,8 @@ body.lb-disable-scrolling {
       align-items: center;
       width: auto;
       height: 70px;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      transition: 0.5s; }
       @media (min-width: 768px) {
         .Header-menu-logo {
           display: flex;
@@ -727,7 +730,8 @@ body.lb-disable-scrolling {
       flex-direction: column;
       justify-content: center;
       align-self: center;
-      margin-bottom: 4px; }
+      margin-bottom: 4px;
+      transition: 0.5s; }
       @media (min-width: 768px) {
         .Header-menu-nav {
           display: flex;
@@ -956,6 +960,21 @@ body.lb-disable-scrolling {
           left: 50%;
           width: 0%; }
 
+.bg_scroll {
+  background-color: #666666; }
+
+.ai_scroll {
+  padding-bottom: 0; }
+  @media (min-width: 768px) {
+    .ai_scroll {
+      padding-bottom: 18px; } }
+
+.jc_scroll {
+  padding-bottom: 0; }
+  @media (min-width: 768px) {
+    .jc_scroll {
+      padding-bottom: 18px; } }
+
 .Footer {
   display: flex;
   width: 100%;
@@ -1044,8 +1063,6 @@ body.lb-disable-scrolling {
               display: none; }
             .Footer-top-company-social .social_desktop {
               display: flex; } }
-        .Footer-top-company-social #in {
-          padding-top: 13px; }
         .Footer-top-company-social #insta {
           padding-left: 8px;
           padding-top: 2px;
@@ -1096,10 +1113,10 @@ body.lb-disable-scrolling {
               border-radius: 20px;
               color: white;
               transition: 0.3s;
-              padding-top: 15px;
+              padding-top: 16px;
               padding-bottom: 15px;
               padding-right: 15px;
-              padding-left: 16px;
+              padding-left: 15px;
               margin-right: 10px;
               margin-left: 10px;
               font-size: 20px; } }
@@ -1515,13 +1532,14 @@ body.lb-disable-scrolling {
 .text_container {
   text-align: center;
   position: absolute;
-  top: 44%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 97%; }
   @media (min-width: 768px) {
     .text_container {
-      width: 110%; } }
+      width: 110%;
+      top: 44%; } }
 
 .text_container span {
   display: flex;
@@ -1534,7 +1552,8 @@ body.lb-disable-scrolling {
   margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
-  text-shadow: 1px 1px 10px #242425; }
+  text-shadow: 1px 1px 10px #242425;
+  line-height: 50px; }
   @media (min-width: 768px) {
     .text1 {
       font-size: 60px;
@@ -1547,7 +1566,7 @@ body.lb-disable-scrolling {
 
 .text12 {
   font-size: 20px;
-  width: 70%;
+  width: 88%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
@@ -1563,7 +1582,8 @@ body.lb-disable-scrolling {
   margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
-  text-shadow: 1px 1px 10px #242425; }
+  text-shadow: 1px 1px 10px #242425;
+  line-height: 50px; }
   @media (min-width: 768px) {
     .text2 {
       font-size: 60px;
@@ -1576,7 +1596,7 @@ body.lb-disable-scrolling {
 
 .text22 {
   font-size: 20px;
-  width: 70%;
+  width: 88%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
@@ -1592,7 +1612,8 @@ body.lb-disable-scrolling {
   margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
-  text-shadow: 1px 1px 10px #242425; }
+  text-shadow: 1px 1px 10px #242425;
+  line-height: 50px; }
   @media (min-width: 768px) {
     .text3 {
       font-size: 60px;
@@ -1605,7 +1626,7 @@ body.lb-disable-scrolling {
 
 .text32 {
   font-size: 20px;
-  width: 70%;
+  width: 88%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
@@ -1621,7 +1642,8 @@ body.lb-disable-scrolling {
   margin-bottom: 26px;
   color: #04BBBB;
   position: relative;
-  text-shadow: 1px 1px 10px #242425; }
+  text-shadow: 1px 1px 10px #242425;
+  line-height: 50px; }
   @media (min-width: 768px) {
     .text4 {
       font-size: 60px;
@@ -1634,7 +1656,7 @@ body.lb-disable-scrolling {
 
 .text42 {
   font-size: 20px;
-  width: 70%;
+  width: 88%;
   color: #ddd;
   margin-left: auto;
   margin-right: auto;
@@ -1771,15 +1793,68 @@ body.lb-disable-scrolling {
   85% {
     opacity: 1; } }
 
-.content {
-  height: 800px;
-  background-color: rgba(36, 36, 37, 0.8);
+#circleBar {
+  text-align: center; }
+  #circleBar .round {
+    min-height: 255px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px; }
+    #circleBar .round strong {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      transform: translate(-50%);
+      font-size: 40px;
+      color: white; }
+  #circleBar span {
+    display: block;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: bold; }
+    #circleBar span i {
+      color: #04BBBB;
+      font-size: 22px;
+      margin-right: 7px; }
+
+.Homepage {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  padding-bottom: 100px;
   position: relative;
-  padding-left: 8px; }
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Homepage {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Homepage .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Homepage .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Homepage-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Homepage-master {
+        top: 140px; } }
+  .Homepage-content {
+    width: 100%;
+    height: 400px;
+    background-color: red; }
 
 .Hakkimizda {
   height: auto;
@@ -2340,7 +2415,7 @@ body.lb-disable-scrolling {
           width: 100%;
           height: 380px; }
 
-.Devam {
+.Zb {
   height: auto;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
@@ -2349,6 +2424,173 @@ body.lb-disable-scrolling {
   margin-left: -50vw;
   margin-right: -50vw;
   padding-bottom: 100px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Zb {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Zb .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Zb .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Zb-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Zb-master {
+        top: 140px; } }
+    .Zb-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+      @media (min-width: 768px) {
+        .Zb-master-page_title {
+          font-size: 40px; } }
+    .Zb-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; }
+      .Zb-master-content-project1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        flex-direction: column; }
+        .Zb-master-content-project1-container1, .Zb-master-content-project1-container2, .Zb-master-content-project1-container3, .Zb-master-content-project1-container4, .Zb-master-content-project1-container5, .Zb-master-content-project1-container6, .Zb-master-content-project1-container7 {
+          display: inherit;
+          width: 100%;
+          height: 80px;
+          justify-content: space-between; }
+          .Zb-master-content-project1-container1-1, .Zb-master-content-project1-container1-2, .Zb-master-content-project1-container1-3, .Zb-master-content-project1-container1-4, .Zb-master-content-project1-container2-1, .Zb-master-content-project1-container2-2, .Zb-master-content-project1-container2-3, .Zb-master-content-project1-container2-4, .Zb-master-content-project1-container3-1, .Zb-master-content-project1-container3-2, .Zb-master-content-project1-container3-3, .Zb-master-content-project1-container3-4, .Zb-master-content-project1-container4-1, .Zb-master-content-project1-container4-2, .Zb-master-content-project1-container4-3, .Zb-master-content-project1-container4-4, .Zb-master-content-project1-container5-1, .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3, .Zb-master-content-project1-container5-4, .Zb-master-content-project1-container6-1, .Zb-master-content-project1-container6-2, .Zb-master-content-project1-container6-3, .Zb-master-content-project1-container6-4, .Zb-master-content-project1-container7-1, .Zb-master-content-project1-container7-2, .Zb-master-content-project1-container7-3, .Zb-master-content-project1-container7-4 {
+            display: inherit;
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            transition: 1s; }
+            .Zb-master-content-project1-container1-1 img, .Zb-master-content-project1-container1-2 img, .Zb-master-content-project1-container1-3 img, .Zb-master-content-project1-container1-4 img, .Zb-master-content-project1-container2-1 img, .Zb-master-content-project1-container2-2 img, .Zb-master-content-project1-container2-3 img, .Zb-master-content-project1-container2-4 img, .Zb-master-content-project1-container3-1 img, .Zb-master-content-project1-container3-2 img, .Zb-master-content-project1-container3-3 img, .Zb-master-content-project1-container3-4 img, .Zb-master-content-project1-container4-1 img, .Zb-master-content-project1-container4-2 img, .Zb-master-content-project1-container4-3 img, .Zb-master-content-project1-container4-4 img, .Zb-master-content-project1-container5-1 img, .Zb-master-content-project1-container5-2 img, .Zb-master-content-project1-container5-3 img, .Zb-master-content-project1-container5-4 img, .Zb-master-content-project1-container6-1 img, .Zb-master-content-project1-container6-2 img, .Zb-master-content-project1-container6-3 img, .Zb-master-content-project1-container6-4 img, .Zb-master-content-project1-container7-1 img, .Zb-master-content-project1-container7-2 img, .Zb-master-content-project1-container7-3 img, .Zb-master-content-project1-container7-4 img {
+              width: 100%;
+              height: 100%; }
+            .Zb-master-content-project1-container1-1:hover, .Zb-master-content-project1-container1-2:hover, .Zb-master-content-project1-container1-3:hover, .Zb-master-content-project1-container1-4:hover, .Zb-master-content-project1-container2-1:hover, .Zb-master-content-project1-container2-2:hover, .Zb-master-content-project1-container2-3:hover, .Zb-master-content-project1-container2-4:hover, .Zb-master-content-project1-container3-1:hover, .Zb-master-content-project1-container3-2:hover, .Zb-master-content-project1-container3-3:hover, .Zb-master-content-project1-container3-4:hover, .Zb-master-content-project1-container4-1:hover, .Zb-master-content-project1-container4-2:hover, .Zb-master-content-project1-container4-3:hover, .Zb-master-content-project1-container4-4:hover, .Zb-master-content-project1-container5-1:hover, .Zb-master-content-project1-container5-2:hover, .Zb-master-content-project1-container5-3:hover, .Zb-master-content-project1-container5-4:hover, .Zb-master-content-project1-container6-1:hover, .Zb-master-content-project1-container6-2:hover, .Zb-master-content-project1-container6-3:hover, .Zb-master-content-project1-container6-4:hover, .Zb-master-content-project1-container7-1:hover, .Zb-master-content-project1-container7-2:hover, .Zb-master-content-project1-container7-3:hover, .Zb-master-content-project1-container7-4:hover {
+              transform: scale(1.1); }
+          .Zb-master-content-project1-container1-4, .Zb-master-content-project1-container2-4, .Zb-master-content-project1-container3-4, .Zb-master-content-project1-container4-4, .Zb-master-content-project1-container5-4, .Zb-master-content-project1-container6-4, .Zb-master-content-project1-container7-4 {
+            display: none; }
+        .Zb-master-content-project1-container6 {
+          justify-content: space-around; }
+        .Zb-master-content-project1 h1 {
+          color: white;
+          padding-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Zb-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Zb-master-content-project1-container6, .Zb-master-content-project1-container7 {
+              display: none; }
+            .Zb-master-content-project1-container1, .Zb-master-content-project1-container2, .Zb-master-content-project1-container3, .Zb-master-content-project1-container4, .Zb-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 160px;
+              justify-content: space-between; }
+              .Zb-master-content-project1-container1-1, .Zb-master-content-project1-container1-2, .Zb-master-content-project1-container1-3, .Zb-master-content-project1-container1-4, .Zb-master-content-project1-container2-1, .Zb-master-content-project1-container2-2, .Zb-master-content-project1-container2-3, .Zb-master-content-project1-container2-4, .Zb-master-content-project1-container3-1, .Zb-master-content-project1-container3-2, .Zb-master-content-project1-container3-3, .Zb-master-content-project1-container3-4, .Zb-master-content-project1-container4-1, .Zb-master-content-project1-container4-2, .Zb-master-content-project1-container4-3, .Zb-master-content-project1-container4-4, .Zb-master-content-project1-container5-1, .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3, .Zb-master-content-project1-container5-4 {
+                display: inherit;
+                width: 170px;
+                height: 110px;
+                background-color: white;
+                transition: 1s; }
+                .Zb-master-content-project1-container1-1 img, .Zb-master-content-project1-container1-2 img, .Zb-master-content-project1-container1-3 img, .Zb-master-content-project1-container1-4 img, .Zb-master-content-project1-container2-1 img, .Zb-master-content-project1-container2-2 img, .Zb-master-content-project1-container2-3 img, .Zb-master-content-project1-container2-4 img, .Zb-master-content-project1-container3-1 img, .Zb-master-content-project1-container3-2 img, .Zb-master-content-project1-container3-3 img, .Zb-master-content-project1-container3-4 img, .Zb-master-content-project1-container4-1 img, .Zb-master-content-project1-container4-2 img, .Zb-master-content-project1-container4-3 img, .Zb-master-content-project1-container4-4 img, .Zb-master-content-project1-container5-1 img, .Zb-master-content-project1-container5-2 img, .Zb-master-content-project1-container5-3 img, .Zb-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Zb-master-content-project1-container1-1:hover, .Zb-master-content-project1-container1-2:hover, .Zb-master-content-project1-container1-3:hover, .Zb-master-content-project1-container1-4:hover, .Zb-master-content-project1-container2-1:hover, .Zb-master-content-project1-container2-2:hover, .Zb-master-content-project1-container2-3:hover, .Zb-master-content-project1-container2-4:hover, .Zb-master-content-project1-container3-1:hover, .Zb-master-content-project1-container3-2:hover, .Zb-master-content-project1-container3-3:hover, .Zb-master-content-project1-container3-4:hover, .Zb-master-content-project1-container4-1:hover, .Zb-master-content-project1-container4-2:hover, .Zb-master-content-project1-container4-3:hover, .Zb-master-content-project1-container4-4:hover, .Zb-master-content-project1-container5-1:hover, .Zb-master-content-project1-container5-2:hover, .Zb-master-content-project1-container5-3:hover, .Zb-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Zb-master-content-project1-container5 {
+              justify-content: start; }
+              .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3 {
+                display: none; } }
+        @media (min-width: 992px) {
+          .Zb-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Zb-master-content-project1-container1, .Zb-master-content-project1-container2, .Zb-master-content-project1-container3, .Zb-master-content-project1-container4, .Zb-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 190px;
+              justify-content: space-between; }
+              .Zb-master-content-project1-container1-1, .Zb-master-content-project1-container1-2, .Zb-master-content-project1-container1-3, .Zb-master-content-project1-container1-4, .Zb-master-content-project1-container2-1, .Zb-master-content-project1-container2-2, .Zb-master-content-project1-container2-3, .Zb-master-content-project1-container2-4, .Zb-master-content-project1-container3-1, .Zb-master-content-project1-container3-2, .Zb-master-content-project1-container3-3, .Zb-master-content-project1-container3-4, .Zb-master-content-project1-container4-1, .Zb-master-content-project1-container4-2, .Zb-master-content-project1-container4-3, .Zb-master-content-project1-container4-4, .Zb-master-content-project1-container5-1, .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3, .Zb-master-content-project1-container5-4 {
+                display: inherit;
+                width: 215px;
+                height: 150px;
+                background-color: white;
+                transition: 1s; }
+                .Zb-master-content-project1-container1-1 img, .Zb-master-content-project1-container1-2 img, .Zb-master-content-project1-container1-3 img, .Zb-master-content-project1-container1-4 img, .Zb-master-content-project1-container2-1 img, .Zb-master-content-project1-container2-2 img, .Zb-master-content-project1-container2-3 img, .Zb-master-content-project1-container2-4 img, .Zb-master-content-project1-container3-1 img, .Zb-master-content-project1-container3-2 img, .Zb-master-content-project1-container3-3 img, .Zb-master-content-project1-container3-4 img, .Zb-master-content-project1-container4-1 img, .Zb-master-content-project1-container4-2 img, .Zb-master-content-project1-container4-3 img, .Zb-master-content-project1-container4-4 img, .Zb-master-content-project1-container5-1 img, .Zb-master-content-project1-container5-2 img, .Zb-master-content-project1-container5-3 img, .Zb-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Zb-master-content-project1-container1-1:hover, .Zb-master-content-project1-container1-2:hover, .Zb-master-content-project1-container1-3:hover, .Zb-master-content-project1-container1-4:hover, .Zb-master-content-project1-container2-1:hover, .Zb-master-content-project1-container2-2:hover, .Zb-master-content-project1-container2-3:hover, .Zb-master-content-project1-container2-4:hover, .Zb-master-content-project1-container3-1:hover, .Zb-master-content-project1-container3-2:hover, .Zb-master-content-project1-container3-3:hover, .Zb-master-content-project1-container3-4:hover, .Zb-master-content-project1-container4-1:hover, .Zb-master-content-project1-container4-2:hover, .Zb-master-content-project1-container4-3:hover, .Zb-master-content-project1-container4-4:hover, .Zb-master-content-project1-container5-1:hover, .Zb-master-content-project1-container5-2:hover, .Zb-master-content-project1-container5-3:hover, .Zb-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Zb-master-content-project1-container5 {
+              justify-content: start; }
+              .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3 {
+                display: none; } }
+        @media (min-width: 1200px) {
+          .Zb-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Zb-master-content-project1-container1, .Zb-master-content-project1-container2, .Zb-master-content-project1-container3, .Zb-master-content-project1-container4, .Zb-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 220px;
+              justify-content: space-between; }
+              .Zb-master-content-project1-container1-1, .Zb-master-content-project1-container1-2, .Zb-master-content-project1-container1-3, .Zb-master-content-project1-container1-4, .Zb-master-content-project1-container2-1, .Zb-master-content-project1-container2-2, .Zb-master-content-project1-container2-3, .Zb-master-content-project1-container2-4, .Zb-master-content-project1-container3-1, .Zb-master-content-project1-container3-2, .Zb-master-content-project1-container3-3, .Zb-master-content-project1-container3-4, .Zb-master-content-project1-container4-1, .Zb-master-content-project1-container4-2, .Zb-master-content-project1-container4-3, .Zb-master-content-project1-container4-4, .Zb-master-content-project1-container5-1, .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3, .Zb-master-content-project1-container5-4 {
+                display: inherit;
+                width: 250px;
+                height: 180px;
+                background-color: white;
+                transition: 1s; }
+                .Zb-master-content-project1-container1-1 img, .Zb-master-content-project1-container1-2 img, .Zb-master-content-project1-container1-3 img, .Zb-master-content-project1-container1-4 img, .Zb-master-content-project1-container2-1 img, .Zb-master-content-project1-container2-2 img, .Zb-master-content-project1-container2-3 img, .Zb-master-content-project1-container2-4 img, .Zb-master-content-project1-container3-1 img, .Zb-master-content-project1-container3-2 img, .Zb-master-content-project1-container3-3 img, .Zb-master-content-project1-container3-4 img, .Zb-master-content-project1-container4-1 img, .Zb-master-content-project1-container4-2 img, .Zb-master-content-project1-container4-3 img, .Zb-master-content-project1-container4-4 img, .Zb-master-content-project1-container5-1 img, .Zb-master-content-project1-container5-2 img, .Zb-master-content-project1-container5-3 img, .Zb-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Zb-master-content-project1-container1-1:hover, .Zb-master-content-project1-container1-2:hover, .Zb-master-content-project1-container1-3:hover, .Zb-master-content-project1-container1-4:hover, .Zb-master-content-project1-container2-1:hover, .Zb-master-content-project1-container2-2:hover, .Zb-master-content-project1-container2-3:hover, .Zb-master-content-project1-container2-4:hover, .Zb-master-content-project1-container3-1:hover, .Zb-master-content-project1-container3-2:hover, .Zb-master-content-project1-container3-3:hover, .Zb-master-content-project1-container3-4:hover, .Zb-master-content-project1-container4-1:hover, .Zb-master-content-project1-container4-2:hover, .Zb-master-content-project1-container4-3:hover, .Zb-master-content-project1-container4-4:hover, .Zb-master-content-project1-container5-1:hover, .Zb-master-content-project1-container5-2:hover, .Zb-master-content-project1-container5-3:hover, .Zb-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Zb-master-content-project1-container5 {
+              justify-content: start; }
+              .Zb-master-content-project1-container5-2, .Zb-master-content-project1-container5-3 {
+                display: none; } }
+
+.Devam {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 80px;
   position: relative;
   justify-content: center;
   padding-right: 28px;
@@ -2384,124 +2626,1338 @@ body.lb-disable-scrolling {
       color: white;
       font-size: 40px;
       font-weight: bold;
-      border-bottom: 1px solid #04BBBB; }
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
     .Devam-master-content {
       display: flex;
       width: 100%;
       height: auto;
+      flex-direction: row;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      justify-content: center; }
+      .Devam-master-content-proje1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .Devam-master-content-proje1 {
+            width: 50%; } }
+        .Devam-master-content-proje1-title {
+          display: inherit;
+          width: 100%;
+          height: auto;
+          padding-bottom: 20px;
+          justify-content: center; }
+          .Devam-master-content-proje1-title h1 {
+            color: white;
+            font-size: 24px; }
+            @media (min-width: 768px) {
+              .Devam-master-content-proje1-title h1 {
+                font-size: 30px; } }
+        .Devam-master-content-proje1-img {
+          display: inherit;
+          width: 100%;
+          height: 180px;
+          background-repeat: no-repeat;
+          background-image: url("/4.447ee639.jpg");
+          background-size: cover;
+          background-position: center;
+          transition: 1s; }
+          @media (min-width: 768px) {
+            .Devam-master-content-proje1-img {
+              height: 300px; } }
+          .Devam-master-content-proje1-img h4 {
+            display: flex;
+            color: white;
+            justify-content: center;
+            padding-top: 100px;
+            opacity: 0;
+            transition: 1s; }
+          .Devam-master-content-proje1-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/4.447ee639.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Devam-master-content-proje1-img:hover h4 {
+              opacity: 1; }
+      .Devam-master-content-proje2 {
+        display: inherit;
+        width: 50%;
+        height: 300px;
+        background-color: green;
+        margin-left: 20px; }
+
+.Tamam {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 40px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Tamam {
+      height: auto;
+      padding-bottom: 100px; } }
+  .Tamam .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Tamam .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Tamam-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Tamam-master {
+        top: 140px; } }
+    .Tamam-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Tamam-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      justify-content: center; }
+      .Tamam-master-content-container1, .Tamam-master-content-container2, .Tamam-master-content-container3 {
+        display: inherit;
+        width: 100%;
+        padding-bottom: 40px;
+        height: auto;
+        flex-direction: column; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container1, .Tamam-master-content-container2, .Tamam-master-content-container3 {
+            flex-direction: row; } }
+        .Tamam-master-content-container1-proje1, .Tamam-master-content-container1-proje2, .Tamam-master-content-container2-proje1, .Tamam-master-content-container2-proje2, .Tamam-master-content-container3-proje1, .Tamam-master-content-container3-proje2 {
+          display: inherit;
+          width: 100%;
+          height: auto;
+          flex-direction: column; }
+          @media (min-width: 768px) {
+            .Tamam-master-content-container1-proje1, .Tamam-master-content-container1-proje2, .Tamam-master-content-container2-proje1, .Tamam-master-content-container2-proje2, .Tamam-master-content-container3-proje1, .Tamam-master-content-container3-proje2 {
+              width: 50%; } }
+          .Tamam-master-content-container1-proje1-title, .Tamam-master-content-container1-proje2-title, .Tamam-master-content-container2-proje1-title, .Tamam-master-content-container2-proje2-title, .Tamam-master-content-container3-proje1-title, .Tamam-master-content-container3-proje2-title {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            padding-bottom: 20px;
+            justify-content: center; }
+            .Tamam-master-content-container1-proje1-title h1, .Tamam-master-content-container1-proje2-title h1, .Tamam-master-content-container2-proje1-title h1, .Tamam-master-content-container2-proje2-title h1, .Tamam-master-content-container3-proje1-title h1, .Tamam-master-content-container3-proje2-title h1 {
+              color: white;
+              font-size: 24px; }
+              @media (min-width: 768px) {
+                .Tamam-master-content-container1-proje1-title h1, .Tamam-master-content-container1-proje2-title h1, .Tamam-master-content-container2-proje1-title h1, .Tamam-master-content-container2-proje2-title h1, .Tamam-master-content-container3-proje1-title h1, .Tamam-master-content-container3-proje2-title h1 {
+                  font-size: 30px; } }
+          .Tamam-master-content-container1-proje1-img, .Tamam-master-content-container1-proje2-img, .Tamam-master-content-container2-proje1-img, .Tamam-master-content-container2-proje2-img, .Tamam-master-content-container3-proje1-img, .Tamam-master-content-container3-proje2-img {
+            display: inherit;
+            width: 100%;
+            height: 180px;
+            transition: 1s; }
+            @media (min-width: 768px) {
+              .Tamam-master-content-container1-proje1-img, .Tamam-master-content-container1-proje2-img, .Tamam-master-content-container2-proje1-img, .Tamam-master-content-container2-proje2-img, .Tamam-master-content-container3-proje1-img, .Tamam-master-content-container3-proje2-img {
+                height: 300px; } }
+            .Tamam-master-content-container1-proje1-img h4, .Tamam-master-content-container1-proje2-img h4, .Tamam-master-content-container2-proje1-img h4, .Tamam-master-content-container2-proje2-img h4, .Tamam-master-content-container3-proje1-img h4, .Tamam-master-content-container3-proje2-img h4 {
+              display: flex;
+              color: white;
+              justify-content: center;
+              padding-top: 100px;
+              opacity: 0;
+              transition: 1s; }
+      .Tamam-master-content-container1-proje1 {
+        margin-right: 0; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container1-proje1 {
+            margin-right: 20px; } }
+        .Tamam-master-content-container1-proje1-img {
+          background-repeat: no-repeat;
+          background-image: url("/49.e110f087.jpg");
+          background-size: cover;
+          background-position: center; }
+          .Tamam-master-content-container1-proje1-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/49.e110f087.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Tamam-master-content-container1-proje1-img:hover h4 {
+              opacity: 1; }
+      .Tamam-master-content-container1-proje2 {
+        margin-left: 0;
+        padding-top: 40px; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container1-proje2 {
+            margin-left: 20px;
+            padding-top: 0; } }
+        .Tamam-master-content-container1-proje2-img {
+          background-repeat: no-repeat;
+          background-image: url("/13.e6b088be.jpg");
+          background-size: cover;
+          background-position: center; }
+          .Tamam-master-content-container1-proje2-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/13.e6b088be.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Tamam-master-content-container1-proje2-img:hover h4 {
+              opacity: 1; }
+      .Tamam-master-content-container2-proje1 {
+        margin-right: 0; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container2-proje1 {
+            margin-right: 20px; } }
+        .Tamam-master-content-container2-proje1-img {
+          background-repeat: no-repeat;
+          background-image: url("/1.ec313a6b.jpg");
+          background-size: cover;
+          background-position: center; }
+          .Tamam-master-content-container2-proje1-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/1.ec313a6b.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Tamam-master-content-container2-proje1-img:hover h4 {
+              opacity: 1; }
+      .Tamam-master-content-container2-proje2 {
+        margin-left: 0;
+        padding-top: 40px; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container2-proje2 {
+            margin-left: 20px;
+            padding-top: 0; } }
+        .Tamam-master-content-container2-proje2-img {
+          background-repeat: no-repeat;
+          background-image: url("/2.98c255ff.jpg");
+          background-size: cover;
+          background-position: center; }
+          .Tamam-master-content-container2-proje2-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/2.98c255ff.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Tamam-master-content-container2-proje2-img:hover h4 {
+              opacity: 1; }
+      .Tamam-master-content-container3-proje1 {
+        margin-right: 0; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container3-proje1 {
+            margin-right: 20px;
+            padding-right: 20px; } }
+        .Tamam-master-content-container3-proje1-img {
+          background-repeat: no-repeat;
+          background-image: url("/4.f934f194.jpg");
+          background-size: cover;
+          background-position: center; }
+          .Tamam-master-content-container3-proje1-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/4.f934f194.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Tamam-master-content-container3-proje1-img:hover h4 {
+              opacity: 1; }
+      .Tamam-master-content-container3-proje2 {
+        margin-left: 0;
+        padding-top: 40px; }
+        @media (min-width: 768px) {
+          .Tamam-master-content-container3-proje2 {
+            margin-left: 20px;
+            padding-top: 0; } }
+        .Tamam-master-content-container3-proje2-img {
+          background-repeat: no-repeat;
+          background-image: url("/6.ea86f133.jpg");
+          background-size: cover;
+          background-position: center; }
+          .Tamam-master-content-container3-proje2-img:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/6.ea86f133.jpg");
+            transition: 1s;
+            transform: scale(1.1); }
+            .Tamam-master-content-container3-proje2-img:hover h4 {
+              opacity: 1; }
+
+.Duhok {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 100px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Duhok {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Duhok .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Duhok .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Duhok-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Duhok-master {
+        top: 140px; } }
+    .Duhok-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Duhok-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
       flex-direction: column; }
-      .Devam-master-content-project1 {
+      .Duhok-master-content-project1 {
         display: inherit;
         width: 100%;
         height: auto;
         margin-top: 40px;
         flex-direction: column; }
-        .Devam-master-content-project1-container1, .Devam-master-content-project1-container2, .Devam-master-content-project1-container3, .Devam-master-content-project1-container4, .Devam-master-content-project1-container5, .Devam-master-content-project1-container6, .Devam-master-content-project1-container7 {
+        .Duhok-master-content-project1-container1, .Duhok-master-content-project1-container2, .Duhok-master-content-project1-container3, .Duhok-master-content-project1-container4, .Duhok-master-content-project1-container5, .Duhok-master-content-project1-container6, .Duhok-master-content-project1-container7 {
           display: inherit;
           width: 100%;
           height: 80px;
           justify-content: space-between; }
-          .Devam-master-content-project1-container1-1, .Devam-master-content-project1-container1-2, .Devam-master-content-project1-container1-3, .Devam-master-content-project1-container1-4, .Devam-master-content-project1-container2-1, .Devam-master-content-project1-container2-2, .Devam-master-content-project1-container2-3, .Devam-master-content-project1-container2-4, .Devam-master-content-project1-container3-1, .Devam-master-content-project1-container3-2, .Devam-master-content-project1-container3-3, .Devam-master-content-project1-container3-4, .Devam-master-content-project1-container4-1, .Devam-master-content-project1-container4-2, .Devam-master-content-project1-container4-3, .Devam-master-content-project1-container4-4, .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3, .Devam-master-content-project1-container5-4, .Devam-master-content-project1-container6-1, .Devam-master-content-project1-container6-2, .Devam-master-content-project1-container6-3, .Devam-master-content-project1-container6-4, .Devam-master-content-project1-container7-1, .Devam-master-content-project1-container7-2, .Devam-master-content-project1-container7-3, .Devam-master-content-project1-container7-4 {
+          .Duhok-master-content-project1-container1-1, .Duhok-master-content-project1-container1-2, .Duhok-master-content-project1-container1-3, .Duhok-master-content-project1-container1-4, .Duhok-master-content-project1-container2-1, .Duhok-master-content-project1-container2-2, .Duhok-master-content-project1-container2-3, .Duhok-master-content-project1-container2-4, .Duhok-master-content-project1-container3-1, .Duhok-master-content-project1-container3-2, .Duhok-master-content-project1-container3-3, .Duhok-master-content-project1-container3-4, .Duhok-master-content-project1-container4-1, .Duhok-master-content-project1-container4-2, .Duhok-master-content-project1-container4-3, .Duhok-master-content-project1-container4-4, .Duhok-master-content-project1-container5-1, .Duhok-master-content-project1-container5-2, .Duhok-master-content-project1-container5-3, .Duhok-master-content-project1-container5-4, .Duhok-master-content-project1-container6-1, .Duhok-master-content-project1-container6-2, .Duhok-master-content-project1-container6-3, .Duhok-master-content-project1-container6-4, .Duhok-master-content-project1-container7-1, .Duhok-master-content-project1-container7-2, .Duhok-master-content-project1-container7-3, .Duhok-master-content-project1-container7-4 {
             display: inherit;
             width: 100px;
             height: 60px;
             background-color: white;
             transition: 1s; }
-            .Devam-master-content-project1-container1-1 img, .Devam-master-content-project1-container1-2 img, .Devam-master-content-project1-container1-3 img, .Devam-master-content-project1-container1-4 img, .Devam-master-content-project1-container2-1 img, .Devam-master-content-project1-container2-2 img, .Devam-master-content-project1-container2-3 img, .Devam-master-content-project1-container2-4 img, .Devam-master-content-project1-container3-1 img, .Devam-master-content-project1-container3-2 img, .Devam-master-content-project1-container3-3 img, .Devam-master-content-project1-container3-4 img, .Devam-master-content-project1-container4-1 img, .Devam-master-content-project1-container4-2 img, .Devam-master-content-project1-container4-3 img, .Devam-master-content-project1-container4-4 img, .Devam-master-content-project1-container5-1 img, .Devam-master-content-project1-container5-2 img, .Devam-master-content-project1-container5-3 img, .Devam-master-content-project1-container5-4 img, .Devam-master-content-project1-container6-1 img, .Devam-master-content-project1-container6-2 img, .Devam-master-content-project1-container6-3 img, .Devam-master-content-project1-container6-4 img, .Devam-master-content-project1-container7-1 img, .Devam-master-content-project1-container7-2 img, .Devam-master-content-project1-container7-3 img, .Devam-master-content-project1-container7-4 img {
+            .Duhok-master-content-project1-container1-1 img, .Duhok-master-content-project1-container1-2 img, .Duhok-master-content-project1-container1-3 img, .Duhok-master-content-project1-container1-4 img, .Duhok-master-content-project1-container2-1 img, .Duhok-master-content-project1-container2-2 img, .Duhok-master-content-project1-container2-3 img, .Duhok-master-content-project1-container2-4 img, .Duhok-master-content-project1-container3-1 img, .Duhok-master-content-project1-container3-2 img, .Duhok-master-content-project1-container3-3 img, .Duhok-master-content-project1-container3-4 img, .Duhok-master-content-project1-container4-1 img, .Duhok-master-content-project1-container4-2 img, .Duhok-master-content-project1-container4-3 img, .Duhok-master-content-project1-container4-4 img, .Duhok-master-content-project1-container5-1 img, .Duhok-master-content-project1-container5-2 img, .Duhok-master-content-project1-container5-3 img, .Duhok-master-content-project1-container5-4 img, .Duhok-master-content-project1-container6-1 img, .Duhok-master-content-project1-container6-2 img, .Duhok-master-content-project1-container6-3 img, .Duhok-master-content-project1-container6-4 img, .Duhok-master-content-project1-container7-1 img, .Duhok-master-content-project1-container7-2 img, .Duhok-master-content-project1-container7-3 img, .Duhok-master-content-project1-container7-4 img {
               width: 100%;
               height: 100%; }
-            .Devam-master-content-project1-container1-1:hover, .Devam-master-content-project1-container1-2:hover, .Devam-master-content-project1-container1-3:hover, .Devam-master-content-project1-container1-4:hover, .Devam-master-content-project1-container2-1:hover, .Devam-master-content-project1-container2-2:hover, .Devam-master-content-project1-container2-3:hover, .Devam-master-content-project1-container2-4:hover, .Devam-master-content-project1-container3-1:hover, .Devam-master-content-project1-container3-2:hover, .Devam-master-content-project1-container3-3:hover, .Devam-master-content-project1-container3-4:hover, .Devam-master-content-project1-container4-1:hover, .Devam-master-content-project1-container4-2:hover, .Devam-master-content-project1-container4-3:hover, .Devam-master-content-project1-container4-4:hover, .Devam-master-content-project1-container5-1:hover, .Devam-master-content-project1-container5-2:hover, .Devam-master-content-project1-container5-3:hover, .Devam-master-content-project1-container5-4:hover, .Devam-master-content-project1-container6-1:hover, .Devam-master-content-project1-container6-2:hover, .Devam-master-content-project1-container6-3:hover, .Devam-master-content-project1-container6-4:hover, .Devam-master-content-project1-container7-1:hover, .Devam-master-content-project1-container7-2:hover, .Devam-master-content-project1-container7-3:hover, .Devam-master-content-project1-container7-4:hover {
+            .Duhok-master-content-project1-container1-1:hover, .Duhok-master-content-project1-container1-2:hover, .Duhok-master-content-project1-container1-3:hover, .Duhok-master-content-project1-container1-4:hover, .Duhok-master-content-project1-container2-1:hover, .Duhok-master-content-project1-container2-2:hover, .Duhok-master-content-project1-container2-3:hover, .Duhok-master-content-project1-container2-4:hover, .Duhok-master-content-project1-container3-1:hover, .Duhok-master-content-project1-container3-2:hover, .Duhok-master-content-project1-container3-3:hover, .Duhok-master-content-project1-container3-4:hover, .Duhok-master-content-project1-container4-1:hover, .Duhok-master-content-project1-container4-2:hover, .Duhok-master-content-project1-container4-3:hover, .Duhok-master-content-project1-container4-4:hover, .Duhok-master-content-project1-container5-1:hover, .Duhok-master-content-project1-container5-2:hover, .Duhok-master-content-project1-container5-3:hover, .Duhok-master-content-project1-container5-4:hover, .Duhok-master-content-project1-container6-1:hover, .Duhok-master-content-project1-container6-2:hover, .Duhok-master-content-project1-container6-3:hover, .Duhok-master-content-project1-container6-4:hover, .Duhok-master-content-project1-container7-1:hover, .Duhok-master-content-project1-container7-2:hover, .Duhok-master-content-project1-container7-3:hover, .Duhok-master-content-project1-container7-4:hover {
               transform: scale(1.1); }
-          .Devam-master-content-project1-container1-4, .Devam-master-content-project1-container2-4, .Devam-master-content-project1-container3-4, .Devam-master-content-project1-container4-4, .Devam-master-content-project1-container5-4, .Devam-master-content-project1-container6-4, .Devam-master-content-project1-container7-4 {
+          .Duhok-master-content-project1-container1-4, .Duhok-master-content-project1-container2-4, .Duhok-master-content-project1-container3-4, .Duhok-master-content-project1-container4-4, .Duhok-master-content-project1-container5-4, .Duhok-master-content-project1-container6-4, .Duhok-master-content-project1-container7-4 {
             display: none; }
-        .Devam-master-content-project1-container7 {
-          justify-content: start; }
-        .Devam-master-content-project1 h1 {
+        .Duhok-master-content-project1-container2 {
+          justify-content: space-around; }
+        .Duhok-master-content-project1 h1 {
           color: white;
           padding-bottom: 20px; }
         @media (min-width: 768px) {
-          .Devam-master-content-project1 {
+          .Duhok-master-content-project1 {
             display: inherit;
             width: 100%;
             height: auto;
             margin-top: 40px;
             flex-direction: column; }
-            .Devam-master-content-project1-container6, .Devam-master-content-project1-container7 {
+            .Duhok-master-content-project1-container6, .Duhok-master-content-project1-container7 {
               display: none; }
-            .Devam-master-content-project1-container1, .Devam-master-content-project1-container2, .Devam-master-content-project1-container3, .Devam-master-content-project1-container4, .Devam-master-content-project1-container5 {
+            .Duhok-master-content-project1-container1, .Duhok-master-content-project1-container2, .Duhok-master-content-project1-container3, .Duhok-master-content-project1-container4, .Duhok-master-content-project1-container5 {
               display: inherit;
               width: 100%;
               height: 160px;
               justify-content: space-between; }
-              .Devam-master-content-project1-container1-1, .Devam-master-content-project1-container1-2, .Devam-master-content-project1-container1-3, .Devam-master-content-project1-container1-4, .Devam-master-content-project1-container2-1, .Devam-master-content-project1-container2-2, .Devam-master-content-project1-container2-3, .Devam-master-content-project1-container2-4, .Devam-master-content-project1-container3-1, .Devam-master-content-project1-container3-2, .Devam-master-content-project1-container3-3, .Devam-master-content-project1-container3-4, .Devam-master-content-project1-container4-1, .Devam-master-content-project1-container4-2, .Devam-master-content-project1-container4-3, .Devam-master-content-project1-container4-4, .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3, .Devam-master-content-project1-container5-4 {
+              .Duhok-master-content-project1-container1-1, .Duhok-master-content-project1-container1-2, .Duhok-master-content-project1-container1-3, .Duhok-master-content-project1-container1-4, .Duhok-master-content-project1-container2-1, .Duhok-master-content-project1-container2-2, .Duhok-master-content-project1-container2-3, .Duhok-master-content-project1-container2-4, .Duhok-master-content-project1-container3-1, .Duhok-master-content-project1-container3-2, .Duhok-master-content-project1-container3-3, .Duhok-master-content-project1-container3-4, .Duhok-master-content-project1-container4-1, .Duhok-master-content-project1-container4-2, .Duhok-master-content-project1-container4-3, .Duhok-master-content-project1-container4-4, .Duhok-master-content-project1-container5-1, .Duhok-master-content-project1-container5-2, .Duhok-master-content-project1-container5-3, .Duhok-master-content-project1-container5-4 {
                 display: inherit;
                 width: 170px;
                 height: 110px;
                 background-color: white;
                 transition: 1s; }
-                .Devam-master-content-project1-container1-1 img, .Devam-master-content-project1-container1-2 img, .Devam-master-content-project1-container1-3 img, .Devam-master-content-project1-container1-4 img, .Devam-master-content-project1-container2-1 img, .Devam-master-content-project1-container2-2 img, .Devam-master-content-project1-container2-3 img, .Devam-master-content-project1-container2-4 img, .Devam-master-content-project1-container3-1 img, .Devam-master-content-project1-container3-2 img, .Devam-master-content-project1-container3-3 img, .Devam-master-content-project1-container3-4 img, .Devam-master-content-project1-container4-1 img, .Devam-master-content-project1-container4-2 img, .Devam-master-content-project1-container4-3 img, .Devam-master-content-project1-container4-4 img, .Devam-master-content-project1-container5-1 img, .Devam-master-content-project1-container5-2 img, .Devam-master-content-project1-container5-3 img, .Devam-master-content-project1-container5-4 img {
+                .Duhok-master-content-project1-container1-1 img, .Duhok-master-content-project1-container1-2 img, .Duhok-master-content-project1-container1-3 img, .Duhok-master-content-project1-container1-4 img, .Duhok-master-content-project1-container2-1 img, .Duhok-master-content-project1-container2-2 img, .Duhok-master-content-project1-container2-3 img, .Duhok-master-content-project1-container2-4 img, .Duhok-master-content-project1-container3-1 img, .Duhok-master-content-project1-container3-2 img, .Duhok-master-content-project1-container3-3 img, .Duhok-master-content-project1-container3-4 img, .Duhok-master-content-project1-container4-1 img, .Duhok-master-content-project1-container4-2 img, .Duhok-master-content-project1-container4-3 img, .Duhok-master-content-project1-container4-4 img, .Duhok-master-content-project1-container5-1 img, .Duhok-master-content-project1-container5-2 img, .Duhok-master-content-project1-container5-3 img, .Duhok-master-content-project1-container5-4 img {
                   width: 100%;
                   height: 100%; }
-                .Devam-master-content-project1-container1-1:hover, .Devam-master-content-project1-container1-2:hover, .Devam-master-content-project1-container1-3:hover, .Devam-master-content-project1-container1-4:hover, .Devam-master-content-project1-container2-1:hover, .Devam-master-content-project1-container2-2:hover, .Devam-master-content-project1-container2-3:hover, .Devam-master-content-project1-container2-4:hover, .Devam-master-content-project1-container3-1:hover, .Devam-master-content-project1-container3-2:hover, .Devam-master-content-project1-container3-3:hover, .Devam-master-content-project1-container3-4:hover, .Devam-master-content-project1-container4-1:hover, .Devam-master-content-project1-container4-2:hover, .Devam-master-content-project1-container4-3:hover, .Devam-master-content-project1-container4-4:hover, .Devam-master-content-project1-container5-1:hover, .Devam-master-content-project1-container5-2:hover, .Devam-master-content-project1-container5-3:hover, .Devam-master-content-project1-container5-4:hover {
+                .Duhok-master-content-project1-container1-1:hover, .Duhok-master-content-project1-container1-2:hover, .Duhok-master-content-project1-container1-3:hover, .Duhok-master-content-project1-container1-4:hover, .Duhok-master-content-project1-container2-1:hover, .Duhok-master-content-project1-container2-2:hover, .Duhok-master-content-project1-container2-3:hover, .Duhok-master-content-project1-container2-4:hover, .Duhok-master-content-project1-container3-1:hover, .Duhok-master-content-project1-container3-2:hover, .Duhok-master-content-project1-container3-3:hover, .Duhok-master-content-project1-container3-4:hover, .Duhok-master-content-project1-container4-1:hover, .Duhok-master-content-project1-container4-2:hover, .Duhok-master-content-project1-container4-3:hover, .Duhok-master-content-project1-container4-4:hover, .Duhok-master-content-project1-container5-1:hover, .Duhok-master-content-project1-container5-2:hover, .Duhok-master-content-project1-container5-3:hover, .Duhok-master-content-project1-container5-4:hover {
                   transform: scale(1.1); }
-            .Devam-master-content-project1-container5 {
-              justify-content: center; }
-              .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3 {
-                margin-right: 34px; } }
+            .Duhok-master-content-project1-container2 {
+              justify-content: flex-start; }
+              .Duhok-master-content-project1-container2-2 {
+                display: none; } }
         @media (min-width: 992px) {
-          .Devam-master-content-project1 {
+          .Duhok-master-content-project1 {
             display: inherit;
             width: 100%;
             height: auto;
             margin-top: 40px;
             flex-direction: column; }
-            .Devam-master-content-project1-container1, .Devam-master-content-project1-container2, .Devam-master-content-project1-container3, .Devam-master-content-project1-container4, .Devam-master-content-project1-container5 {
+            .Duhok-master-content-project1-container1, .Duhok-master-content-project1-container2, .Duhok-master-content-project1-container3, .Duhok-master-content-project1-container4, .Duhok-master-content-project1-container5 {
               display: inherit;
               width: 100%;
               height: 190px;
               justify-content: space-between; }
-              .Devam-master-content-project1-container1-1, .Devam-master-content-project1-container1-2, .Devam-master-content-project1-container1-3, .Devam-master-content-project1-container1-4, .Devam-master-content-project1-container2-1, .Devam-master-content-project1-container2-2, .Devam-master-content-project1-container2-3, .Devam-master-content-project1-container2-4, .Devam-master-content-project1-container3-1, .Devam-master-content-project1-container3-2, .Devam-master-content-project1-container3-3, .Devam-master-content-project1-container3-4, .Devam-master-content-project1-container4-1, .Devam-master-content-project1-container4-2, .Devam-master-content-project1-container4-3, .Devam-master-content-project1-container4-4, .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3, .Devam-master-content-project1-container5-4 {
+              .Duhok-master-content-project1-container1-1, .Duhok-master-content-project1-container1-2, .Duhok-master-content-project1-container1-3, .Duhok-master-content-project1-container1-4, .Duhok-master-content-project1-container2-1, .Duhok-master-content-project1-container2-2, .Duhok-master-content-project1-container2-3, .Duhok-master-content-project1-container2-4, .Duhok-master-content-project1-container3-1, .Duhok-master-content-project1-container3-2, .Duhok-master-content-project1-container3-3, .Duhok-master-content-project1-container3-4, .Duhok-master-content-project1-container4-1, .Duhok-master-content-project1-container4-2, .Duhok-master-content-project1-container4-3, .Duhok-master-content-project1-container4-4, .Duhok-master-content-project1-container5-1, .Duhok-master-content-project1-container5-2, .Duhok-master-content-project1-container5-3, .Duhok-master-content-project1-container5-4 {
                 display: inherit;
                 width: 215px;
                 height: 150px;
                 background-color: white;
                 transition: 1s; }
-                .Devam-master-content-project1-container1-1 img, .Devam-master-content-project1-container1-2 img, .Devam-master-content-project1-container1-3 img, .Devam-master-content-project1-container1-4 img, .Devam-master-content-project1-container2-1 img, .Devam-master-content-project1-container2-2 img, .Devam-master-content-project1-container2-3 img, .Devam-master-content-project1-container2-4 img, .Devam-master-content-project1-container3-1 img, .Devam-master-content-project1-container3-2 img, .Devam-master-content-project1-container3-3 img, .Devam-master-content-project1-container3-4 img, .Devam-master-content-project1-container4-1 img, .Devam-master-content-project1-container4-2 img, .Devam-master-content-project1-container4-3 img, .Devam-master-content-project1-container4-4 img, .Devam-master-content-project1-container5-1 img, .Devam-master-content-project1-container5-2 img, .Devam-master-content-project1-container5-3 img, .Devam-master-content-project1-container5-4 img {
+                .Duhok-master-content-project1-container1-1 img, .Duhok-master-content-project1-container1-2 img, .Duhok-master-content-project1-container1-3 img, .Duhok-master-content-project1-container1-4 img, .Duhok-master-content-project1-container2-1 img, .Duhok-master-content-project1-container2-2 img, .Duhok-master-content-project1-container2-3 img, .Duhok-master-content-project1-container2-4 img, .Duhok-master-content-project1-container3-1 img, .Duhok-master-content-project1-container3-2 img, .Duhok-master-content-project1-container3-3 img, .Duhok-master-content-project1-container3-4 img, .Duhok-master-content-project1-container4-1 img, .Duhok-master-content-project1-container4-2 img, .Duhok-master-content-project1-container4-3 img, .Duhok-master-content-project1-container4-4 img, .Duhok-master-content-project1-container5-1 img, .Duhok-master-content-project1-container5-2 img, .Duhok-master-content-project1-container5-3 img, .Duhok-master-content-project1-container5-4 img {
                   width: 100%;
                   height: 100%; }
-                .Devam-master-content-project1-container1-1:hover, .Devam-master-content-project1-container1-2:hover, .Devam-master-content-project1-container1-3:hover, .Devam-master-content-project1-container1-4:hover, .Devam-master-content-project1-container2-1:hover, .Devam-master-content-project1-container2-2:hover, .Devam-master-content-project1-container2-3:hover, .Devam-master-content-project1-container2-4:hover, .Devam-master-content-project1-container3-1:hover, .Devam-master-content-project1-container3-2:hover, .Devam-master-content-project1-container3-3:hover, .Devam-master-content-project1-container3-4:hover, .Devam-master-content-project1-container4-1:hover, .Devam-master-content-project1-container4-2:hover, .Devam-master-content-project1-container4-3:hover, .Devam-master-content-project1-container4-4:hover, .Devam-master-content-project1-container5-1:hover, .Devam-master-content-project1-container5-2:hover, .Devam-master-content-project1-container5-3:hover, .Devam-master-content-project1-container5-4:hover {
+                .Duhok-master-content-project1-container1-1:hover, .Duhok-master-content-project1-container1-2:hover, .Duhok-master-content-project1-container1-3:hover, .Duhok-master-content-project1-container1-4:hover, .Duhok-master-content-project1-container2-1:hover, .Duhok-master-content-project1-container2-2:hover, .Duhok-master-content-project1-container2-3:hover, .Duhok-master-content-project1-container2-4:hover, .Duhok-master-content-project1-container3-1:hover, .Duhok-master-content-project1-container3-2:hover, .Duhok-master-content-project1-container3-3:hover, .Duhok-master-content-project1-container3-4:hover, .Duhok-master-content-project1-container4-1:hover, .Duhok-master-content-project1-container4-2:hover, .Duhok-master-content-project1-container4-3:hover, .Duhok-master-content-project1-container4-4:hover, .Duhok-master-content-project1-container5-1:hover, .Duhok-master-content-project1-container5-2:hover, .Duhok-master-content-project1-container5-3:hover, .Duhok-master-content-project1-container5-4:hover {
                   transform: scale(1.1); }
-            .Devam-master-content-project1-container5 {
-              justify-content: center; }
-              .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3 {
-                margin-right: 34px; } }
+            .Duhok-master-content-project1-container2 {
+              justify-content: flex-start; }
+              .Duhok-master-content-project1-container2-2 {
+                display: none; } }
         @media (min-width: 1200px) {
-          .Devam-master-content-project1 {
+          .Duhok-master-content-project1 {
             display: inherit;
             width: 100%;
             height: auto;
             margin-top: 40px;
             flex-direction: column; }
-            .Devam-master-content-project1-container1, .Devam-master-content-project1-container2, .Devam-master-content-project1-container3, .Devam-master-content-project1-container4, .Devam-master-content-project1-container5 {
+            .Duhok-master-content-project1-container1, .Duhok-master-content-project1-container2, .Duhok-master-content-project1-container3, .Duhok-master-content-project1-container4, .Duhok-master-content-project1-container5 {
               display: inherit;
               width: 100%;
               height: 220px;
               justify-content: space-between; }
-              .Devam-master-content-project1-container1-1, .Devam-master-content-project1-container1-2, .Devam-master-content-project1-container1-3, .Devam-master-content-project1-container1-4, .Devam-master-content-project1-container2-1, .Devam-master-content-project1-container2-2, .Devam-master-content-project1-container2-3, .Devam-master-content-project1-container2-4, .Devam-master-content-project1-container3-1, .Devam-master-content-project1-container3-2, .Devam-master-content-project1-container3-3, .Devam-master-content-project1-container3-4, .Devam-master-content-project1-container4-1, .Devam-master-content-project1-container4-2, .Devam-master-content-project1-container4-3, .Devam-master-content-project1-container4-4, .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3, .Devam-master-content-project1-container5-4 {
+              .Duhok-master-content-project1-container1-1, .Duhok-master-content-project1-container1-2, .Duhok-master-content-project1-container1-3, .Duhok-master-content-project1-container1-4, .Duhok-master-content-project1-container2-1, .Duhok-master-content-project1-container2-2, .Duhok-master-content-project1-container2-3, .Duhok-master-content-project1-container2-4, .Duhok-master-content-project1-container3-1, .Duhok-master-content-project1-container3-2, .Duhok-master-content-project1-container3-3, .Duhok-master-content-project1-container3-4, .Duhok-master-content-project1-container4-1, .Duhok-master-content-project1-container4-2, .Duhok-master-content-project1-container4-3, .Duhok-master-content-project1-container4-4, .Duhok-master-content-project1-container5-1, .Duhok-master-content-project1-container5-2, .Duhok-master-content-project1-container5-3, .Duhok-master-content-project1-container5-4 {
                 display: inherit;
                 width: 250px;
                 height: 180px;
                 background-color: white;
                 transition: 1s; }
-                .Devam-master-content-project1-container1-1 img, .Devam-master-content-project1-container1-2 img, .Devam-master-content-project1-container1-3 img, .Devam-master-content-project1-container1-4 img, .Devam-master-content-project1-container2-1 img, .Devam-master-content-project1-container2-2 img, .Devam-master-content-project1-container2-3 img, .Devam-master-content-project1-container2-4 img, .Devam-master-content-project1-container3-1 img, .Devam-master-content-project1-container3-2 img, .Devam-master-content-project1-container3-3 img, .Devam-master-content-project1-container3-4 img, .Devam-master-content-project1-container4-1 img, .Devam-master-content-project1-container4-2 img, .Devam-master-content-project1-container4-3 img, .Devam-master-content-project1-container4-4 img, .Devam-master-content-project1-container5-1 img, .Devam-master-content-project1-container5-2 img, .Devam-master-content-project1-container5-3 img, .Devam-master-content-project1-container5-4 img {
+                .Duhok-master-content-project1-container1-1 img, .Duhok-master-content-project1-container1-2 img, .Duhok-master-content-project1-container1-3 img, .Duhok-master-content-project1-container1-4 img, .Duhok-master-content-project1-container2-1 img, .Duhok-master-content-project1-container2-2 img, .Duhok-master-content-project1-container2-3 img, .Duhok-master-content-project1-container2-4 img, .Duhok-master-content-project1-container3-1 img, .Duhok-master-content-project1-container3-2 img, .Duhok-master-content-project1-container3-3 img, .Duhok-master-content-project1-container3-4 img, .Duhok-master-content-project1-container4-1 img, .Duhok-master-content-project1-container4-2 img, .Duhok-master-content-project1-container4-3 img, .Duhok-master-content-project1-container4-4 img, .Duhok-master-content-project1-container5-1 img, .Duhok-master-content-project1-container5-2 img, .Duhok-master-content-project1-container5-3 img, .Duhok-master-content-project1-container5-4 img {
                   width: 100%;
                   height: 100%; }
-                .Devam-master-content-project1-container1-1:hover, .Devam-master-content-project1-container1-2:hover, .Devam-master-content-project1-container1-3:hover, .Devam-master-content-project1-container1-4:hover, .Devam-master-content-project1-container2-1:hover, .Devam-master-content-project1-container2-2:hover, .Devam-master-content-project1-container2-3:hover, .Devam-master-content-project1-container2-4:hover, .Devam-master-content-project1-container3-1:hover, .Devam-master-content-project1-container3-2:hover, .Devam-master-content-project1-container3-3:hover, .Devam-master-content-project1-container3-4:hover, .Devam-master-content-project1-container4-1:hover, .Devam-master-content-project1-container4-2:hover, .Devam-master-content-project1-container4-3:hover, .Devam-master-content-project1-container4-4:hover, .Devam-master-content-project1-container5-1:hover, .Devam-master-content-project1-container5-2:hover, .Devam-master-content-project1-container5-3:hover, .Devam-master-content-project1-container5-4:hover {
+                .Duhok-master-content-project1-container1-1:hover, .Duhok-master-content-project1-container1-2:hover, .Duhok-master-content-project1-container1-3:hover, .Duhok-master-content-project1-container1-4:hover, .Duhok-master-content-project1-container2-1:hover, .Duhok-master-content-project1-container2-2:hover, .Duhok-master-content-project1-container2-3:hover, .Duhok-master-content-project1-container2-4:hover, .Duhok-master-content-project1-container3-1:hover, .Duhok-master-content-project1-container3-2:hover, .Duhok-master-content-project1-container3-3:hover, .Duhok-master-content-project1-container3-4:hover, .Duhok-master-content-project1-container4-1:hover, .Duhok-master-content-project1-container4-2:hover, .Duhok-master-content-project1-container4-3:hover, .Duhok-master-content-project1-container4-4:hover, .Duhok-master-content-project1-container5-1:hover, .Duhok-master-content-project1-container5-2:hover, .Duhok-master-content-project1-container5-3:hover, .Duhok-master-content-project1-container5-4:hover {
                   transform: scale(1.1); }
-            .Devam-master-content-project1-container5 {
+            .Duhok-master-content-project1-container2 {
+              justify-content: flex-start; }
+              .Duhok-master-content-project1-container2-2 {
+                display: none; } }
+
+.Bahcesehir_tadilat {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 100px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Bahcesehir_tadilat {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Bahcesehir_tadilat .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Bahcesehir_tadilat .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Bahcesehir_tadilat-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Bahcesehir_tadilat-master {
+        top: 140px; } }
+    .Bahcesehir_tadilat-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Bahcesehir_tadilat-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; }
+      .Bahcesehir_tadilat-master-content-project1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        flex-direction: column; }
+        .Bahcesehir_tadilat-master-content-project1-container1, .Bahcesehir_tadilat-master-content-project1-container2, .Bahcesehir_tadilat-master-content-project1-container3, .Bahcesehir_tadilat-master-content-project1-container4, .Bahcesehir_tadilat-master-content-project1-container5, .Bahcesehir_tadilat-master-content-project1-container6, .Bahcesehir_tadilat-master-content-project1-container7 {
+          display: inherit;
+          width: 100%;
+          height: 80px;
+          justify-content: space-between; }
+          .Bahcesehir_tadilat-master-content-project1-container1-1, .Bahcesehir_tadilat-master-content-project1-container1-2, .Bahcesehir_tadilat-master-content-project1-container1-3, .Bahcesehir_tadilat-master-content-project1-container1-4, .Bahcesehir_tadilat-master-content-project1-container2-1, .Bahcesehir_tadilat-master-content-project1-container2-2, .Bahcesehir_tadilat-master-content-project1-container2-3, .Bahcesehir_tadilat-master-content-project1-container2-4, .Bahcesehir_tadilat-master-content-project1-container3-1, .Bahcesehir_tadilat-master-content-project1-container3-2, .Bahcesehir_tadilat-master-content-project1-container3-3, .Bahcesehir_tadilat-master-content-project1-container3-4, .Bahcesehir_tadilat-master-content-project1-container4-1, .Bahcesehir_tadilat-master-content-project1-container4-2, .Bahcesehir_tadilat-master-content-project1-container4-3, .Bahcesehir_tadilat-master-content-project1-container4-4, .Bahcesehir_tadilat-master-content-project1-container5-1, .Bahcesehir_tadilat-master-content-project1-container5-2, .Bahcesehir_tadilat-master-content-project1-container5-3, .Bahcesehir_tadilat-master-content-project1-container5-4, .Bahcesehir_tadilat-master-content-project1-container6-1, .Bahcesehir_tadilat-master-content-project1-container6-2, .Bahcesehir_tadilat-master-content-project1-container6-3, .Bahcesehir_tadilat-master-content-project1-container6-4, .Bahcesehir_tadilat-master-content-project1-container7-1, .Bahcesehir_tadilat-master-content-project1-container7-2, .Bahcesehir_tadilat-master-content-project1-container7-3, .Bahcesehir_tadilat-master-content-project1-container7-4 {
+            display: inherit;
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            transition: 1s; }
+            .Bahcesehir_tadilat-master-content-project1-container1-1 img, .Bahcesehir_tadilat-master-content-project1-container1-2 img, .Bahcesehir_tadilat-master-content-project1-container1-3 img, .Bahcesehir_tadilat-master-content-project1-container1-4 img, .Bahcesehir_tadilat-master-content-project1-container2-1 img, .Bahcesehir_tadilat-master-content-project1-container2-2 img, .Bahcesehir_tadilat-master-content-project1-container2-3 img, .Bahcesehir_tadilat-master-content-project1-container2-4 img, .Bahcesehir_tadilat-master-content-project1-container3-1 img, .Bahcesehir_tadilat-master-content-project1-container3-2 img, .Bahcesehir_tadilat-master-content-project1-container3-3 img, .Bahcesehir_tadilat-master-content-project1-container3-4 img, .Bahcesehir_tadilat-master-content-project1-container4-1 img, .Bahcesehir_tadilat-master-content-project1-container4-2 img, .Bahcesehir_tadilat-master-content-project1-container4-3 img, .Bahcesehir_tadilat-master-content-project1-container4-4 img, .Bahcesehir_tadilat-master-content-project1-container5-1 img, .Bahcesehir_tadilat-master-content-project1-container5-2 img, .Bahcesehir_tadilat-master-content-project1-container5-3 img, .Bahcesehir_tadilat-master-content-project1-container5-4 img, .Bahcesehir_tadilat-master-content-project1-container6-1 img, .Bahcesehir_tadilat-master-content-project1-container6-2 img, .Bahcesehir_tadilat-master-content-project1-container6-3 img, .Bahcesehir_tadilat-master-content-project1-container6-4 img, .Bahcesehir_tadilat-master-content-project1-container7-1 img, .Bahcesehir_tadilat-master-content-project1-container7-2 img, .Bahcesehir_tadilat-master-content-project1-container7-3 img, .Bahcesehir_tadilat-master-content-project1-container7-4 img {
+              width: 100%;
+              height: 100%; }
+            .Bahcesehir_tadilat-master-content-project1-container1-1:hover, .Bahcesehir_tadilat-master-content-project1-container1-2:hover, .Bahcesehir_tadilat-master-content-project1-container1-3:hover, .Bahcesehir_tadilat-master-content-project1-container1-4:hover, .Bahcesehir_tadilat-master-content-project1-container2-1:hover, .Bahcesehir_tadilat-master-content-project1-container2-2:hover, .Bahcesehir_tadilat-master-content-project1-container2-3:hover, .Bahcesehir_tadilat-master-content-project1-container2-4:hover, .Bahcesehir_tadilat-master-content-project1-container3-1:hover, .Bahcesehir_tadilat-master-content-project1-container3-2:hover, .Bahcesehir_tadilat-master-content-project1-container3-3:hover, .Bahcesehir_tadilat-master-content-project1-container3-4:hover, .Bahcesehir_tadilat-master-content-project1-container4-1:hover, .Bahcesehir_tadilat-master-content-project1-container4-2:hover, .Bahcesehir_tadilat-master-content-project1-container4-3:hover, .Bahcesehir_tadilat-master-content-project1-container4-4:hover, .Bahcesehir_tadilat-master-content-project1-container5-1:hover, .Bahcesehir_tadilat-master-content-project1-container5-2:hover, .Bahcesehir_tadilat-master-content-project1-container5-3:hover, .Bahcesehir_tadilat-master-content-project1-container5-4:hover, .Bahcesehir_tadilat-master-content-project1-container6-1:hover, .Bahcesehir_tadilat-master-content-project1-container6-2:hover, .Bahcesehir_tadilat-master-content-project1-container6-3:hover, .Bahcesehir_tadilat-master-content-project1-container6-4:hover, .Bahcesehir_tadilat-master-content-project1-container7-1:hover, .Bahcesehir_tadilat-master-content-project1-container7-2:hover, .Bahcesehir_tadilat-master-content-project1-container7-3:hover, .Bahcesehir_tadilat-master-content-project1-container7-4:hover {
+              transform: scale(1.1); }
+          .Bahcesehir_tadilat-master-content-project1-container1-4, .Bahcesehir_tadilat-master-content-project1-container2-4, .Bahcesehir_tadilat-master-content-project1-container3-4, .Bahcesehir_tadilat-master-content-project1-container4-4, .Bahcesehir_tadilat-master-content-project1-container5-4, .Bahcesehir_tadilat-master-content-project1-container6-4, .Bahcesehir_tadilat-master-content-project1-container7-4 {
+            display: none; }
+        .Bahcesehir_tadilat-master-content-project1-container2 {
+          justify-content: start; }
+        .Bahcesehir_tadilat-master-content-project1 h1 {
+          color: white;
+          padding-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Bahcesehir_tadilat-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Bahcesehir_tadilat-master-content-project1-container6, .Bahcesehir_tadilat-master-content-project1-container7 {
+              display: none; }
+            .Bahcesehir_tadilat-master-content-project1-container1, .Bahcesehir_tadilat-master-content-project1-container2, .Bahcesehir_tadilat-master-content-project1-container3, .Bahcesehir_tadilat-master-content-project1-container4, .Bahcesehir_tadilat-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 160px;
+              justify-content: space-between; }
+              .Bahcesehir_tadilat-master-content-project1-container1-1, .Bahcesehir_tadilat-master-content-project1-container1-2, .Bahcesehir_tadilat-master-content-project1-container1-3, .Bahcesehir_tadilat-master-content-project1-container1-4, .Bahcesehir_tadilat-master-content-project1-container2-1, .Bahcesehir_tadilat-master-content-project1-container2-2, .Bahcesehir_tadilat-master-content-project1-container2-3, .Bahcesehir_tadilat-master-content-project1-container2-4, .Bahcesehir_tadilat-master-content-project1-container3-1, .Bahcesehir_tadilat-master-content-project1-container3-2, .Bahcesehir_tadilat-master-content-project1-container3-3, .Bahcesehir_tadilat-master-content-project1-container3-4, .Bahcesehir_tadilat-master-content-project1-container4-1, .Bahcesehir_tadilat-master-content-project1-container4-2, .Bahcesehir_tadilat-master-content-project1-container4-3, .Bahcesehir_tadilat-master-content-project1-container4-4, .Bahcesehir_tadilat-master-content-project1-container5-1, .Bahcesehir_tadilat-master-content-project1-container5-2, .Bahcesehir_tadilat-master-content-project1-container5-3, .Bahcesehir_tadilat-master-content-project1-container5-4 {
+                display: inherit;
+                width: 170px;
+                height: 110px;
+                background-color: white;
+                transition: 1s; }
+                .Bahcesehir_tadilat-master-content-project1-container1-1 img, .Bahcesehir_tadilat-master-content-project1-container1-2 img, .Bahcesehir_tadilat-master-content-project1-container1-3 img, .Bahcesehir_tadilat-master-content-project1-container1-4 img, .Bahcesehir_tadilat-master-content-project1-container2-1 img, .Bahcesehir_tadilat-master-content-project1-container2-2 img, .Bahcesehir_tadilat-master-content-project1-container2-3 img, .Bahcesehir_tadilat-master-content-project1-container2-4 img, .Bahcesehir_tadilat-master-content-project1-container3-1 img, .Bahcesehir_tadilat-master-content-project1-container3-2 img, .Bahcesehir_tadilat-master-content-project1-container3-3 img, .Bahcesehir_tadilat-master-content-project1-container3-4 img, .Bahcesehir_tadilat-master-content-project1-container4-1 img, .Bahcesehir_tadilat-master-content-project1-container4-2 img, .Bahcesehir_tadilat-master-content-project1-container4-3 img, .Bahcesehir_tadilat-master-content-project1-container4-4 img, .Bahcesehir_tadilat-master-content-project1-container5-1 img, .Bahcesehir_tadilat-master-content-project1-container5-2 img, .Bahcesehir_tadilat-master-content-project1-container5-3 img, .Bahcesehir_tadilat-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Bahcesehir_tadilat-master-content-project1-container1-1:hover, .Bahcesehir_tadilat-master-content-project1-container1-2:hover, .Bahcesehir_tadilat-master-content-project1-container1-3:hover, .Bahcesehir_tadilat-master-content-project1-container1-4:hover, .Bahcesehir_tadilat-master-content-project1-container2-1:hover, .Bahcesehir_tadilat-master-content-project1-container2-2:hover, .Bahcesehir_tadilat-master-content-project1-container2-3:hover, .Bahcesehir_tadilat-master-content-project1-container2-4:hover, .Bahcesehir_tadilat-master-content-project1-container3-1:hover, .Bahcesehir_tadilat-master-content-project1-container3-2:hover, .Bahcesehir_tadilat-master-content-project1-container3-3:hover, .Bahcesehir_tadilat-master-content-project1-container3-4:hover, .Bahcesehir_tadilat-master-content-project1-container4-1:hover, .Bahcesehir_tadilat-master-content-project1-container4-2:hover, .Bahcesehir_tadilat-master-content-project1-container4-3:hover, .Bahcesehir_tadilat-master-content-project1-container4-4:hover, .Bahcesehir_tadilat-master-content-project1-container5-1:hover, .Bahcesehir_tadilat-master-content-project1-container5-2:hover, .Bahcesehir_tadilat-master-content-project1-container5-3:hover, .Bahcesehir_tadilat-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Bahcesehir_tadilat-master-content-project1-container2 {
+              display: none; } }
+        @media (min-width: 992px) {
+          .Bahcesehir_tadilat-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Bahcesehir_tadilat-master-content-project1-container1, .Bahcesehir_tadilat-master-content-project1-container2, .Bahcesehir_tadilat-master-content-project1-container3, .Bahcesehir_tadilat-master-content-project1-container4, .Bahcesehir_tadilat-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 190px;
+              justify-content: space-between; }
+              .Bahcesehir_tadilat-master-content-project1-container1-1, .Bahcesehir_tadilat-master-content-project1-container1-2, .Bahcesehir_tadilat-master-content-project1-container1-3, .Bahcesehir_tadilat-master-content-project1-container1-4, .Bahcesehir_tadilat-master-content-project1-container2-1, .Bahcesehir_tadilat-master-content-project1-container2-2, .Bahcesehir_tadilat-master-content-project1-container2-3, .Bahcesehir_tadilat-master-content-project1-container2-4, .Bahcesehir_tadilat-master-content-project1-container3-1, .Bahcesehir_tadilat-master-content-project1-container3-2, .Bahcesehir_tadilat-master-content-project1-container3-3, .Bahcesehir_tadilat-master-content-project1-container3-4, .Bahcesehir_tadilat-master-content-project1-container4-1, .Bahcesehir_tadilat-master-content-project1-container4-2, .Bahcesehir_tadilat-master-content-project1-container4-3, .Bahcesehir_tadilat-master-content-project1-container4-4, .Bahcesehir_tadilat-master-content-project1-container5-1, .Bahcesehir_tadilat-master-content-project1-container5-2, .Bahcesehir_tadilat-master-content-project1-container5-3, .Bahcesehir_tadilat-master-content-project1-container5-4 {
+                display: inherit;
+                width: 215px;
+                height: 150px;
+                background-color: white;
+                transition: 1s; }
+                .Bahcesehir_tadilat-master-content-project1-container1-1 img, .Bahcesehir_tadilat-master-content-project1-container1-2 img, .Bahcesehir_tadilat-master-content-project1-container1-3 img, .Bahcesehir_tadilat-master-content-project1-container1-4 img, .Bahcesehir_tadilat-master-content-project1-container2-1 img, .Bahcesehir_tadilat-master-content-project1-container2-2 img, .Bahcesehir_tadilat-master-content-project1-container2-3 img, .Bahcesehir_tadilat-master-content-project1-container2-4 img, .Bahcesehir_tadilat-master-content-project1-container3-1 img, .Bahcesehir_tadilat-master-content-project1-container3-2 img, .Bahcesehir_tadilat-master-content-project1-container3-3 img, .Bahcesehir_tadilat-master-content-project1-container3-4 img, .Bahcesehir_tadilat-master-content-project1-container4-1 img, .Bahcesehir_tadilat-master-content-project1-container4-2 img, .Bahcesehir_tadilat-master-content-project1-container4-3 img, .Bahcesehir_tadilat-master-content-project1-container4-4 img, .Bahcesehir_tadilat-master-content-project1-container5-1 img, .Bahcesehir_tadilat-master-content-project1-container5-2 img, .Bahcesehir_tadilat-master-content-project1-container5-3 img, .Bahcesehir_tadilat-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Bahcesehir_tadilat-master-content-project1-container1-1:hover, .Bahcesehir_tadilat-master-content-project1-container1-2:hover, .Bahcesehir_tadilat-master-content-project1-container1-3:hover, .Bahcesehir_tadilat-master-content-project1-container1-4:hover, .Bahcesehir_tadilat-master-content-project1-container2-1:hover, .Bahcesehir_tadilat-master-content-project1-container2-2:hover, .Bahcesehir_tadilat-master-content-project1-container2-3:hover, .Bahcesehir_tadilat-master-content-project1-container2-4:hover, .Bahcesehir_tadilat-master-content-project1-container3-1:hover, .Bahcesehir_tadilat-master-content-project1-container3-2:hover, .Bahcesehir_tadilat-master-content-project1-container3-3:hover, .Bahcesehir_tadilat-master-content-project1-container3-4:hover, .Bahcesehir_tadilat-master-content-project1-container4-1:hover, .Bahcesehir_tadilat-master-content-project1-container4-2:hover, .Bahcesehir_tadilat-master-content-project1-container4-3:hover, .Bahcesehir_tadilat-master-content-project1-container4-4:hover, .Bahcesehir_tadilat-master-content-project1-container5-1:hover, .Bahcesehir_tadilat-master-content-project1-container5-2:hover, .Bahcesehir_tadilat-master-content-project1-container5-3:hover, .Bahcesehir_tadilat-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Bahcesehir_tadilat-master-content-project1-container2 {
+              display: none; } }
+        @media (min-width: 1200px) {
+          .Bahcesehir_tadilat-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Bahcesehir_tadilat-master-content-project1-container1, .Bahcesehir_tadilat-master-content-project1-container2, .Bahcesehir_tadilat-master-content-project1-container3, .Bahcesehir_tadilat-master-content-project1-container4, .Bahcesehir_tadilat-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 220px;
+              justify-content: space-between; }
+              .Bahcesehir_tadilat-master-content-project1-container1-1, .Bahcesehir_tadilat-master-content-project1-container1-2, .Bahcesehir_tadilat-master-content-project1-container1-3, .Bahcesehir_tadilat-master-content-project1-container1-4, .Bahcesehir_tadilat-master-content-project1-container2-1, .Bahcesehir_tadilat-master-content-project1-container2-2, .Bahcesehir_tadilat-master-content-project1-container2-3, .Bahcesehir_tadilat-master-content-project1-container2-4, .Bahcesehir_tadilat-master-content-project1-container3-1, .Bahcesehir_tadilat-master-content-project1-container3-2, .Bahcesehir_tadilat-master-content-project1-container3-3, .Bahcesehir_tadilat-master-content-project1-container3-4, .Bahcesehir_tadilat-master-content-project1-container4-1, .Bahcesehir_tadilat-master-content-project1-container4-2, .Bahcesehir_tadilat-master-content-project1-container4-3, .Bahcesehir_tadilat-master-content-project1-container4-4, .Bahcesehir_tadilat-master-content-project1-container5-1, .Bahcesehir_tadilat-master-content-project1-container5-2, .Bahcesehir_tadilat-master-content-project1-container5-3, .Bahcesehir_tadilat-master-content-project1-container5-4 {
+                display: inherit;
+                width: 250px;
+                height: 180px;
+                background-color: white;
+                transition: 1s; }
+                .Bahcesehir_tadilat-master-content-project1-container1-1 img, .Bahcesehir_tadilat-master-content-project1-container1-2 img, .Bahcesehir_tadilat-master-content-project1-container1-3 img, .Bahcesehir_tadilat-master-content-project1-container1-4 img, .Bahcesehir_tadilat-master-content-project1-container2-1 img, .Bahcesehir_tadilat-master-content-project1-container2-2 img, .Bahcesehir_tadilat-master-content-project1-container2-3 img, .Bahcesehir_tadilat-master-content-project1-container2-4 img, .Bahcesehir_tadilat-master-content-project1-container3-1 img, .Bahcesehir_tadilat-master-content-project1-container3-2 img, .Bahcesehir_tadilat-master-content-project1-container3-3 img, .Bahcesehir_tadilat-master-content-project1-container3-4 img, .Bahcesehir_tadilat-master-content-project1-container4-1 img, .Bahcesehir_tadilat-master-content-project1-container4-2 img, .Bahcesehir_tadilat-master-content-project1-container4-3 img, .Bahcesehir_tadilat-master-content-project1-container4-4 img, .Bahcesehir_tadilat-master-content-project1-container5-1 img, .Bahcesehir_tadilat-master-content-project1-container5-2 img, .Bahcesehir_tadilat-master-content-project1-container5-3 img, .Bahcesehir_tadilat-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Bahcesehir_tadilat-master-content-project1-container1-1:hover, .Bahcesehir_tadilat-master-content-project1-container1-2:hover, .Bahcesehir_tadilat-master-content-project1-container1-3:hover, .Bahcesehir_tadilat-master-content-project1-container1-4:hover, .Bahcesehir_tadilat-master-content-project1-container2-1:hover, .Bahcesehir_tadilat-master-content-project1-container2-2:hover, .Bahcesehir_tadilat-master-content-project1-container2-3:hover, .Bahcesehir_tadilat-master-content-project1-container2-4:hover, .Bahcesehir_tadilat-master-content-project1-container3-1:hover, .Bahcesehir_tadilat-master-content-project1-container3-2:hover, .Bahcesehir_tadilat-master-content-project1-container3-3:hover, .Bahcesehir_tadilat-master-content-project1-container3-4:hover, .Bahcesehir_tadilat-master-content-project1-container4-1:hover, .Bahcesehir_tadilat-master-content-project1-container4-2:hover, .Bahcesehir_tadilat-master-content-project1-container4-3:hover, .Bahcesehir_tadilat-master-content-project1-container4-4:hover, .Bahcesehir_tadilat-master-content-project1-container5-1:hover, .Bahcesehir_tadilat-master-content-project1-container5-2:hover, .Bahcesehir_tadilat-master-content-project1-container5-3:hover, .Bahcesehir_tadilat-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Bahcesehir_tadilat-master-content-project1-container2 {
+              display: none; } }
+
+.Fapel {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 100px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Fapel {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Fapel .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Fapel .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Fapel-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Fapel-master {
+        top: 140px; } }
+    .Fapel-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Fapel-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; }
+      .Fapel-master-content-project1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        flex-direction: column; }
+        .Fapel-master-content-project1-container1, .Fapel-master-content-project1-container2, .Fapel-master-content-project1-container3, .Fapel-master-content-project1-container4, .Fapel-master-content-project1-container5, .Fapel-master-content-project1-container6, .Fapel-master-content-project1-container7 {
+          display: inherit;
+          width: 100%;
+          height: 80px;
+          justify-content: space-between; }
+          .Fapel-master-content-project1-container1-1, .Fapel-master-content-project1-container1-2, .Fapel-master-content-project1-container1-3, .Fapel-master-content-project1-container1-4, .Fapel-master-content-project1-container2-1, .Fapel-master-content-project1-container2-2, .Fapel-master-content-project1-container2-3, .Fapel-master-content-project1-container2-4, .Fapel-master-content-project1-container3-1, .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3, .Fapel-master-content-project1-container3-4, .Fapel-master-content-project1-container4-1, .Fapel-master-content-project1-container4-2, .Fapel-master-content-project1-container4-3, .Fapel-master-content-project1-container4-4, .Fapel-master-content-project1-container5-1, .Fapel-master-content-project1-container5-2, .Fapel-master-content-project1-container5-3, .Fapel-master-content-project1-container5-4, .Fapel-master-content-project1-container6-1, .Fapel-master-content-project1-container6-2, .Fapel-master-content-project1-container6-3, .Fapel-master-content-project1-container6-4, .Fapel-master-content-project1-container7-1, .Fapel-master-content-project1-container7-2, .Fapel-master-content-project1-container7-3, .Fapel-master-content-project1-container7-4 {
+            display: inherit;
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            transition: 1s; }
+            .Fapel-master-content-project1-container1-1 img, .Fapel-master-content-project1-container1-2 img, .Fapel-master-content-project1-container1-3 img, .Fapel-master-content-project1-container1-4 img, .Fapel-master-content-project1-container2-1 img, .Fapel-master-content-project1-container2-2 img, .Fapel-master-content-project1-container2-3 img, .Fapel-master-content-project1-container2-4 img, .Fapel-master-content-project1-container3-1 img, .Fapel-master-content-project1-container3-2 img, .Fapel-master-content-project1-container3-3 img, .Fapel-master-content-project1-container3-4 img, .Fapel-master-content-project1-container4-1 img, .Fapel-master-content-project1-container4-2 img, .Fapel-master-content-project1-container4-3 img, .Fapel-master-content-project1-container4-4 img, .Fapel-master-content-project1-container5-1 img, .Fapel-master-content-project1-container5-2 img, .Fapel-master-content-project1-container5-3 img, .Fapel-master-content-project1-container5-4 img, .Fapel-master-content-project1-container6-1 img, .Fapel-master-content-project1-container6-2 img, .Fapel-master-content-project1-container6-3 img, .Fapel-master-content-project1-container6-4 img, .Fapel-master-content-project1-container7-1 img, .Fapel-master-content-project1-container7-2 img, .Fapel-master-content-project1-container7-3 img, .Fapel-master-content-project1-container7-4 img {
+              width: 100%;
+              height: 100%; }
+            .Fapel-master-content-project1-container1-1:hover, .Fapel-master-content-project1-container1-2:hover, .Fapel-master-content-project1-container1-3:hover, .Fapel-master-content-project1-container1-4:hover, .Fapel-master-content-project1-container2-1:hover, .Fapel-master-content-project1-container2-2:hover, .Fapel-master-content-project1-container2-3:hover, .Fapel-master-content-project1-container2-4:hover, .Fapel-master-content-project1-container3-1:hover, .Fapel-master-content-project1-container3-2:hover, .Fapel-master-content-project1-container3-3:hover, .Fapel-master-content-project1-container3-4:hover, .Fapel-master-content-project1-container4-1:hover, .Fapel-master-content-project1-container4-2:hover, .Fapel-master-content-project1-container4-3:hover, .Fapel-master-content-project1-container4-4:hover, .Fapel-master-content-project1-container5-1:hover, .Fapel-master-content-project1-container5-2:hover, .Fapel-master-content-project1-container5-3:hover, .Fapel-master-content-project1-container5-4:hover, .Fapel-master-content-project1-container6-1:hover, .Fapel-master-content-project1-container6-2:hover, .Fapel-master-content-project1-container6-3:hover, .Fapel-master-content-project1-container6-4:hover, .Fapel-master-content-project1-container7-1:hover, .Fapel-master-content-project1-container7-2:hover, .Fapel-master-content-project1-container7-3:hover, .Fapel-master-content-project1-container7-4:hover {
+              transform: scale(1.1); }
+          .Fapel-master-content-project1-container1-4, .Fapel-master-content-project1-container2-4, .Fapel-master-content-project1-container3-4, .Fapel-master-content-project1-container4-4, .Fapel-master-content-project1-container5-4, .Fapel-master-content-project1-container6-4, .Fapel-master-content-project1-container7-4 {
+            display: none; }
+        .Fapel-master-content-project1 h1 {
+          color: white;
+          padding-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Fapel-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Fapel-master-content-project1-container6, .Fapel-master-content-project1-container7 {
+              display: none; }
+            .Fapel-master-content-project1-container1, .Fapel-master-content-project1-container2, .Fapel-master-content-project1-container3, .Fapel-master-content-project1-container4, .Fapel-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 160px;
+              justify-content: space-between; }
+              .Fapel-master-content-project1-container1-1, .Fapel-master-content-project1-container1-2, .Fapel-master-content-project1-container1-3, .Fapel-master-content-project1-container1-4, .Fapel-master-content-project1-container2-1, .Fapel-master-content-project1-container2-2, .Fapel-master-content-project1-container2-3, .Fapel-master-content-project1-container2-4, .Fapel-master-content-project1-container3-1, .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3, .Fapel-master-content-project1-container3-4, .Fapel-master-content-project1-container4-1, .Fapel-master-content-project1-container4-2, .Fapel-master-content-project1-container4-3, .Fapel-master-content-project1-container4-4, .Fapel-master-content-project1-container5-1, .Fapel-master-content-project1-container5-2, .Fapel-master-content-project1-container5-3, .Fapel-master-content-project1-container5-4 {
+                display: inherit;
+                width: 170px;
+                height: 110px;
+                background-color: white;
+                transition: 1s; }
+                .Fapel-master-content-project1-container1-1 img, .Fapel-master-content-project1-container1-2 img, .Fapel-master-content-project1-container1-3 img, .Fapel-master-content-project1-container1-4 img, .Fapel-master-content-project1-container2-1 img, .Fapel-master-content-project1-container2-2 img, .Fapel-master-content-project1-container2-3 img, .Fapel-master-content-project1-container2-4 img, .Fapel-master-content-project1-container3-1 img, .Fapel-master-content-project1-container3-2 img, .Fapel-master-content-project1-container3-3 img, .Fapel-master-content-project1-container3-4 img, .Fapel-master-content-project1-container4-1 img, .Fapel-master-content-project1-container4-2 img, .Fapel-master-content-project1-container4-3 img, .Fapel-master-content-project1-container4-4 img, .Fapel-master-content-project1-container5-1 img, .Fapel-master-content-project1-container5-2 img, .Fapel-master-content-project1-container5-3 img, .Fapel-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Fapel-master-content-project1-container1-1:hover, .Fapel-master-content-project1-container1-2:hover, .Fapel-master-content-project1-container1-3:hover, .Fapel-master-content-project1-container1-4:hover, .Fapel-master-content-project1-container2-1:hover, .Fapel-master-content-project1-container2-2:hover, .Fapel-master-content-project1-container2-3:hover, .Fapel-master-content-project1-container2-4:hover, .Fapel-master-content-project1-container3-1:hover, .Fapel-master-content-project1-container3-2:hover, .Fapel-master-content-project1-container3-3:hover, .Fapel-master-content-project1-container3-4:hover, .Fapel-master-content-project1-container4-1:hover, .Fapel-master-content-project1-container4-2:hover, .Fapel-master-content-project1-container4-3:hover, .Fapel-master-content-project1-container4-4:hover, .Fapel-master-content-project1-container5-1:hover, .Fapel-master-content-project1-container5-2:hover, .Fapel-master-content-project1-container5-3:hover, .Fapel-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Fapel-master-content-project1-container3 {
               justify-content: start; }
-              .Devam-master-content-project1-container5-1, .Devam-master-content-project1-container5-2, .Devam-master-content-project1-container5-3 {
-                margin-right: 34px; } }
+              .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3 {
+                display: none; } }
+        @media (min-width: 992px) {
+          .Fapel-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Fapel-master-content-project1-container1, .Fapel-master-content-project1-container2, .Fapel-master-content-project1-container3, .Fapel-master-content-project1-container4, .Fapel-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 190px;
+              justify-content: space-between; }
+              .Fapel-master-content-project1-container1-1, .Fapel-master-content-project1-container1-2, .Fapel-master-content-project1-container1-3, .Fapel-master-content-project1-container1-4, .Fapel-master-content-project1-container2-1, .Fapel-master-content-project1-container2-2, .Fapel-master-content-project1-container2-3, .Fapel-master-content-project1-container2-4, .Fapel-master-content-project1-container3-1, .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3, .Fapel-master-content-project1-container3-4, .Fapel-master-content-project1-container4-1, .Fapel-master-content-project1-container4-2, .Fapel-master-content-project1-container4-3, .Fapel-master-content-project1-container4-4, .Fapel-master-content-project1-container5-1, .Fapel-master-content-project1-container5-2, .Fapel-master-content-project1-container5-3, .Fapel-master-content-project1-container5-4 {
+                display: inherit;
+                width: 215px;
+                height: 150px;
+                background-color: white;
+                transition: 1s; }
+                .Fapel-master-content-project1-container1-1 img, .Fapel-master-content-project1-container1-2 img, .Fapel-master-content-project1-container1-3 img, .Fapel-master-content-project1-container1-4 img, .Fapel-master-content-project1-container2-1 img, .Fapel-master-content-project1-container2-2 img, .Fapel-master-content-project1-container2-3 img, .Fapel-master-content-project1-container2-4 img, .Fapel-master-content-project1-container3-1 img, .Fapel-master-content-project1-container3-2 img, .Fapel-master-content-project1-container3-3 img, .Fapel-master-content-project1-container3-4 img, .Fapel-master-content-project1-container4-1 img, .Fapel-master-content-project1-container4-2 img, .Fapel-master-content-project1-container4-3 img, .Fapel-master-content-project1-container4-4 img, .Fapel-master-content-project1-container5-1 img, .Fapel-master-content-project1-container5-2 img, .Fapel-master-content-project1-container5-3 img, .Fapel-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Fapel-master-content-project1-container1-1:hover, .Fapel-master-content-project1-container1-2:hover, .Fapel-master-content-project1-container1-3:hover, .Fapel-master-content-project1-container1-4:hover, .Fapel-master-content-project1-container2-1:hover, .Fapel-master-content-project1-container2-2:hover, .Fapel-master-content-project1-container2-3:hover, .Fapel-master-content-project1-container2-4:hover, .Fapel-master-content-project1-container3-1:hover, .Fapel-master-content-project1-container3-2:hover, .Fapel-master-content-project1-container3-3:hover, .Fapel-master-content-project1-container3-4:hover, .Fapel-master-content-project1-container4-1:hover, .Fapel-master-content-project1-container4-2:hover, .Fapel-master-content-project1-container4-3:hover, .Fapel-master-content-project1-container4-4:hover, .Fapel-master-content-project1-container5-1:hover, .Fapel-master-content-project1-container5-2:hover, .Fapel-master-content-project1-container5-3:hover, .Fapel-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Fapel-master-content-project1-container3 {
+              justify-content: start; }
+              .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3 {
+                display: none; } }
+        @media (min-width: 1200px) {
+          .Fapel-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Fapel-master-content-project1-container1, .Fapel-master-content-project1-container2, .Fapel-master-content-project1-container3, .Fapel-master-content-project1-container4, .Fapel-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 220px;
+              justify-content: space-between; }
+              .Fapel-master-content-project1-container1-1, .Fapel-master-content-project1-container1-2, .Fapel-master-content-project1-container1-3, .Fapel-master-content-project1-container1-4, .Fapel-master-content-project1-container2-1, .Fapel-master-content-project1-container2-2, .Fapel-master-content-project1-container2-3, .Fapel-master-content-project1-container2-4, .Fapel-master-content-project1-container3-1, .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3, .Fapel-master-content-project1-container3-4, .Fapel-master-content-project1-container4-1, .Fapel-master-content-project1-container4-2, .Fapel-master-content-project1-container4-3, .Fapel-master-content-project1-container4-4, .Fapel-master-content-project1-container5-1, .Fapel-master-content-project1-container5-2, .Fapel-master-content-project1-container5-3, .Fapel-master-content-project1-container5-4 {
+                display: inherit;
+                width: 250px;
+                height: 180px;
+                background-color: white;
+                transition: 1s; }
+                .Fapel-master-content-project1-container1-1 img, .Fapel-master-content-project1-container1-2 img, .Fapel-master-content-project1-container1-3 img, .Fapel-master-content-project1-container1-4 img, .Fapel-master-content-project1-container2-1 img, .Fapel-master-content-project1-container2-2 img, .Fapel-master-content-project1-container2-3 img, .Fapel-master-content-project1-container2-4 img, .Fapel-master-content-project1-container3-1 img, .Fapel-master-content-project1-container3-2 img, .Fapel-master-content-project1-container3-3 img, .Fapel-master-content-project1-container3-4 img, .Fapel-master-content-project1-container4-1 img, .Fapel-master-content-project1-container4-2 img, .Fapel-master-content-project1-container4-3 img, .Fapel-master-content-project1-container4-4 img, .Fapel-master-content-project1-container5-1 img, .Fapel-master-content-project1-container5-2 img, .Fapel-master-content-project1-container5-3 img, .Fapel-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Fapel-master-content-project1-container1-1:hover, .Fapel-master-content-project1-container1-2:hover, .Fapel-master-content-project1-container1-3:hover, .Fapel-master-content-project1-container1-4:hover, .Fapel-master-content-project1-container2-1:hover, .Fapel-master-content-project1-container2-2:hover, .Fapel-master-content-project1-container2-3:hover, .Fapel-master-content-project1-container2-4:hover, .Fapel-master-content-project1-container3-1:hover, .Fapel-master-content-project1-container3-2:hover, .Fapel-master-content-project1-container3-3:hover, .Fapel-master-content-project1-container3-4:hover, .Fapel-master-content-project1-container4-1:hover, .Fapel-master-content-project1-container4-2:hover, .Fapel-master-content-project1-container4-3:hover, .Fapel-master-content-project1-container4-4:hover, .Fapel-master-content-project1-container5-1:hover, .Fapel-master-content-project1-container5-2:hover, .Fapel-master-content-project1-container5-3:hover, .Fapel-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Fapel-master-content-project1-container3 {
+              justify-content: start; }
+              .Fapel-master-content-project1-container3-2, .Fapel-master-content-project1-container3-3 {
+                display: none; } }
+
+.Kerkuk {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 100px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Kerkuk {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Kerkuk .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Kerkuk .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Kerkuk-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Kerkuk-master {
+        top: 140px; } }
+    .Kerkuk-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Kerkuk-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; }
+      .Kerkuk-master-content-project1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        flex-direction: column; }
+        .Kerkuk-master-content-project1-container1, .Kerkuk-master-content-project1-container2, .Kerkuk-master-content-project1-container3, .Kerkuk-master-content-project1-container4, .Kerkuk-master-content-project1-container5, .Kerkuk-master-content-project1-container6, .Kerkuk-master-content-project1-container7 {
+          display: inherit;
+          width: 100%;
+          height: 80px;
+          justify-content: space-between; }
+          .Kerkuk-master-content-project1-container1-1, .Kerkuk-master-content-project1-container1-2, .Kerkuk-master-content-project1-container1-3, .Kerkuk-master-content-project1-container1-4, .Kerkuk-master-content-project1-container2-1, .Kerkuk-master-content-project1-container2-2, .Kerkuk-master-content-project1-container2-3, .Kerkuk-master-content-project1-container2-4, .Kerkuk-master-content-project1-container3-1, .Kerkuk-master-content-project1-container3-2, .Kerkuk-master-content-project1-container3-3, .Kerkuk-master-content-project1-container3-4, .Kerkuk-master-content-project1-container4-1, .Kerkuk-master-content-project1-container4-2, .Kerkuk-master-content-project1-container4-3, .Kerkuk-master-content-project1-container4-4, .Kerkuk-master-content-project1-container5-1, .Kerkuk-master-content-project1-container5-2, .Kerkuk-master-content-project1-container5-3, .Kerkuk-master-content-project1-container5-4, .Kerkuk-master-content-project1-container6-1, .Kerkuk-master-content-project1-container6-2, .Kerkuk-master-content-project1-container6-3, .Kerkuk-master-content-project1-container6-4, .Kerkuk-master-content-project1-container7-1, .Kerkuk-master-content-project1-container7-2, .Kerkuk-master-content-project1-container7-3, .Kerkuk-master-content-project1-container7-4 {
+            display: inherit;
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            transition: 1s; }
+            .Kerkuk-master-content-project1-container1-1 img, .Kerkuk-master-content-project1-container1-2 img, .Kerkuk-master-content-project1-container1-3 img, .Kerkuk-master-content-project1-container1-4 img, .Kerkuk-master-content-project1-container2-1 img, .Kerkuk-master-content-project1-container2-2 img, .Kerkuk-master-content-project1-container2-3 img, .Kerkuk-master-content-project1-container2-4 img, .Kerkuk-master-content-project1-container3-1 img, .Kerkuk-master-content-project1-container3-2 img, .Kerkuk-master-content-project1-container3-3 img, .Kerkuk-master-content-project1-container3-4 img, .Kerkuk-master-content-project1-container4-1 img, .Kerkuk-master-content-project1-container4-2 img, .Kerkuk-master-content-project1-container4-3 img, .Kerkuk-master-content-project1-container4-4 img, .Kerkuk-master-content-project1-container5-1 img, .Kerkuk-master-content-project1-container5-2 img, .Kerkuk-master-content-project1-container5-3 img, .Kerkuk-master-content-project1-container5-4 img, .Kerkuk-master-content-project1-container6-1 img, .Kerkuk-master-content-project1-container6-2 img, .Kerkuk-master-content-project1-container6-3 img, .Kerkuk-master-content-project1-container6-4 img, .Kerkuk-master-content-project1-container7-1 img, .Kerkuk-master-content-project1-container7-2 img, .Kerkuk-master-content-project1-container7-3 img, .Kerkuk-master-content-project1-container7-4 img {
+              width: 100%;
+              height: 100%; }
+            .Kerkuk-master-content-project1-container1-1:hover, .Kerkuk-master-content-project1-container1-2:hover, .Kerkuk-master-content-project1-container1-3:hover, .Kerkuk-master-content-project1-container1-4:hover, .Kerkuk-master-content-project1-container2-1:hover, .Kerkuk-master-content-project1-container2-2:hover, .Kerkuk-master-content-project1-container2-3:hover, .Kerkuk-master-content-project1-container2-4:hover, .Kerkuk-master-content-project1-container3-1:hover, .Kerkuk-master-content-project1-container3-2:hover, .Kerkuk-master-content-project1-container3-3:hover, .Kerkuk-master-content-project1-container3-4:hover, .Kerkuk-master-content-project1-container4-1:hover, .Kerkuk-master-content-project1-container4-2:hover, .Kerkuk-master-content-project1-container4-3:hover, .Kerkuk-master-content-project1-container4-4:hover, .Kerkuk-master-content-project1-container5-1:hover, .Kerkuk-master-content-project1-container5-2:hover, .Kerkuk-master-content-project1-container5-3:hover, .Kerkuk-master-content-project1-container5-4:hover, .Kerkuk-master-content-project1-container6-1:hover, .Kerkuk-master-content-project1-container6-2:hover, .Kerkuk-master-content-project1-container6-3:hover, .Kerkuk-master-content-project1-container6-4:hover, .Kerkuk-master-content-project1-container7-1:hover, .Kerkuk-master-content-project1-container7-2:hover, .Kerkuk-master-content-project1-container7-3:hover, .Kerkuk-master-content-project1-container7-4:hover {
+              transform: scale(1.1); }
+          .Kerkuk-master-content-project1-container1-4, .Kerkuk-master-content-project1-container2-4, .Kerkuk-master-content-project1-container3-4, .Kerkuk-master-content-project1-container4-4, .Kerkuk-master-content-project1-container5-4, .Kerkuk-master-content-project1-container6-4, .Kerkuk-master-content-project1-container7-4 {
+            display: none; }
+        .Kerkuk-master-content-project1-container3 {
+          justify-content: space-around; }
+        .Kerkuk-master-content-project1 h1 {
+          color: white;
+          padding-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Kerkuk-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Kerkuk-master-content-project1-container6, .Kerkuk-master-content-project1-container7 {
+              display: none; }
+            .Kerkuk-master-content-project1-container1, .Kerkuk-master-content-project1-container2, .Kerkuk-master-content-project1-container3, .Kerkuk-master-content-project1-container4, .Kerkuk-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 160px;
+              justify-content: space-between; }
+              .Kerkuk-master-content-project1-container1-1, .Kerkuk-master-content-project1-container1-2, .Kerkuk-master-content-project1-container1-3, .Kerkuk-master-content-project1-container1-4, .Kerkuk-master-content-project1-container2-1, .Kerkuk-master-content-project1-container2-2, .Kerkuk-master-content-project1-container2-3, .Kerkuk-master-content-project1-container2-4, .Kerkuk-master-content-project1-container3-1, .Kerkuk-master-content-project1-container3-2, .Kerkuk-master-content-project1-container3-3, .Kerkuk-master-content-project1-container3-4, .Kerkuk-master-content-project1-container4-1, .Kerkuk-master-content-project1-container4-2, .Kerkuk-master-content-project1-container4-3, .Kerkuk-master-content-project1-container4-4, .Kerkuk-master-content-project1-container5-1, .Kerkuk-master-content-project1-container5-2, .Kerkuk-master-content-project1-container5-3, .Kerkuk-master-content-project1-container5-4 {
+                display: inherit;
+                width: 170px;
+                height: 110px;
+                background-color: white;
+                transition: 1s; }
+                .Kerkuk-master-content-project1-container1-1 img, .Kerkuk-master-content-project1-container1-2 img, .Kerkuk-master-content-project1-container1-3 img, .Kerkuk-master-content-project1-container1-4 img, .Kerkuk-master-content-project1-container2-1 img, .Kerkuk-master-content-project1-container2-2 img, .Kerkuk-master-content-project1-container2-3 img, .Kerkuk-master-content-project1-container2-4 img, .Kerkuk-master-content-project1-container3-1 img, .Kerkuk-master-content-project1-container3-2 img, .Kerkuk-master-content-project1-container3-3 img, .Kerkuk-master-content-project1-container3-4 img, .Kerkuk-master-content-project1-container4-1 img, .Kerkuk-master-content-project1-container4-2 img, .Kerkuk-master-content-project1-container4-3 img, .Kerkuk-master-content-project1-container4-4 img, .Kerkuk-master-content-project1-container5-1 img, .Kerkuk-master-content-project1-container5-2 img, .Kerkuk-master-content-project1-container5-3 img, .Kerkuk-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Kerkuk-master-content-project1-container1-1:hover, .Kerkuk-master-content-project1-container1-2:hover, .Kerkuk-master-content-project1-container1-3:hover, .Kerkuk-master-content-project1-container1-4:hover, .Kerkuk-master-content-project1-container2-1:hover, .Kerkuk-master-content-project1-container2-2:hover, .Kerkuk-master-content-project1-container2-3:hover, .Kerkuk-master-content-project1-container2-4:hover, .Kerkuk-master-content-project1-container3-1:hover, .Kerkuk-master-content-project1-container3-2:hover, .Kerkuk-master-content-project1-container3-3:hover, .Kerkuk-master-content-project1-container3-4:hover, .Kerkuk-master-content-project1-container4-1:hover, .Kerkuk-master-content-project1-container4-2:hover, .Kerkuk-master-content-project1-container4-3:hover, .Kerkuk-master-content-project1-container4-4:hover, .Kerkuk-master-content-project1-container5-1:hover, .Kerkuk-master-content-project1-container5-2:hover, .Kerkuk-master-content-project1-container5-3:hover, .Kerkuk-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Kerkuk-master-content-project1-container3 {
+              display: none; } }
+        @media (min-width: 992px) {
+          .Kerkuk-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Kerkuk-master-content-project1-container1, .Kerkuk-master-content-project1-container2, .Kerkuk-master-content-project1-container3, .Kerkuk-master-content-project1-container4, .Kerkuk-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 190px;
+              justify-content: space-between; }
+              .Kerkuk-master-content-project1-container1-1, .Kerkuk-master-content-project1-container1-2, .Kerkuk-master-content-project1-container1-3, .Kerkuk-master-content-project1-container1-4, .Kerkuk-master-content-project1-container2-1, .Kerkuk-master-content-project1-container2-2, .Kerkuk-master-content-project1-container2-3, .Kerkuk-master-content-project1-container2-4, .Kerkuk-master-content-project1-container3-1, .Kerkuk-master-content-project1-container3-2, .Kerkuk-master-content-project1-container3-3, .Kerkuk-master-content-project1-container3-4, .Kerkuk-master-content-project1-container4-1, .Kerkuk-master-content-project1-container4-2, .Kerkuk-master-content-project1-container4-3, .Kerkuk-master-content-project1-container4-4, .Kerkuk-master-content-project1-container5-1, .Kerkuk-master-content-project1-container5-2, .Kerkuk-master-content-project1-container5-3, .Kerkuk-master-content-project1-container5-4 {
+                display: inherit;
+                width: 215px;
+                height: 150px;
+                background-color: white;
+                transition: 1s; }
+                .Kerkuk-master-content-project1-container1-1 img, .Kerkuk-master-content-project1-container1-2 img, .Kerkuk-master-content-project1-container1-3 img, .Kerkuk-master-content-project1-container1-4 img, .Kerkuk-master-content-project1-container2-1 img, .Kerkuk-master-content-project1-container2-2 img, .Kerkuk-master-content-project1-container2-3 img, .Kerkuk-master-content-project1-container2-4 img, .Kerkuk-master-content-project1-container3-1 img, .Kerkuk-master-content-project1-container3-2 img, .Kerkuk-master-content-project1-container3-3 img, .Kerkuk-master-content-project1-container3-4 img, .Kerkuk-master-content-project1-container4-1 img, .Kerkuk-master-content-project1-container4-2 img, .Kerkuk-master-content-project1-container4-3 img, .Kerkuk-master-content-project1-container4-4 img, .Kerkuk-master-content-project1-container5-1 img, .Kerkuk-master-content-project1-container5-2 img, .Kerkuk-master-content-project1-container5-3 img, .Kerkuk-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Kerkuk-master-content-project1-container1-1:hover, .Kerkuk-master-content-project1-container1-2:hover, .Kerkuk-master-content-project1-container1-3:hover, .Kerkuk-master-content-project1-container1-4:hover, .Kerkuk-master-content-project1-container2-1:hover, .Kerkuk-master-content-project1-container2-2:hover, .Kerkuk-master-content-project1-container2-3:hover, .Kerkuk-master-content-project1-container2-4:hover, .Kerkuk-master-content-project1-container3-1:hover, .Kerkuk-master-content-project1-container3-2:hover, .Kerkuk-master-content-project1-container3-3:hover, .Kerkuk-master-content-project1-container3-4:hover, .Kerkuk-master-content-project1-container4-1:hover, .Kerkuk-master-content-project1-container4-2:hover, .Kerkuk-master-content-project1-container4-3:hover, .Kerkuk-master-content-project1-container4-4:hover, .Kerkuk-master-content-project1-container5-1:hover, .Kerkuk-master-content-project1-container5-2:hover, .Kerkuk-master-content-project1-container5-3:hover, .Kerkuk-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Kerkuk-master-content-project1-container3 {
+              display: none; } }
+        @media (min-width: 1200px) {
+          .Kerkuk-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Kerkuk-master-content-project1-container1, .Kerkuk-master-content-project1-container2, .Kerkuk-master-content-project1-container3, .Kerkuk-master-content-project1-container4, .Kerkuk-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 220px;
+              justify-content: space-between; }
+              .Kerkuk-master-content-project1-container1-1, .Kerkuk-master-content-project1-container1-2, .Kerkuk-master-content-project1-container1-3, .Kerkuk-master-content-project1-container1-4, .Kerkuk-master-content-project1-container2-1, .Kerkuk-master-content-project1-container2-2, .Kerkuk-master-content-project1-container2-3, .Kerkuk-master-content-project1-container2-4, .Kerkuk-master-content-project1-container3-1, .Kerkuk-master-content-project1-container3-2, .Kerkuk-master-content-project1-container3-3, .Kerkuk-master-content-project1-container3-4, .Kerkuk-master-content-project1-container4-1, .Kerkuk-master-content-project1-container4-2, .Kerkuk-master-content-project1-container4-3, .Kerkuk-master-content-project1-container4-4, .Kerkuk-master-content-project1-container5-1, .Kerkuk-master-content-project1-container5-2, .Kerkuk-master-content-project1-container5-3, .Kerkuk-master-content-project1-container5-4 {
+                display: inherit;
+                width: 250px;
+                height: 180px;
+                background-color: white;
+                transition: 1s; }
+                .Kerkuk-master-content-project1-container1-1 img, .Kerkuk-master-content-project1-container1-2 img, .Kerkuk-master-content-project1-container1-3 img, .Kerkuk-master-content-project1-container1-4 img, .Kerkuk-master-content-project1-container2-1 img, .Kerkuk-master-content-project1-container2-2 img, .Kerkuk-master-content-project1-container2-3 img, .Kerkuk-master-content-project1-container2-4 img, .Kerkuk-master-content-project1-container3-1 img, .Kerkuk-master-content-project1-container3-2 img, .Kerkuk-master-content-project1-container3-3 img, .Kerkuk-master-content-project1-container3-4 img, .Kerkuk-master-content-project1-container4-1 img, .Kerkuk-master-content-project1-container4-2 img, .Kerkuk-master-content-project1-container4-3 img, .Kerkuk-master-content-project1-container4-4 img, .Kerkuk-master-content-project1-container5-1 img, .Kerkuk-master-content-project1-container5-2 img, .Kerkuk-master-content-project1-container5-3 img, .Kerkuk-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Kerkuk-master-content-project1-container1-1:hover, .Kerkuk-master-content-project1-container1-2:hover, .Kerkuk-master-content-project1-container1-3:hover, .Kerkuk-master-content-project1-container1-4:hover, .Kerkuk-master-content-project1-container2-1:hover, .Kerkuk-master-content-project1-container2-2:hover, .Kerkuk-master-content-project1-container2-3:hover, .Kerkuk-master-content-project1-container2-4:hover, .Kerkuk-master-content-project1-container3-1:hover, .Kerkuk-master-content-project1-container3-2:hover, .Kerkuk-master-content-project1-container3-3:hover, .Kerkuk-master-content-project1-container3-4:hover, .Kerkuk-master-content-project1-container4-1:hover, .Kerkuk-master-content-project1-container4-2:hover, .Kerkuk-master-content-project1-container4-3:hover, .Kerkuk-master-content-project1-container4-4:hover, .Kerkuk-master-content-project1-container5-1:hover, .Kerkuk-master-content-project1-container5-2:hover, .Kerkuk-master-content-project1-container5-3:hover, .Kerkuk-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Kerkuk-master-content-project1-container3 {
+              display: none; } }
+
+.Balkon {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 100px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Balkon {
+      height: auto;
+      padding-bottom: 140px; } }
+  .Balkon .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Balkon .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Balkon-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Balkon-master {
+        top: 140px; } }
+    .Balkon-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Balkon-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; }
+      .Balkon-master-content-project1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        flex-direction: column; }
+        .Balkon-master-content-project1-container1, .Balkon-master-content-project1-container2, .Balkon-master-content-project1-container3, .Balkon-master-content-project1-container4, .Balkon-master-content-project1-container5, .Balkon-master-content-project1-container6, .Balkon-master-content-project1-container7 {
+          display: inherit;
+          width: 100%;
+          height: 80px;
+          justify-content: space-between; }
+          .Balkon-master-content-project1-container1-1, .Balkon-master-content-project1-container1-2, .Balkon-master-content-project1-container1-3, .Balkon-master-content-project1-container1-4, .Balkon-master-content-project1-container2-1, .Balkon-master-content-project1-container2-2, .Balkon-master-content-project1-container2-3, .Balkon-master-content-project1-container2-4, .Balkon-master-content-project1-container3-1, .Balkon-master-content-project1-container3-2, .Balkon-master-content-project1-container3-3, .Balkon-master-content-project1-container3-4, .Balkon-master-content-project1-container4-1, .Balkon-master-content-project1-container4-2, .Balkon-master-content-project1-container4-3, .Balkon-master-content-project1-container4-4, .Balkon-master-content-project1-container5-1, .Balkon-master-content-project1-container5-2, .Balkon-master-content-project1-container5-3, .Balkon-master-content-project1-container5-4, .Balkon-master-content-project1-container6-1, .Balkon-master-content-project1-container6-2, .Balkon-master-content-project1-container6-3, .Balkon-master-content-project1-container6-4, .Balkon-master-content-project1-container7-1, .Balkon-master-content-project1-container7-2, .Balkon-master-content-project1-container7-3, .Balkon-master-content-project1-container7-4 {
+            display: inherit;
+            width: 100px;
+            height: 60px;
+            background-color: white;
+            transition: 1s; }
+            .Balkon-master-content-project1-container1-1 img, .Balkon-master-content-project1-container1-2 img, .Balkon-master-content-project1-container1-3 img, .Balkon-master-content-project1-container1-4 img, .Balkon-master-content-project1-container2-1 img, .Balkon-master-content-project1-container2-2 img, .Balkon-master-content-project1-container2-3 img, .Balkon-master-content-project1-container2-4 img, .Balkon-master-content-project1-container3-1 img, .Balkon-master-content-project1-container3-2 img, .Balkon-master-content-project1-container3-3 img, .Balkon-master-content-project1-container3-4 img, .Balkon-master-content-project1-container4-1 img, .Balkon-master-content-project1-container4-2 img, .Balkon-master-content-project1-container4-3 img, .Balkon-master-content-project1-container4-4 img, .Balkon-master-content-project1-container5-1 img, .Balkon-master-content-project1-container5-2 img, .Balkon-master-content-project1-container5-3 img, .Balkon-master-content-project1-container5-4 img, .Balkon-master-content-project1-container6-1 img, .Balkon-master-content-project1-container6-2 img, .Balkon-master-content-project1-container6-3 img, .Balkon-master-content-project1-container6-4 img, .Balkon-master-content-project1-container7-1 img, .Balkon-master-content-project1-container7-2 img, .Balkon-master-content-project1-container7-3 img, .Balkon-master-content-project1-container7-4 img {
+              width: 100%;
+              height: 100%; }
+            .Balkon-master-content-project1-container1-1:hover, .Balkon-master-content-project1-container1-2:hover, .Balkon-master-content-project1-container1-3:hover, .Balkon-master-content-project1-container1-4:hover, .Balkon-master-content-project1-container2-1:hover, .Balkon-master-content-project1-container2-2:hover, .Balkon-master-content-project1-container2-3:hover, .Balkon-master-content-project1-container2-4:hover, .Balkon-master-content-project1-container3-1:hover, .Balkon-master-content-project1-container3-2:hover, .Balkon-master-content-project1-container3-3:hover, .Balkon-master-content-project1-container3-4:hover, .Balkon-master-content-project1-container4-1:hover, .Balkon-master-content-project1-container4-2:hover, .Balkon-master-content-project1-container4-3:hover, .Balkon-master-content-project1-container4-4:hover, .Balkon-master-content-project1-container5-1:hover, .Balkon-master-content-project1-container5-2:hover, .Balkon-master-content-project1-container5-3:hover, .Balkon-master-content-project1-container5-4:hover, .Balkon-master-content-project1-container6-1:hover, .Balkon-master-content-project1-container6-2:hover, .Balkon-master-content-project1-container6-3:hover, .Balkon-master-content-project1-container6-4:hover, .Balkon-master-content-project1-container7-1:hover, .Balkon-master-content-project1-container7-2:hover, .Balkon-master-content-project1-container7-3:hover, .Balkon-master-content-project1-container7-4:hover {
+              transform: scale(1.1); }
+          .Balkon-master-content-project1-container1-4, .Balkon-master-content-project1-container2-4, .Balkon-master-content-project1-container3-4, .Balkon-master-content-project1-container4-4, .Balkon-master-content-project1-container5-4, .Balkon-master-content-project1-container6-4, .Balkon-master-content-project1-container7-4 {
+            display: none; }
+        .Balkon-master-content-project1 h1 {
+          color: white;
+          padding-bottom: 20px; }
+        @media (min-width: 768px) {
+          .Balkon-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Balkon-master-content-project1-container6, .Balkon-master-content-project1-container7 {
+              display: none; }
+            .Balkon-master-content-project1-container1, .Balkon-master-content-project1-container2, .Balkon-master-content-project1-container3, .Balkon-master-content-project1-container4, .Balkon-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 160px;
+              justify-content: space-between; }
+              .Balkon-master-content-project1-container1-1, .Balkon-master-content-project1-container1-2, .Balkon-master-content-project1-container1-3, .Balkon-master-content-project1-container1-4, .Balkon-master-content-project1-container2-1, .Balkon-master-content-project1-container2-2, .Balkon-master-content-project1-container2-3, .Balkon-master-content-project1-container2-4, .Balkon-master-content-project1-container3-1, .Balkon-master-content-project1-container3-2, .Balkon-master-content-project1-container3-3, .Balkon-master-content-project1-container3-4, .Balkon-master-content-project1-container4-1, .Balkon-master-content-project1-container4-2, .Balkon-master-content-project1-container4-3, .Balkon-master-content-project1-container4-4, .Balkon-master-content-project1-container5-1, .Balkon-master-content-project1-container5-2, .Balkon-master-content-project1-container5-3, .Balkon-master-content-project1-container5-4 {
+                display: inherit;
+                width: 170px;
+                height: 110px;
+                background-color: white;
+                transition: 1s; }
+                .Balkon-master-content-project1-container1-1 img, .Balkon-master-content-project1-container1-2 img, .Balkon-master-content-project1-container1-3 img, .Balkon-master-content-project1-container1-4 img, .Balkon-master-content-project1-container2-1 img, .Balkon-master-content-project1-container2-2 img, .Balkon-master-content-project1-container2-3 img, .Balkon-master-content-project1-container2-4 img, .Balkon-master-content-project1-container3-1 img, .Balkon-master-content-project1-container3-2 img, .Balkon-master-content-project1-container3-3 img, .Balkon-master-content-project1-container3-4 img, .Balkon-master-content-project1-container4-1 img, .Balkon-master-content-project1-container4-2 img, .Balkon-master-content-project1-container4-3 img, .Balkon-master-content-project1-container4-4 img, .Balkon-master-content-project1-container5-1 img, .Balkon-master-content-project1-container5-2 img, .Balkon-master-content-project1-container5-3 img, .Balkon-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Balkon-master-content-project1-container1-1:hover, .Balkon-master-content-project1-container1-2:hover, .Balkon-master-content-project1-container1-3:hover, .Balkon-master-content-project1-container1-4:hover, .Balkon-master-content-project1-container2-1:hover, .Balkon-master-content-project1-container2-2:hover, .Balkon-master-content-project1-container2-3:hover, .Balkon-master-content-project1-container2-4:hover, .Balkon-master-content-project1-container3-1:hover, .Balkon-master-content-project1-container3-2:hover, .Balkon-master-content-project1-container3-3:hover, .Balkon-master-content-project1-container3-4:hover, .Balkon-master-content-project1-container4-1:hover, .Balkon-master-content-project1-container4-2:hover, .Balkon-master-content-project1-container4-3:hover, .Balkon-master-content-project1-container4-4:hover, .Balkon-master-content-project1-container5-1:hover, .Balkon-master-content-project1-container5-2:hover, .Balkon-master-content-project1-container5-3:hover, .Balkon-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Balkon-master-content-project1-container4 {
+              display: none; } }
+        @media (min-width: 992px) {
+          .Balkon-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Balkon-master-content-project1-container1, .Balkon-master-content-project1-container2, .Balkon-master-content-project1-container3, .Balkon-master-content-project1-container4, .Balkon-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 190px;
+              justify-content: space-between; }
+              .Balkon-master-content-project1-container1-1, .Balkon-master-content-project1-container1-2, .Balkon-master-content-project1-container1-3, .Balkon-master-content-project1-container1-4, .Balkon-master-content-project1-container2-1, .Balkon-master-content-project1-container2-2, .Balkon-master-content-project1-container2-3, .Balkon-master-content-project1-container2-4, .Balkon-master-content-project1-container3-1, .Balkon-master-content-project1-container3-2, .Balkon-master-content-project1-container3-3, .Balkon-master-content-project1-container3-4, .Balkon-master-content-project1-container4-1, .Balkon-master-content-project1-container4-2, .Balkon-master-content-project1-container4-3, .Balkon-master-content-project1-container4-4, .Balkon-master-content-project1-container5-1, .Balkon-master-content-project1-container5-2, .Balkon-master-content-project1-container5-3, .Balkon-master-content-project1-container5-4 {
+                display: inherit;
+                width: 215px;
+                height: 150px;
+                background-color: white;
+                transition: 1s; }
+                .Balkon-master-content-project1-container1-1 img, .Balkon-master-content-project1-container1-2 img, .Balkon-master-content-project1-container1-3 img, .Balkon-master-content-project1-container1-4 img, .Balkon-master-content-project1-container2-1 img, .Balkon-master-content-project1-container2-2 img, .Balkon-master-content-project1-container2-3 img, .Balkon-master-content-project1-container2-4 img, .Balkon-master-content-project1-container3-1 img, .Balkon-master-content-project1-container3-2 img, .Balkon-master-content-project1-container3-3 img, .Balkon-master-content-project1-container3-4 img, .Balkon-master-content-project1-container4-1 img, .Balkon-master-content-project1-container4-2 img, .Balkon-master-content-project1-container4-3 img, .Balkon-master-content-project1-container4-4 img, .Balkon-master-content-project1-container5-1 img, .Balkon-master-content-project1-container5-2 img, .Balkon-master-content-project1-container5-3 img, .Balkon-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Balkon-master-content-project1-container1-1:hover, .Balkon-master-content-project1-container1-2:hover, .Balkon-master-content-project1-container1-3:hover, .Balkon-master-content-project1-container1-4:hover, .Balkon-master-content-project1-container2-1:hover, .Balkon-master-content-project1-container2-2:hover, .Balkon-master-content-project1-container2-3:hover, .Balkon-master-content-project1-container2-4:hover, .Balkon-master-content-project1-container3-1:hover, .Balkon-master-content-project1-container3-2:hover, .Balkon-master-content-project1-container3-3:hover, .Balkon-master-content-project1-container3-4:hover, .Balkon-master-content-project1-container4-1:hover, .Balkon-master-content-project1-container4-2:hover, .Balkon-master-content-project1-container4-3:hover, .Balkon-master-content-project1-container4-4:hover, .Balkon-master-content-project1-container5-1:hover, .Balkon-master-content-project1-container5-2:hover, .Balkon-master-content-project1-container5-3:hover, .Balkon-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Balkon-master-content-project1-container4 {
+              display: none; } }
+        @media (min-width: 1200px) {
+          .Balkon-master-content-project1 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            flex-direction: column; }
+            .Balkon-master-content-project1-container1, .Balkon-master-content-project1-container2, .Balkon-master-content-project1-container3, .Balkon-master-content-project1-container4, .Balkon-master-content-project1-container5 {
+              display: inherit;
+              width: 100%;
+              height: 220px;
+              justify-content: space-between; }
+              .Balkon-master-content-project1-container1-1, .Balkon-master-content-project1-container1-2, .Balkon-master-content-project1-container1-3, .Balkon-master-content-project1-container1-4, .Balkon-master-content-project1-container2-1, .Balkon-master-content-project1-container2-2, .Balkon-master-content-project1-container2-3, .Balkon-master-content-project1-container2-4, .Balkon-master-content-project1-container3-1, .Balkon-master-content-project1-container3-2, .Balkon-master-content-project1-container3-3, .Balkon-master-content-project1-container3-4, .Balkon-master-content-project1-container4-1, .Balkon-master-content-project1-container4-2, .Balkon-master-content-project1-container4-3, .Balkon-master-content-project1-container4-4, .Balkon-master-content-project1-container5-1, .Balkon-master-content-project1-container5-2, .Balkon-master-content-project1-container5-3, .Balkon-master-content-project1-container5-4 {
+                display: inherit;
+                width: 250px;
+                height: 180px;
+                background-color: white;
+                transition: 1s; }
+                .Balkon-master-content-project1-container1-1 img, .Balkon-master-content-project1-container1-2 img, .Balkon-master-content-project1-container1-3 img, .Balkon-master-content-project1-container1-4 img, .Balkon-master-content-project1-container2-1 img, .Balkon-master-content-project1-container2-2 img, .Balkon-master-content-project1-container2-3 img, .Balkon-master-content-project1-container2-4 img, .Balkon-master-content-project1-container3-1 img, .Balkon-master-content-project1-container3-2 img, .Balkon-master-content-project1-container3-3 img, .Balkon-master-content-project1-container3-4 img, .Balkon-master-content-project1-container4-1 img, .Balkon-master-content-project1-container4-2 img, .Balkon-master-content-project1-container4-3 img, .Balkon-master-content-project1-container4-4 img, .Balkon-master-content-project1-container5-1 img, .Balkon-master-content-project1-container5-2 img, .Balkon-master-content-project1-container5-3 img, .Balkon-master-content-project1-container5-4 img {
+                  width: 100%;
+                  height: 100%; }
+                .Balkon-master-content-project1-container1-1:hover, .Balkon-master-content-project1-container1-2:hover, .Balkon-master-content-project1-container1-3:hover, .Balkon-master-content-project1-container1-4:hover, .Balkon-master-content-project1-container2-1:hover, .Balkon-master-content-project1-container2-2:hover, .Balkon-master-content-project1-container2-3:hover, .Balkon-master-content-project1-container2-4:hover, .Balkon-master-content-project1-container3-1:hover, .Balkon-master-content-project1-container3-2:hover, .Balkon-master-content-project1-container3-3:hover, .Balkon-master-content-project1-container3-4:hover, .Balkon-master-content-project1-container4-1:hover, .Balkon-master-content-project1-container4-2:hover, .Balkon-master-content-project1-container4-3:hover, .Balkon-master-content-project1-container4-4:hover, .Balkon-master-content-project1-container5-1:hover, .Balkon-master-content-project1-container5-2:hover, .Balkon-master-content-project1-container5-3:hover, .Balkon-master-content-project1-container5-4:hover {
+                  transform: scale(1.1); }
+            .Balkon-master-content-project1-container4 {
+              display: none; } }
+
+.Kentsel {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 40px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Kentsel {
+      height: auto;
+      padding-bottom: 100px; } }
+  .Kentsel .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Kentsel .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Kentsel-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Kentsel-master {
+        top: 140px; } }
+    .Kentsel-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Kentsel-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      justify-content: center;
+      margin-bottom: 40px; }
+      .Kentsel-master-content-top {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+        flex-direction: column; }
+        @media (min-width: 992px) {
+          .Kentsel-master-content-top {
+            flex-direction: row; } }
+        .Kentsel-master-content-top-img {
+          width: 100%;
+          height: 280px;
+          background-repeat: no-repeat;
+          background-image: url("/kd_2.8e933a0f.jpg");
+          background-size: cover;
+          background-position: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: auto;
+          margin-right: auto; }
+          @media (min-width: 768px) {
+            .Kentsel-master-content-top-img {
+              width: 70%; } }
+          @media (min-width: 992px) {
+            .Kentsel-master-content-top-img {
+              width: 40%; } }
+        .Kentsel-master-content-top-text {
+          display: flex;
+          width: 100%;
+          height: auto;
+          padding: 0;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+          margin-top: 20px; }
+          @media (min-width: 768px) {
+            .Kentsel-master-content-top-text {
+              padding: 20px; } }
+          @media (min-width: 992px) {
+            .Kentsel-master-content-top-text {
+              margin-top: 0;
+              width: 60%;
+              padding: 20px; } }
+      .Kentsel-master-content-steps_title h1 {
+        color: white;
+        border-top: 1px solid #04BBBB;
+        padding-top: 40px;
+        text-align: center; }
+      .Kentsel-master-content-steps {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column; }
+        .Kentsel-master-content-steps-1, .Kentsel-master-content-steps-2 {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 20px;
+          align-items: center; }
+          .Kentsel-master-content-steps-1 h1, .Kentsel-master-content-steps-2 h1 {
+            display: inline-block;
+            color: white;
+            align-self: flex-start;
+            width: 10px; }
+            @media (min-width: 768px) {
+              .Kentsel-master-content-steps-1 h1, .Kentsel-master-content-steps-2 h1 {
+                width: 20px; } }
+          .Kentsel-master-content-steps-1 p, .Kentsel-master-content-steps-2 p {
+            color: white;
+            margin-left: 40px; }
+          .Kentsel-master-content-steps-1-content, .Kentsel-master-content-steps-2-content {
+            display: inherit;
+            flex-direction: column; }
+            .Kentsel-master-content-steps-1-content ul, .Kentsel-master-content-steps-2-content ul {
+              margin-left: 80px;
+              margin-top: 10px; }
+            .Kentsel-master-content-steps-1-content li, .Kentsel-master-content-steps-2-content li {
+              list-style-type: circle;
+              color: white; }
+            .Kentsel-master-content-steps-1-content a, .Kentsel-master-content-steps-2-content a {
+              text-align: center;
+              color: #04BBBB;
+              transition: 0.3s; }
+              .Kentsel-master-content-steps-1-content a:hover, .Kentsel-master-content-steps-2-content a:hover {
+                text-decoration: underline; }
+
+.Trafik {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 40px;
+  position: relative;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (min-width: 768px) {
+    .Trafik {
+      height: auto;
+      padding-bottom: 100px; } }
+  .Trafik .container {
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 768px) {
+      .Trafik .container {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .Trafik-master {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 80px; }
+    @media (min-width: 768px) {
+      .Trafik-master {
+        top: 140px; } }
+    .Trafik-master-page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      text-align: center;
+      position: relative;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      border-bottom: 1px solid #04BBBB;
+      line-height: 40px; }
+    .Trafik-master-content {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      justify-content: center;
+      margin-bottom: 40px; }
+      .Trafik-master-content-1, .Trafik-master-content-2, .Trafik-master-content-3, .Trafik-master-content-4 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        flex-direction: column; }
+        .Trafik-master-content-1-title, .Trafik-master-content-2-title, .Trafik-master-content-3-title, .Trafik-master-content-4-title {
+          display: inherit;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: auto;
+          padding-top: 40px;
+          padding-bottom: 20px;
+          color: white; }
+        .Trafik-master-content-1 #first_title, .Trafik-master-content-2 #first_title, .Trafik-master-content-3 #first_title, .Trafik-master-content-4 #first_title {
+          padding-top: 20px; }
+        .Trafik-master-content-1-rest, .Trafik-master-content-2-rest, .Trafik-master-content-3-rest, .Trafik-master-content-4-rest {
+          display: inherit;
+          width: 100%;
+          height: auto;
+          flex-direction: column; }
+          @media (min-width: 768px) {
+            .Trafik-master-content-1-rest, .Trafik-master-content-2-rest, .Trafik-master-content-3-rest, .Trafik-master-content-4-rest {
+              flex-direction: row;
+              height: 400px; } }
+          .Trafik-master-content-1-rest-img, .Trafik-master-content-2-rest-img, .Trafik-master-content-3-rest-img, .Trafik-master-content-4-rest-img {
+            display: inherit;
+            width: 100%;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto; }
+            @media (min-width: 768px) {
+              .Trafik-master-content-1-rest-img, .Trafik-master-content-2-rest-img, .Trafik-master-content-3-rest-img, .Trafik-master-content-4-rest-img {
+                width: 50%;
+                margin-right: 0;
+                margin-left: 0;
+                height: auto; } }
+          .Trafik-master-content-1-rest-text, .Trafik-master-content-2-rest-text, .Trafik-master-content-3-rest-text, .Trafik-master-content-4-rest-text {
+            display: inherit;
+            width: 100%;
+            height: 100%;
+            color: white;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px; }
+            @media (min-width: 768px) {
+              .Trafik-master-content-1-rest-text, .Trafik-master-content-2-rest-text, .Trafik-master-content-3-rest-text, .Trafik-master-content-4-rest-text {
+                width: 50%;
+                margin-right: 0;
+                margin-left: 0;
+                padding: 40px; } }
+      .Trafik-master-content-1-rest-img {
+        background-repeat: no-repeat;
+        background-image: url("/trafik-1.06cfe073.jpg");
+        background-size: cover;
+        background-position: center; }
+      .Trafik-master-content-2-rest-img {
+        background-repeat: no-repeat;
+        background-image: url("/trafik-2.7d8e5b89.jpg");
+        background-size: cover;
+        background-position: center; }
+      .Trafik-master-content-3-rest-img {
+        background-repeat: no-repeat;
+        background-image: url("/trafik-3.35a154e7.jpg");
+        background-size: cover;
+        background-position: center; }
+      .Trafik-master-content-4-rest-img {
+        background-repeat: no-repeat;
+        background-image: url("/trafik-4.40b68ab5.jpg");
+        background-size: cover;
+        background-position: center; }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */
