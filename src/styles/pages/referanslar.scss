@@ -3,7 +3,7 @@
     width: 100vw;
     // background-color: rgba($color: $color-dark-grey, $alpha: .8);
     // background-color: #777777;
-    background-color: rgba($color: #000000, $alpha: .6);
+    background-color: rgba($color: $color-dark-grey, $alpha: .85);
     left: 50%;
     right: 50%;
     margin-left: -50vw;
@@ -89,9 +89,10 @@
                     display: inherit;
                     width: 70px;
                     height: 70px;
-                    background-color: white;
+                    // background-color: white;
                     // margin-left: $offset;
                     // margin-right: $offset;
+                    filter: brightness(70%);
                     &:last-child {
                         display: none;
                     }
@@ -119,7 +120,7 @@
                         display: inherit;
                         width: 130px;
                         height: 130px;
-                        background-color: white;
+                        // background-color: white;
                         // margin-left: $offset;
                         // margin-right: $offset;
                         &:last-child {
@@ -149,7 +150,7 @@
                         display: inherit;
                         width: 170px;
                         height: 170px;
-                        background-color: white;
+                        // background-color: white;
                         // margin-left: $offset;
                         // margin-right: $offset;
                     }
@@ -176,7 +177,7 @@
                         display: inherit;
                         width: 200px;
                         height: 200px;
-                        background-color: white;
+                        // background-color: white;
                         // margin-left: $offset;
                         // margin-right: $offset;
                     }

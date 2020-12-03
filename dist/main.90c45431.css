@@ -961,7 +961,7 @@ body.lb-disable-scrolling {
           width: 0%; }
 
 .bg_scroll {
-  background-color: #666666; }
+  background-color: #454545; }
 
 .ai_scroll {
   padding-bottom: 0; }
@@ -978,7 +978,7 @@ body.lb-disable-scrolling {
 .Footer {
   display: flex;
   width: 100%;
-  background-color: rgba(36, 36, 37, 0.85);
+  background-color: rgba(36, 36, 37, 0.93);
   height: auto;
   overflow-x: hidden;
   position: relative; }
@@ -1039,7 +1039,15 @@ body.lb-disable-scrolling {
         text-align: justify;
         margin-top: 20px;
         color: white;
-        font-size: 15px; }
+        font-size: 15px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 20px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          .Footer-top-company-content {
+            font-family: 'Great Vibes', cursive;
+            font-size: 30px;
+            text-align: center; } }
       .Footer-top-company-social {
         display: flex;
         width: 100%;
@@ -1162,7 +1170,7 @@ body.lb-disable-scrolling {
         padding-right: 20px;
         padding-left: 20px;
         text-align: center;
-        font-size: 15px; }
+        font-size: 16px; }
         @media (min-width: 768px) {
           .Footer-top-contact-address {
             padding-top: 40px; } }
@@ -1826,7 +1834,7 @@ body.lb-disable-scrolling {
 .Homepage {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -1953,7 +1961,7 @@ body.lb-disable-scrolling {
 .Hakkimizda {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -2067,7 +2075,7 @@ body.lb-disable-scrolling {
 .Referanslar {
   height: 730px;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -2133,7 +2141,7 @@ body.lb-disable-scrolling {
           display: inherit;
           width: 70px;
           height: 70px;
-          background-color: white; }
+          filter: brightness(70%); }
           .Referanslar-master-content-container1-1:last-child, .Referanslar-master-content-container1-2:last-child, .Referanslar-master-content-container1-3:last-child, .Referanslar-master-content-container1-4:last-child, .Referanslar-master-content-container1-5:last-child, .Referanslar-master-content-container2-1:last-child, .Referanslar-master-content-container2-2:last-child, .Referanslar-master-content-container2-3:last-child, .Referanslar-master-content-container2-4:last-child, .Referanslar-master-content-container2-5:last-child, .Referanslar-master-content-container3-1:last-child, .Referanslar-master-content-container3-2:last-child, .Referanslar-master-content-container3-3:last-child, .Referanslar-master-content-container3-4:last-child, .Referanslar-master-content-container3-5:last-child, .Referanslar-master-content-container4-1:last-child, .Referanslar-master-content-container4-2:last-child, .Referanslar-master-content-container4-3:last-child, .Referanslar-master-content-container4-4:last-child, .Referanslar-master-content-container4-5:last-child, .Referanslar-master-content-container5-1:last-child, .Referanslar-master-content-container5-2:last-child, .Referanslar-master-content-container5-3:last-child, .Referanslar-master-content-container5-4:last-child, .Referanslar-master-content-container5-5:last-child {
             display: none; }
       @media (min-width: 768px) {
@@ -2151,8 +2159,7 @@ body.lb-disable-scrolling {
             .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5 {
               display: inherit;
               width: 130px;
-              height: 130px;
-              background-color: white; }
+              height: 130px; }
               .Referanslar-master-content-container1-1:last-child, .Referanslar-master-content-container1-2:last-child, .Referanslar-master-content-container1-3:last-child, .Referanslar-master-content-container1-4:last-child, .Referanslar-master-content-container1-5:last-child, .Referanslar-master-content-container2-1:last-child, .Referanslar-master-content-container2-2:last-child, .Referanslar-master-content-container2-3:last-child, .Referanslar-master-content-container2-4:last-child, .Referanslar-master-content-container2-5:last-child, .Referanslar-master-content-container3-1:last-child, .Referanslar-master-content-container3-2:last-child, .Referanslar-master-content-container3-3:last-child, .Referanslar-master-content-container3-4:last-child, .Referanslar-master-content-container3-5:last-child, .Referanslar-master-content-container4-1:last-child, .Referanslar-master-content-container4-2:last-child, .Referanslar-master-content-container4-3:last-child, .Referanslar-master-content-container4-4:last-child, .Referanslar-master-content-container4-5:last-child {
                 display: flex; } }
       @media (min-width: 992px) {
@@ -2170,8 +2177,7 @@ body.lb-disable-scrolling {
             .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5 {
               display: inherit;
               width: 170px;
-              height: 170px;
-              background-color: white; } }
+              height: 170px; } }
       @media (min-width: 1200px) {
         .Referanslar-master-content {
           display: flex;
@@ -2187,8 +2193,7 @@ body.lb-disable-scrolling {
             .Referanslar-master-content-container1-1, .Referanslar-master-content-container1-2, .Referanslar-master-content-container1-3, .Referanslar-master-content-container1-4, .Referanslar-master-content-container1-5, .Referanslar-master-content-container2-1, .Referanslar-master-content-container2-2, .Referanslar-master-content-container2-3, .Referanslar-master-content-container2-4, .Referanslar-master-content-container2-5, .Referanslar-master-content-container3-1, .Referanslar-master-content-container3-2, .Referanslar-master-content-container3-3, .Referanslar-master-content-container3-4, .Referanslar-master-content-container3-5, .Referanslar-master-content-container4-1, .Referanslar-master-content-container4-2, .Referanslar-master-content-container4-3, .Referanslar-master-content-container4-4, .Referanslar-master-content-container4-5 {
               display: inherit;
               width: 200px;
-              height: 200px;
-              background-color: white; } }
+              height: 200px; } }
       .Referanslar-master-content-container1-1 {
         background-color: white;
         background-image: url(/ibb.2ce8007f.jpg);
@@ -2343,7 +2348,7 @@ body.lb-disable-scrolling {
 .Iletisim {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -2512,7 +2517,7 @@ body.lb-disable-scrolling {
 .Zb {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -2679,7 +2684,7 @@ body.lb-disable-scrolling {
 .Devam {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -2786,7 +2791,7 @@ body.lb-disable-scrolling {
 .Tamam {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -2988,7 +2993,7 @@ body.lb-disable-scrolling {
 .Duhok {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -3152,7 +3157,7 @@ body.lb-disable-scrolling {
 .Bahcesehir_tadilat {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -3310,7 +3315,7 @@ body.lb-disable-scrolling {
 .Fapel {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -3472,7 +3477,7 @@ body.lb-disable-scrolling {
 .Kerkuk {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -3630,7 +3635,7 @@ body.lb-disable-scrolling {
 .Balkon {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -3786,7 +3791,7 @@ body.lb-disable-scrolling {
 .Kentsel {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -3927,7 +3932,7 @@ body.lb-disable-scrolling {
 .Trafik {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -4056,7 +4061,7 @@ body.lb-disable-scrolling {
 .Bim {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -4137,7 +4142,7 @@ body.lb-disable-scrolling {
 .Mimari {
   height: auto;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(36, 36, 37, 0.85);
   left: 50%;
   right: 50%;
   margin-left: -50vw;
