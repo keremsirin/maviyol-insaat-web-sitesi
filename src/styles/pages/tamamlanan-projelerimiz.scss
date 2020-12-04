@@ -77,21 +77,24 @@
                 // background-color: red;
                 height: auto;
                 flex-direction: column;
+
                 @include mq("tablet") {
                     flex-direction: row;
+                    justify-content: center;
                 }
 
 
 
                 &-proje1,
-                &-proje2 {
+                &-proje2,
+                &-proje3 {
                     display: inherit;
                     width: 100%;
                     height: auto;
                     flex-direction: column;
 
                     @include mq("tablet") {
-                        width: 50%;
+                        width: 30%;
                     }
 
                     &-title {
@@ -101,15 +104,16 @@
                         height: auto;
                         padding-bottom: 20px;
                         justify-content: center;
+                        text-align: center;
 
                         // align-items: center;
                         h1 {
                             color: white;
                             font-size: 24px;
-                        
-                        @include mq("tablet") {
-                            font-size: 30px;
-                        }
+
+                            @include mq("tablet") {
+                                font-size: 30px;
+                            }
                         }
                     }
 
@@ -117,29 +121,33 @@
                         display: inherit;
                         // background-color: black;
                         width: 100%;
-                        height: 180px;        
+                        height: 180px;
                         transition: 1s;
+
                         @include mq("tablet") {
-                            height: 300px;        
+                            height: 180px;
                         }
+
                         h4 {
                             display: flex;
                             color: white;
                             justify-content: center;
-                            padding-top: 100px;
+                            padding-top: 80px;
                             opacity: 0;
                             transition: 1s;
-                        }                       
+                        }
                     }
                 }
             }
-            
+
             &-container1 {
                 &-proje1 {
                     margin-right: 0;
+
                     @include mq("tablet") {
                         margin-right: 20px;
                     }
+
                     &-img {
                         background-repeat: no-repeat;
                         background-image: url("../../src/img/duhok/49.jpg");
@@ -161,13 +169,19 @@
                         }
                     }
                 }
+
                 &-proje2 {
                     margin-left: 0;
+                    margin-right: 0;
                     padding-top: 40px;
+
                     @include mq("tablet") {
                         margin-left: 20px;
+                        margin-right: 20px;
                         padding-top: 0;
-                    }                    &-img {
+                    }
+
+                    &-img {
                         background-repeat: no-repeat;
                         background-image: url("../../src/img/bhc/13.jpg");
                         background-size: cover;
@@ -188,13 +202,16 @@
                         }
                     }
                 }
-            }  
-            &-container2 {
-                &-proje1 {
-                    margin-right: 0;
+
+                &-proje3 {
+                    margin-left: 0;
+                    padding-top: 40px;
+
                     @include mq("tablet") {
-                        margin-right: 20px;
+                        margin-left: 20px;
+                        padding-top: 0;
                     }
+
                     &-img {
                         background-repeat: no-repeat;
                         background-image: url("../../src/img/fapel/1.jpg");
@@ -216,13 +233,17 @@
                         }
                     }
                 }
-                &-proje2 {
-                    margin-left: 0;
-                    padding-top: 40px;
+            }
+
+            &-container2 {
+                &-proje1 {
+                    margin-right: 0;
+
                     @include mq("tablet") {
-                        margin-left: 20px;
-                        padding-top: 0;
-                    }                    &-img {
+                        margin-right: 20px;
+                    }
+
+                    &-img {
                         background-repeat: no-repeat;
                         background-image: url("../../src/img/kerkuk/2.jpg");
                         background-size: cover;
@@ -243,14 +264,18 @@
                         }
                     }
                 }
-            }
-            &-container3 {
-                &-proje1 {
+
+                &-proje2 {
+                    margin-left: 0;
                     margin-right: 0;
+                    padding-top: 40px;
+                    
                     @include mq("tablet") {
+                        margin-left: 20px;
                         margin-right: 20px;
-                        padding-right: 20px; // YANINA YENI PROJE GELINCE SILINECEK
+                        padding-top: 0;
                     }
+
                     &-img {
                         background-repeat: no-repeat;
                         background-image: url("../../src/img/balkon/4.jpg");
@@ -272,15 +297,19 @@
                         }
                     }
                 }
-                &-proje2 {
+
+                &-proje3 {
                     margin-left: 0;
                     padding-top: 40px;
+
                     @include mq("tablet") {
                         margin-left: 20px;
                         padding-top: 0;
-                    }                    &-img {
+                    }
+
+                    &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/bhc/6.jpg");
+                        background-image: url("../../src/img/fapel/1.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -288,7 +317,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/bhc/6.jpg");
+                                url("../../src/img/fapel/1.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -299,7 +328,99 @@
                         }
                     }
                 }
-            }           
+            }
+
+            &-container3 {
+                
+                &-proje1 {
+                    margin-right: 0;
+
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/kerkuk/2.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/kerkuk/2.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                &-proje2 {
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        padding-top: 0;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/balkon/4.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/balkon/4.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                &-proje3 {
+                    margin-left: 0;
+                    padding-top: 40px;
+
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        padding-top: 0;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/fapel/1.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/fapel/1.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

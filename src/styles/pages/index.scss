@@ -751,6 +751,12 @@
     // margin-top: 180px;
     text-align: center;
 
+    .row {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .round {
         min-height: 255px;
         margin-top: 30px;
@@ -759,7 +765,7 @@
 
         strong {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 50%;
             margin-top: -50px;
             transform: translate(-50%);
@@ -855,6 +861,7 @@
         margin-left: 0px;
         margin-right: 0px;
         flex-direction: column;
+        align-items: center;
 
         &-top, &-bot, &-mid {
             display: inherit;
@@ -949,7 +956,7 @@
         @include mq("tablet") {
             &-top, &-bot {
                 display: inherit;
-                width: 100%;
+                width: 80%;
                 height: auto;
                 justify-content: center;
                 margin-bottom: 20px;

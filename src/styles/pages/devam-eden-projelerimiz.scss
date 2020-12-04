@@ -67,85 +67,106 @@
             padding-bottom: 40px;
             justify-content: center;
 
-            &-proje1 {
+            &-container1 {
                 display: inherit;
                 width: 100%;
+                padding-bottom: 40px;
+                // background-color: red;
                 height: auto;
-                // background-color: blue;
-                // margin-right: 20px;
                 flex-direction: column;
-                text-align: center;
 
                 @include mq("tablet") {
-                    width: 50%;
+                    flex-direction: row;
+                    justify-content: center;
                 }
 
-                
 
-                &-title {
+                &-proje1 {
                     display: inherit;
-                    // background-color: red;
                     width: 100%;
                     height: auto;
-                    padding-bottom: 20px;
-                    justify-content: center;
-                    // align-items: center;
-                    h1 {
-                        color: white;
-                        font-size: 24px;
-                        
-                        @include mq("tablet") {
-                            font-size: 30px;
+                    // background-color: blue;
+                    // margin-right: 20px;
+                    flex-direction: column;
+                    text-align: center;
+    
+                    @include mq("tablet") {
+                        width: 30%;
+                    }
+    
+                    
+    
+                    &-title {
+                        display: inherit;
+                        // background-color: red;
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 20px;
+                        justify-content: center;
+                        // align-items: center;
+                        h1 {
+                            color: white;
+                            font-size: 24px;
+                            
+                            @include mq("tablet") {
+                                font-size: 30px;
+                            }
                         }
                     }
-                }
-
-                &-img {
-                    display: inherit;
-                    // background-color: black;
-                    width: 100%;
-                    height: 180px;
-                    background-repeat: no-repeat;
-                    background-image: url("../../src/img/zb/4.jpg");
-                    background-size: cover;
-                    background-position: center;
-                    transition: 1s;
-
-                    @include mq("tablet") {
-                        height: 300px;
-                    }
-                    
-                    
-                    h4 {
-                        display: flex;
-                        color: white;
-                        justify-content: center;
-                        padding-top: 100px;
-                        opacity: 0;
+    
+                    &-img {
+                        display: inherit;
+                        // background-color: black;
+                        width: 100%;
+                        height: 180px;
                         transition: 1s;
-                    }
-
-                    &:hover {
-                        // filter: grayscale(100%);
-                        background-image:
-                        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                        url("../../src/img/zb/4.jpg");
-                        transition: 1s;
-                        transform: scale(1.1);
-                        // filter: brightness(30%);
-
+    
+                        @include mq("tablet") {
+                            height: 180px;
+                        }
+                        
+                        
                         h4 {
-                            opacity: 1;
+                            display: flex;
+                            color: white;
+                            justify-content: center;
+                            padding-top: 80px;
+                            opacity: 0;
+                            transition: 1s;
                         }
                     }
                 }
             }
-            &-proje2 {
-                display: inherit;
-                width: 50%;
-                height: 300px;
-                background-color: green;
-                margin-left: 20px;
+
+            &-container1 {
+                &-proje1 {
+                    margin-right: 0;
+
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/zb/4.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/zb/4.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
