@@ -70,7 +70,9 @@
 
             &-container1,
             &-container2,
-            &-container3 {
+            &-container3,
+            &-container4, 
+            &-container5 {
                 display: inherit;
                 width: 100%;
                 padding-bottom: 40px;
@@ -101,10 +103,11 @@
                         display: inherit;
                         // background-color: red;
                         width: 100%;
-                        height: auto;
+                        height: 92px;
                         padding-bottom: 20px;
                         justify-content: center;
                         text-align: center;
+                        padding-top: 20px;
 
                         // align-items: center;
                         h1 {
@@ -140,7 +143,9 @@
                 }
             }
 
+
             &-container1 {
+
                 &-proje1 {
                     margin-right: 0;
 
@@ -150,7 +155,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/duhok/49.jpg");
+                        background-image: url("../../src/img/duhok1/7.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -158,7 +163,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/duhok/49.jpg");
+                                url("../../src/img/duhok1/7.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -169,7 +174,6 @@
                         }
                     }
                 }
-
                 &-proje2 {
                     margin-left: 0;
                     margin-right: 0;
@@ -183,7 +187,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/bhc/13.jpg");
+                        background-image: url("../../src/img/bhc20/1.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -191,7 +195,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/bhc/13.jpg");
+                                url("../../src/img/bhc20/1.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -202,7 +206,6 @@
                         }
                     }
                 }
-
                 &-proje3 {
                     margin-left: 0;
                     padding-top: 40px;
@@ -214,7 +217,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/fapel/1.jpg");
+                        background-image: url("../../src/img/fapel1/1.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -222,7 +225,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/fapel/1.jpg");
+                                url("../../src/img/fapel1/1.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -235,7 +238,9 @@
                 }
             }
 
+
             &-container2 {
+
                 &-proje1 {
                     margin-right: 0;
 
@@ -245,7 +250,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/kerkuk/2.jpg");
+                        background-image: url("../../src/img/kerkuk/kutuphane/2.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -253,7 +258,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/kerkuk/2.jpg");
+                                url("../../src/img/kerkuk/kutuphane/2.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -264,7 +269,6 @@
                         }
                     }
                 }
-
                 &-proje2 {
                     margin-left: 0;
                     margin-right: 0;
@@ -278,7 +282,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/balkon/4.jpg");
+                        background-image: url("../../src/img/kerkuk/towers/11.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -286,7 +290,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/balkon/4.jpg");
+                                url("../../src/img/kerkuk/towers/11.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -297,7 +301,6 @@
                         }
                     }
                 }
-
                 &-proje3 {
                     margin-left: 0;
                     padding-top: 40px;
@@ -309,7 +312,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/fapel/1.jpg");
+                        background-image: url("../../src/img/kerkuk/plaza/8.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -317,7 +320,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/fapel/1.jpg");
+                                url("../../src/img/kerkuk/plaza/8.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -330,6 +333,7 @@
                 }
             }
 
+
             &-container3 {
                 
                 &-proje1 {
@@ -341,7 +345,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/kerkuk/2.jpg");
+                        background-image: url("../../src/img/balkon-yesilkoy/4.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -349,7 +353,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/kerkuk/2.jpg");
+                                url("../../src/img/balkon-yesilkoy/4.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -360,8 +364,9 @@
                         }
                     }
                 }
-
                 &-proje2 {
+                    padding-top: 40px;
+
                     @include mq("tablet") {
                         margin-left: 20px;
                         margin-right: 20px;
@@ -370,7 +375,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/balkon/4.jpg");
+                        background-image: url("../../src/img/balkon-erbil/1.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -378,7 +383,7 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/balkon/4.jpg");
+                                url("../../src/img/balkon-erbil/1.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
@@ -389,7 +394,6 @@
                         }
                     }
                 }
-
                 &-proje3 {
                     margin-left: 0;
                     padding-top: 40px;
@@ -401,7 +405,7 @@
 
                     &-img {
                         background-repeat: no-repeat;
-                        background-image: url("../../src/img/fapel/1.jpg");
+                        background-image: url("../../src/img/balkon-kuveyt/1.jpg");
                         background-size: cover;
                         background-position: center;
 
@@ -409,7 +413,193 @@
                             // filter: grayscale(100%);
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                                url("../../src/img/fapel/1.jpg");
+                                url("../../src/img/balkon-kuveyt/1.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            &-container4 {
+                
+                &-proje1 {
+                    margin-right: 0;
+
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/tato/3.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/tato/3.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje2 {
+                    padding-top: 40px;
+
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        padding-top: 0;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/kerkuk/kuran/16.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/kerkuk/kuran/16.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje3 {
+                    margin-left: 0;
+                    padding-top: 40px;
+
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        padding-top: 0;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/torunlar/11.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/torunlar/11.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            &-container5 {
+
+                justify-content: flex-start;
+                
+                &-proje1 {
+                    margin-right: 0;
+
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/sandavic/8.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/sandavic/8.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje2 {
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        padding-top: 0;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/balkon.png");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/balkon.png");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje3 {
+                    margin-left: 0;
+                    padding-top: 40px;
+
+                    @include mq("tablet") {
+                        margin-left: 20px;
+                        padding-top: 0;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/balkon.png");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/balkon.png");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);

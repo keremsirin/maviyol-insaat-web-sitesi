@@ -98,7 +98,9 @@
                         display: none;
                     }
                 }  
-                
+                &-container3 {
+                    justify-content: space-around;
+                }
 
 
                 h1 {
@@ -142,10 +144,7 @@
                         }
                     }  
                     &-container3 {
-                        justify-content: start;
-                        &-2, &-3 {
-                            display: none;
-                        }
+                        display: none;
                     }
                 }
 
@@ -183,10 +182,7 @@
                         }
                     }  
                     &-container3 {
-                        justify-content: start;
-                        &-2, &-3 {
-                            display: none;
-                        }
+                        display: none;
                     }
                 }
 
@@ -223,10 +219,7 @@
                         }
                     }  
                     &-container3 {
-                        justify-content: start;
-                        &-2, &-3 {
-                            display: none;
-                        }
+                        display: none;
                     }
                 }
             }

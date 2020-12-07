@@ -296,8 +296,8 @@ $(document).ready(function () {
     $(".Zb-master-content-project1-container1 a").last().attr("data-lightbox", " ");
     $(".Zb-master-content-project1-container2 a").last().attr("data-lightbox", " ");
     $(".Zb-master-content-project1-container3 a").last().attr("data-lightbox", " ");
-    $(".Zb-master-content-project1-container4 a").last().attr("data-lightbox", " ");
-    $(".Duhok-master-content-project1-container1 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container4 a").last().attr("data-lightbox", " "); // $(".Duhok-master-content-project1-container1 a").last().attr("data-lightbox", " ")
+
     $(".Bahcesehir_tadilat-master-content-project1-container2 a").first().attr("data-lightbox", " ");
     $(".Fapel-master-content-project1-container1 a").last().attr("data-lightbox", " ");
     $(".Fapel-master-content-project1-container2 a").last().attr("data-lightbox", " ");
@@ -310,8 +310,8 @@ $(document).ready(function () {
     $(".Zb-master-content-project1-container5 a").eq(1).attr("data-lightbox", " ");
     $(".Zb-master-content-project1-container5 a").last().attr("data-lightbox", " ");
     $(".Zb-master-content-project1-container6 a").attr("data-lightbox", " ");
-    $(".Zb-master-content-project1-container7 a").attr("data-lightbox", " ");
-    $(".Duhok-master-content-project1-container2 a").last().attr("data-lightbox", " ");
+    $(".Zb-master-content-project1-container7 a").attr("data-lightbox", " "); // $(".Duhok-master-content-project1-container2 a").last().attr("data-lightbox", " ")
+
     $(".Bahcesehir_tadilat-master-content-project1-container2 a").last().attr("data-lightbox", " ");
     $(".Fapel-master-content-project1-container3 a").eq(1).attr("data-lightbox", " ");
     $(".Fapel-master-content-project1-container3 a").last().attr("data-lightbox", " ");
@@ -387,7 +387,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54634" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62263" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

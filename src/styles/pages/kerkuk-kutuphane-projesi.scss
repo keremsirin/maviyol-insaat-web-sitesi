@@ -1,4 +1,4 @@
-.Kerkuk {
+.Kerkuk_kutuphane {
     height: auto;
     width: 100vw;
     // background-color: rgba($color: $color-dark-grey, $alpha: .8);
@@ -98,9 +98,7 @@
                         display: none;
                     }
                 }  
-                &-container3 {
-                    justify-content: space-around;
-                }
+                
 
 
                 h1 {
@@ -144,7 +142,10 @@
                         }
                     }  
                     &-container3 {
-                        display: none;
+                        justify-content: flex-start;
+                        &-2, &-3 {
+                            display: none;
+                        }
                     }
                 }
 
@@ -182,7 +183,10 @@
                         }
                     }  
                     &-container3 {
-                        display: none;
+                        justify-content: flex-start;
+                        &-2, &-3 {
+                            display: none;
+                        }
                     }
                 }
 
@@ -219,7 +223,10 @@
                         }
                     }  
                     &-container3 {
-                        display: none;
+                        justify-content: flex-start;
+                        &-2, &-3 {
+                            display: none;
+                        }
                     }
                 }
             }

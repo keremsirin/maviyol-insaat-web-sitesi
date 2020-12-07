@@ -1,0 +1,226 @@
+.Kerkuk_towers {
+    height: auto;
+    width: 100vw;
+    // background-color: rgba($color: $color-dark-grey, $alpha: .8);
+    background-color: rgba($color: $color-dark-grey, $alpha: .85);
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-bottom: 100px;
+    position: relative;
+    justify-content: center;
+    padding-right: 28px;
+    padding-left: 28px;
+
+    @include mq("tablet") {
+        height: auto;
+        padding-bottom: 140px;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        @include mq("tablet") {
+            padding-left: $offset;
+            padding-right: $offset;
+        }
+    }
+
+    &-master {
+        width: 100%;
+        height: auto;
+        // background-color: #ddd;
+        position: relative;
+        top: 80px;
+        
+         
+        @include mq("tablet") {
+            top: 140px;
+        }
+
+        &-page_title {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 140px;
+            // background-color: black;
+            text-align: center;
+            position: relative;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            border-bottom: 1px solid $color-blue;
+            line-height: 40px;
+        }
+
+        &-content {
+            display: flex;
+            width: 100%;
+            height: auto;
+            // background-color: red;
+            flex-direction: column;
+
+            &-project1 {
+                display: inherit;
+                width: 100%;
+                height: auto;
+                // background-color: red;
+                margin-top: 40px;
+                // justify-content: center;
+                flex-direction: column;
+    
+                &-container1, &-container2, &-container3, &-container4, &-container5, &-container6, &-container7, &-container8, &-container9, &-container10  {
+                    display: inherit;
+                    width: 100%;
+                    height: 80px;
+                    justify-content: space-between;
+    
+                    &-1, &-2, &-3, &-4 {
+                        display: inherit;
+                        width: 100px;
+                        height: 60px;
+                        background-color: white;
+                        // margin-left: $offset;
+                        // margin-right: $offset;
+                        transition: 1s;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    &-4 {
+                        display: none;
+                    }
+                }  
+                
+
+
+                h1 {
+                    color: white;
+                    padding-bottom: $offset;
+                }
+
+                @include mq("tablet") {
+                    display: inherit;
+                    width: 100%;
+                    height: auto;
+                    // background-color: red;
+                    margin-top: 40px;
+                    // justify-content: center;
+                    flex-direction: column;
+                    &-container6, &-container7 {
+                        display: none;
+                    }
+        
+                    &-container1, &-container2, &-container3, &-container4, &-container5, &-container6, &-container7 {
+                        display: inherit;
+                        width: 100%;
+                        height: 160px;
+                        justify-content: space-between;
+        
+                        &-1, &-2, &-3, &-4 {
+                            display: inherit;
+                            width: 170px;
+                            height: 110px;
+                            background-color: white;
+                            // margin-left: $offset;
+                            // margin-right: $offset;
+                            transition: 1s;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }  
+                    &-container8, &-container9, &-container10 {
+                        display: none;
+                    }
+                }
+
+
+                @include mq("desktop") {
+                    display: inherit;
+                    width: 100%;
+                    height: auto;
+                    // background-color: red;
+                    margin-top: 40px;
+                    // justify-content: center;
+                    flex-direction: column;
+        
+                    &-container1, &-container2, &-container3, &-container4, &-container5, &-container6, &-container7 {
+                        display: inherit;
+                        width: 100%;
+                        height: 190px;
+                        justify-content: space-between;
+        
+                        &-1, &-2, &-3, &-4 {
+                            display: inherit;
+                            width: 215px;
+                            height: 150px;
+                            background-color: white;
+                            // margin-left: $offset;
+                            // margin-right: $offset;
+                            transition: 1s;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }  
+                    &-container8, &-container9, &-container10 {
+                        display: none;
+                    }
+                }
+
+                @include mq("large") {
+                    display: inherit;
+                    width: 100%;
+                    height: auto;
+                    // background-color: red;
+                    margin-top: 40px;
+                    // justify-content: center;
+                    flex-direction: column;
+        
+                    &-container1, &-container2, &-container3, &-container4, &-container5, &-container6, &-container7 {
+                        display: inherit;
+                        width: 100%;
+                        height: 220px;
+                        justify-content: space-between;
+        
+                        &-1, &-2, &-3, &-4 {
+                            display: inherit;
+                            width: 250px;
+                            height: 180px;
+                            background-color: white;
+                            // margin-left: $offset;
+                            // margin-right: $offset;
+                            transition: 1s;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }  
+                    &-container8, &-container9, &-container10 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
