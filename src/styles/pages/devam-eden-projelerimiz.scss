@@ -77,11 +77,12 @@
 
                 @include mq("tablet") {
                     flex-direction: row;
-                    justify-content: center;
+                    justify-content: space-around;
                 }
 
 
-                &-proje1 {
+                &-proje1,
+                &-proje2 {
                     display: inherit;
                     width: 100%;
                     height: auto;
@@ -141,9 +142,10 @@
             &-container1 {
                 &-proje1 {
                     margin-right: 0;
+                    padding-bottom: 60px;
 
                     @include mq("tablet") {
-                        margin-right: 20px;
+                        padding-bottom: 0;
                     }
 
                     &-img {
@@ -157,6 +159,34 @@
                             background-image:
                                 linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                                 url("../../src/img/zb1/3.jpg");
+                            transition: 1s;
+                            transform: scale(1.1);
+                            // filter: brightness(30%);
+
+                            h4 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &-proje2 {
+                    margin-right: 0;
+
+                    @include mq("tablet") {
+                        margin-right: 20px;
+                    }
+
+                    &-img {
+                        background-repeat: no-repeat;
+                        background-image: url("../../src/img/zb2/zb2-1.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        &:hover {
+                            // filter: grayscale(100%);
+                            background-image:
+                                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                                url("../../src/img/zb2/zb2-1.jpg");
                             transition: 1s;
                             transform: scale(1.1);
                             // filter: brightness(30%);
